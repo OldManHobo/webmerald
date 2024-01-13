@@ -297,6 +297,12 @@ static const u8 sEmbodyAspectWellspringDescription[] = _("Raises Sp. Def.");
 static const u8 sEmbodyAspectCornerstoneDescription[] = _("Raises Defense.");
 static const u8 sToxicChainDescription[] = _("Moves can poison.");
 static const u8 sSupersweetSyrupDescription[] = _("Lowers the foe's Speed.");
+static const u8 sVampiricDescription[] = _("Ups draining moves' effects.");
+static const u8 sArroganceDescription[] = _("K.O.'s raise Sp.Atk.");
+static const u8 sSpellboundDescription[] = _("Ups Sp.Atk and locks move.");
+static const u8 sRefractionDescription[] = _("Beam moves are stronger.");
+static const u8 sDataAbsorbDescription[] = _("Turns Data into HP.");
+
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -608,6 +614,11 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_EMBODY_ASPECT_CORNERSTONE] = _("Embody Aspect"),
     [ABILITY_TOXIC_CHAIN] = _("Toxic Chain"),
     [ABILITY_SUPERSWEET_SYRUP] = _("Supersweet Syrup"),
+    [ABILITY_VAMPIRIC] = _("Vampiric"),
+    [ABILITY_ARROGANCE] = _("Arrogance"),
+    [ABILITY_SPELLBOUND] = _("Spellbound"),
+    [ABILITY_REFRACTION] = _("Refraction"),
+    [ABILITY_DATA_ABSORB] = _("Data Absorb"),
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -1231,4 +1242,9 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_EMBODY_ASPECT_CORNERSTONE] = sEmbodyAspectCornerstoneDescription,
     [ABILITY_TOXIC_CHAIN] = sToxicChainDescription,
     [ABILITY_SUPERSWEET_SYRUP] = sSupersweetSyrupDescription,
+    [ABILITY_VAMPIRIC] = sVampiricDescription,
+    [ABILITY_ARROGANCE] = sArroganceDescription,
+    [ABILITY_SPELLBOUND] = sSpellboundDescription,
+    [ABILITY_REFRACTION] = sRefractionDescription,
+    [ABILITY_DATA_ABSORB] = sDataAbsorbDescription,
 };
