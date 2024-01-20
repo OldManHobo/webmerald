@@ -34,7 +34,7 @@ static const union AnimCmd sAnim_Bulbasaur_1[] =
 static const union AnimCmd sAnim_Ivysaur_1[] =
 {
     ANIMCMD_FRAME(0, 1),
-    ANIMCMD_FRAME(1, 36),
+    ANIMCMD_FRAME(1, 46),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
@@ -42,7 +42,7 @@ static const union AnimCmd sAnim_Ivysaur_1[] =
 static const union AnimCmd sAnim_Venusaur_1[] =
 {
     ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
@@ -60,22 +60,22 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(VenusaurGigantamax);
 static const union AnimCmd sAnim_Charmander_1[] =
 {
     ANIMCMD_FRAME(0, 2),
-    ANIMCMD_FRAME(1, 46),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 56),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Charmeleon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 25),
-    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 45),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Charizard_1[] =
 {
-    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
@@ -96,10 +96,9 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(CharizardGigantamax);
 #if P_FAMILY_SQUIRTLE
 static const union AnimCmd sAnim_Squirtle_1[] =
 {
-    ANIMCMD_FRAME(1, 11),
-    ANIMCMD_FRAME(0, 11),
-    ANIMCMD_FRAME(1, 11),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
@@ -113,10 +112,11 @@ static const union AnimCmd sAnim_Wartortle_1[] =
 
 static const union AnimCmd sAnim_Blastoise_1[] =
 {
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(0, 50),
     ANIMCMD_FRAME(1, 25),
     ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
@@ -132,20 +132,17 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BlastoiseGigantamax);
 #if P_FAMILY_CATERPIE
 static const union AnimCmd sAnim_Caterpie_1[] =
 {
-    ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 28),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Metapod_1[] =
 {
-    ANIMCMD_FRAME(1, 45),
+    ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
@@ -153,17 +150,9 @@ static const union AnimCmd sAnim_Metapod_1[] =
 static const union AnimCmd sAnim_Butterfree_1[] =
 {
     ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 25),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
@@ -176,41 +165,34 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(ButterfreeGigantamax);
 #if P_FAMILY_WEEDLE
 static const union AnimCmd sAnim_Weedle_1[] =
 {
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Kakuna_1[] =
 {
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 20),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 7),
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(1, 7),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 7),
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(1, 7),
+    ANIMCMD_FRAME(0, 7),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Beedrill_1[] =
 {
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 35),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 8),
     ANIMCMD_END,
 };
 
@@ -222,26 +204,29 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BeedrillMega);
 #if P_FAMILY_PIDGEY
 static const union AnimCmd sAnim_Pidgey_1[] =
 {
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Pidgeotto_1[] =
 {
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Pidgeot_1[] =
 {
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 25),
     ANIMCMD_END,
 };
 
@@ -253,26 +238,19 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(PidgeotMega);
 #if P_FAMILY_RATTATA
 static const union AnimCmd sAnim_Rattata_1[] =
 {
-    ANIMCMD_FRAME(1, 11),
-    ANIMCMD_FRAME(0, 11),
-    ANIMCMD_FRAME(1, 11),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Raticate_1[] =
 {
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(1, 27),
+    ANIMCMD_FRAME(0, 27),
+    ANIMCMD_FRAME(1, 24),
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_FRAME(1, 27),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
@@ -287,23 +265,25 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(RaticateAlolan);
 #if P_FAMILY_SPEAROW
 static const union AnimCmd sAnim_Spearow_1[] =
 {
-    ANIMCMD_FRAME(1, 11),
-    ANIMCMD_FRAME(0, 11),
-    ANIMCMD_FRAME(1, 11),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Fearow_1[] =
 {
-    ANIMCMD_FRAME(1, 7),
-    ANIMCMD_FRAME(0, 7),
-    ANIMCMD_FRAME(1, 7),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 7),
-    ANIMCMD_FRAME(0, 7),
-    ANIMCMD_FRAME(1, 7),
-    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 #endif //P_FAMILY_SPEAROW
@@ -311,20 +291,15 @@ static const union AnimCmd sAnim_Fearow_1[] =
 #if P_FAMILY_EKANS
 static const union AnimCmd sAnim_Ekans_1[] =
 {
-    ANIMCMD_FRAME(1, 8),
-    ANIMCMD_FRAME(0, 8),
-    ANIMCMD_FRAME(1, 8),
-    ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 40),
-    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Arbok_1[] =
 {
+    ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 35),
-    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 #endif //P_FAMILY_EKANS
@@ -346,10 +321,11 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(PichuSpikyEared);
 
 static const union AnimCmd sAnim_Pikachu_1[] =
 {
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 60),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
@@ -375,9 +351,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(PikachuGigantamax);
 static const union AnimCmd sAnim_Raichu_1[] =
 {
     ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
@@ -390,21 +364,21 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(RaichuAlolan);
 #if P_FAMILY_SANDSHREW
 static const union AnimCmd sAnim_Sandshrew_1[] =
 {
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Sandslash_1[] =
 {
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
@@ -417,53 +391,65 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SandslashAlolan);
 #if P_FAMILY_NIDORAN
 static const union AnimCmd sAnim_NidoranF_1[] =
 {
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 50),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Nidorina_1[] =
 {
-    ANIMCMD_FRAME(1, 40),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(1, 28),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Nidoqueen_1[] =
 {
-    ANIMCMD_FRAME(1, 45),
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_NidoranM_1[] =
 {
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Nidorino_1[] =
 {
-    ANIMCMD_FRAME(0, 7),
-    ANIMCMD_FRAME(1, 23),
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Nidoking_1[] =
 {
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
@@ -484,16 +470,20 @@ static const union AnimCmd sAnim_Cleffa_1[] =
 static const union AnimCmd sAnim_Clefairy_1[] =
 {
     ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Clefable_1[] =
 {
-    ANIMCMD_FRAME(0, 16),
-    ANIMCMD_FRAME(1, 48),
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
 #endif //P_FAMILY_CLEFAIRY
@@ -704,11 +694,12 @@ static const union AnimCmd sAnim_Paras_1[] =
 
 static const union AnimCmd sAnim_Parasect_1[] =
 {
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
@@ -717,39 +708,18 @@ static const union AnimCmd sAnim_Parasect_1[] =
 #if P_FAMILY_VENONAT
 static const union AnimCmd sAnim_Venonat_1[] =
 {
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 35),
-    ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Venomoth_1[] =
 {
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(0, 4),
     ANIMCMD_END,
 };
 #endif //P_FAMILY_VENONAT
@@ -757,23 +727,20 @@ static const union AnimCmd sAnim_Venomoth_1[] =
 #if P_FAMILY_DIGLETT
 static const union AnimCmd sAnim_Diglett_1[] =
 {
-    ANIMCMD_FRAME(0, 25),
-    ANIMCMD_FRAME(1, 35),
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_FRAME(1, 11),
+    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_FRAME(1, 11),
+    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_FRAME(1, 11),
+    ANIMCMD_FRAME(0, 6),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Dugtrio_1[] =
 {
-    ANIMCMD_FRAME(1, 35),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 21),
+    ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
@@ -831,11 +798,9 @@ static const union AnimCmd sAnim_Psyduck_1[] =
 
 static const union AnimCmd sAnim_Golduck_1[] =
 {
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_FRAME(1, 35),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 #endif //P_FAMILY_PSYDUCK
@@ -979,21 +944,19 @@ static const union AnimCmd sAnim_Machop_1[] =
 
 static const union AnimCmd sAnim_Machoke_1[] =
 {
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_FRAME(1, 25),
     ANIMCMD_FRAME(0, 20),
-    ANIMCMD_FRAME(1, 44),
-    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_Machamp_1[] =
 {
-    ANIMCMD_FRAME(0, 11),
-    ANIMCMD_FRAME(1, 11),
-    ANIMCMD_FRAME(0, 11),
-    ANIMCMD_FRAME(1, 11),
-    ANIMCMD_FRAME(0, 11),
-    ANIMCMD_FRAME(1, 11),
-    ANIMCMD_FRAME(0, 11),
+    ANIMCMD_FRAME(0, 25),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 

@@ -6414,8 +6414,8 @@ static const struct TrainerMon sParty_WallyVR1[] = {
 
 static const struct TrainerMon sParty_BrendanRoute103Mudkip[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_TREECKO,
+    .lvl = 3,
+    .species = SPECIES_BULBASAUR,
     }
 };
 
@@ -6457,8 +6457,8 @@ static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
 
 static const struct TrainerMon sParty_BrendanRoute103Treecko[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_TORCHIC,
+    .lvl = 3,
+    .species = SPECIES_CHARMANDER,
     }
 };
 
@@ -6500,8 +6500,8 @@ static const struct TrainerMon sParty_BrendanRoute119Treecko[] = {
 
 static const struct TrainerMon sParty_BrendanRoute103Torchic[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_MUDKIP,
+    .lvl = 3,
+    .species = SPECIES_SQUIRTLE,
     }
 };
 
@@ -6543,8 +6543,8 @@ static const struct TrainerMon sParty_BrendanRoute119Torchic[] = {
 
 static const struct TrainerMon sParty_MayRoute103Mudkip[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_TREECKO,
+    .lvl = 3,
+    .species = SPECIES_BULBASAUR,
     }
 };
 
@@ -6586,8 +6586,8 @@ static const struct TrainerMon sParty_MayRoute119Mudkip[] = {
 
 static const struct TrainerMon sParty_MayRoute103Treecko[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_TORCHIC,
+    .lvl = 3,
+    .species = SPECIES_CHARMANDER,
     }
 };
 
@@ -6629,8 +6629,8 @@ static const struct TrainerMon sParty_MayRoute119Treecko[] = {
 
 static const struct TrainerMon sParty_MayRoute103Torchic[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_MUDKIP,
+    .lvl = 3,
+    .species = SPECIES_SQUIRTLE,
     }
 };
 
@@ -7425,12 +7425,12 @@ static const struct TrainerMon sParty_BrendanRustboroTreecko[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_RATTATA,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
-    .species = SPECIES_TORCHIC,
+    .species = SPECIES_CHARMANDER,
     }
 };
 
@@ -7438,12 +7438,12 @@ static const struct TrainerMon sParty_BrendanRustboroMudkip[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 13,
-    .species = SPECIES_WINGULL,
+    .species = SPECIES_PIKACHU,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
-    .species = SPECIES_TREECKO,
+    .species = SPECIES_BULBASAUR,
     }
 };
 
@@ -7514,12 +7514,12 @@ static const struct TrainerMon sParty_BrendanRustboroTorchic[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 13,
-    .species = SPECIES_SLUGMA,
+    .species = SPECIES_SANDSLASH,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
-    .species = SPECIES_MUDKIP,
+    .species = SPECIES_SQUIRTLE,
     }
 };
 
@@ -7527,12 +7527,12 @@ static const struct TrainerMon sParty_MayRustboroMudkip[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 13,
-    .species = SPECIES_WINGULL,
+    .species = SPECIES_PIKACHU,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
-    .species = SPECIES_TREECKO,
+    .species = SPECIES_BULBASAUR,
     }
 };
 
@@ -9661,12 +9661,12 @@ static const struct TrainerMon sParty_MayRustboroTreecko[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_RATTATA,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
-    .species = SPECIES_TORCHIC,
+    .species = SPECIES_CHARMANDER,
     }
 };
 
@@ -9674,12 +9674,12 @@ static const struct TrainerMon sParty_MayRustboroTorchic[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 13,
-    .species = SPECIES_TORKOAL,
+    .species = SPECIES_SANDSLASH,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 15,
-    .species = SPECIES_MUDKIP,
+    .species = SPECIES_SQUIRTLE,
     }
 };
 
