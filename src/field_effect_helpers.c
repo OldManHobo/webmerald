@@ -51,7 +51,6 @@ void SetUpReflection(struct ObjectEvent *objectEvent, struct Sprite *sprite, boo
     reflectionSprite = &gSprites[CreateCopySpriteAt(sprite, sprite->x, sprite->y, 152)];
     reflectionSprite->callback = UpdateObjectReflectionSprite;
     reflectionSprite->oam.priority = 3;
-    reflectionSprite->oam.paletteNum = gReflectionEffectPaletteMap[reflectionSprite->oam.paletteNum];
     reflectionSprite->usingSheet = TRUE;
     reflectionSprite->anims = gDummySpriteAnimTable;
     StartSpriteAnim(reflectionSprite, 0);
@@ -65,6 +64,8 @@ void SetUpReflection(struct ObjectEvent *objectEvent, struct Sprite *sprite, boo
 
     if (!stillReflection)
         reflectionSprite->oam.affineMode = ST_OAM_AFFINE_NORMAL;
+
+    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(12, 7));
 }
 
 static s16 GetReflectionVerticalOffset(struct ObjectEvent *objectEvent)
@@ -85,12 +86,16 @@ static void LoadObjectReflectionPalette(struct ObjectEvent *objectEvent, struct 
      && ((bridgeType = MetatileBehavior_GetBridgeType(objectEvent->previousMetatileBehavior))
       || (bridgeType = MetatileBehavior_GetBridgeType(objectEvent->currentMetatileBehavior))))
     {
+        u8 bridgePaletteNum = 1;
         reflectionSprite->sReflectionVerticalOffset = bridgeReflectionVerticalOffsets[bridgeType - 1];
-        LoadObjectHighBridgeReflectionPalette(objectEvent, reflectionSprite->oam.paletteNum);
+        LoadObjectHighBridgeReflectionPalette(objectEvent, bridgePaletteNum);
+        reflectionSprite->oam.objMode = ST_OAM_OBJ_NORMAL;
+        reflectionSprite->oam.paletteNum = bridgePaletteNum;
     }
     else
     {
         LoadObjectRegularReflectionPalette(objectEvent, reflectionSprite->oam.paletteNum);
+        reflectionSprite->oam.objMode = ST_OAM_OBJ_BLEND;
     }
 }
 
@@ -131,7 +136,6 @@ static void UpdateObjectReflectionSprite(struct Sprite *reflectionSprite)
     }
     else
     {
-        reflectionSprite->oam.paletteNum = gReflectionEffectPaletteMap[mainSprite->oam.paletteNum];
         reflectionSprite->oam.shape = mainSprite->oam.shape;
         reflectionSprite->oam.size = mainSprite->oam.size;
         reflectionSprite->oam.matrixNum = mainSprite->oam.matrixNum | ST_OAM_VFLIP;
@@ -1108,13 +1112,13 @@ static void UpdateBobbingEffect(struct ObjectEvent *playerObj, struct Sprite *pl
 {
     // The frame interval at which to update the blob's y movement.
     // Normally every 4th frame, but every 8th frame while dismounting.
-    u16 intervals[] = {0x3, 0x7};
+    u16 intervals[] = {0x10, 0x7};
 
     u8 bobState = GetSurfBlob_BobState(sprite);
     if (bobState != BOB_NONE)
     {
         // Update vertical position of surf blob
-        if (((u16)(++sprite->sTimer) & intervals[sprite->sIntervalIdx]) == 0)
+        if (((u16)(++sprite->sTimer) & intervals[1]) == 0)
             sprite->y2 += sprite->sVelocity;
 
         // Reverse bob direction
