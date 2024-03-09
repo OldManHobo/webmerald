@@ -875,6 +875,37 @@ gBattleAnims_Moves::
 	.4byte Move_PSYCHIC_NOISE
 	.4byte Move_UPPER_HAND
 	.4byte Move_MALIGNANT_CHAIN
+@@@@Interweb
+	.4byte Move_VENOM_DRAIN
+	.4byte Move_EXHAUST_FUME
+	.4byte Move_DEEP_SUNDER
+	.4byte Move_INSTALL
+	.4byte Move_WILD_SPAM
+	.4byte Move_DIGIDASH
+	.4byte Move_MEMORY_LEAK
+	.4byte Move_SHED_CACHE
+	.4byte Move_DATA_FLOOD
+	.4byte Move_TURBO_CUTTER
+	.4byte Move_SYSTEM_CRASH
+	.4byte Move_FUSE_BURN
+	.4byte Move_OVERLOAD
+	.4byte Move_BYTE
+	.4byte Move_ANTIVIRUS
+	.4byte Move_BLUE_SCREEN
+	.4byte Move_RED_RINGER
+	.4byte Move_GIGABYTE
+	.4byte Move_SLEEP_MODE
+	.4byte Move_HOLO_STRIKE
+	.4byte Move_BACKUP
+	.4byte Move_DATA_TRANSFER
+	.4byte Move_CONVERSION_3
+	.4byte Move_DEBUG
+	.4byte Move_RANDOM_ACCESS
+	.4byte Move_NEGATIVE_ROOM
+	.4byte Move_OPTIMIZE
+	.4byte Move_OVERWRITE
+	.4byte Move_SPEED_TEST
+	.4byte Move_RANDOMIZE
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -33596,3 +33627,257 @@ General_DynamaxGrowth:: @ PORTED FROM CFRU
 	createvisualtask AnimTask_DynamaxGrowth, 0x5, 0x1, 0x0
 	waitforvisualfinish
 	end
+
+Move_VENOM_DRAIN::
+	loadspritegfx ANIM_TAG_ROOTS
+	loadspritegfx ANIM_TAG_POISON_BUBBLE
+	loadspritegfx ANIM_TAG_BLUE_STAR
+	loadspritegfx ANIM_TAG_IMPACT
+	loadspritegfx ANIM_TAG_ORBS
+	monbg ANIM_DEF_PARTNER
+	splitbgprio_foes ANIM_TARGET
+	createsprite gFrenzyPlantRootSpriteTemplate, ANIM_ATTACKER, 2, 10, 8, 2, 0, 0, 100
+	playsewithpan SE_M_SCRATCH, SOUND_PAN_ATTACKER
+	delay 5
+	createsprite gFrenzyPlantRootSpriteTemplate, ANIM_ATTACKER, 2, 20, -8, -2, 0, 1, 95
+	playsewithpan SE_M_SCRATCH, -43
+	delay 5
+	createsprite gFrenzyPlantRootSpriteTemplate, ANIM_ATTACKER, 2, 30, 8, -4, 0, 0, 90
+	playsewithpan SE_M_SCRATCH, -22
+	delay 5
+	createsprite gFrenzyPlantRootSpriteTemplate, ANIM_ATTACKER, 2, 40, -8, 4, 0, 1, 85
+	playsewithpan SE_M_SCRATCH, 0
+	delay 5
+	createsprite gFrenzyPlantRootSpriteTemplate, ANIM_ATTACKER, 2, 50, 8, 0, 0, 0, 85
+	playsewithpan SE_M_SCRATCH, +21
+	delay 5
+	createsprite gFrenzyPlantRootSpriteTemplate, ANIM_ATTACKER, 2, 60, -8, -2, 0, 1, 85
+	playsewithpan SE_M_SCRATCH, +42
+	delay 5
+	createsprite gFrenzyPlantRootSpriteTemplate, ANIM_ATTACKER, 2, 75, 8, 0, 0, 0, 85
+	playsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET
+	delay 5
+	createsprite gFrenzyPlantRootSpriteTemplate, ANIM_ATTACKER, 2, 85, 16, 6, 0, 3, 80
+	playsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET
+	delay 5
+	createsprite gFrenzyPlantRootSpriteTemplate, ANIM_ATTACKER, 2, 85, -16, -6, 0, 2, 75
+	playsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET
+	delay 5
+	setalpha 12, 8
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 12, RGB(31, 13, 31)
+	waitforvisualfinish
+	playsewithpan SE_M_ABSORB, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 0
+	delay 2
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 5, 5, 1
+	waitforvisualfinish
+	delay 3
+	call GigaDrainAbsorbEffect
+	waitforvisualfinish
+	delay 15
+	call PoisonBubblesEffect
+	waitforvisualfinish
+	call HealingEffect
+	waitforvisualfinish
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 12, 0, RGB(31, 13, 31)
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	end
+
+Move_EXHAUST_FUME::
+	loadspritegfx ANIM_TAG_BLACK_SMOKE
+	loadspritegfx ANIM_TAG_BLACK_BALL
+	loadspritegfx ANIM_TAG_SMALL_EMBER
+	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
+	createsprite gBlackBallSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 35, -25
+	waitforvisualfinish
+	createvisualtask AnimTask_SmokescreenImpact, 2
+	delay 2
+	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_TARGET
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, -12, 104, 0, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, -12, 72, 1, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, -6, 56, 1, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, -6, 88, 0, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 0, 56, 0, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 0, 88, 1, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 6, 72, 0, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 6, 104, 1, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 12, 72, 0, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 12, 56, 1, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 18, 80, 0, 75
+	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 18, 72, 1, 75
+	waitforvisualfinish
+	call EmberFireHit
+	call EmberFireHit
+	call EmberFireHit
+	end
+
+Move_DEEP_SUNDER::
+	loadspritegfx ANIM_TAG_SHARP_TEETH
+	loadspritegfx ANIM_TAG_WATER_IMPACT
+	loadspritegfx ANIM_TAG_SMALL_BUBBLES
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
+	fadetobg BG_WATER_PULSE
+	waitbgfadein
+	setalpha 12, 8
+	playsewithpan SE_M_BITE, SOUND_PAN_TARGET
+	createsprite gSharpTeethSpriteTemplate, ANIM_ATTACKER, 2, -32, -32, 1, 819, 819, 10
+	createsprite gSharpTeethSpriteTemplate, ANIM_ATTACKER, 2, 32, 32, 5, -819, -819, 10
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 0, ANIM_TARGET, 1
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 7, 5, 2
+	waitforvisualfinish
+	playsewithpan SE_M_BITE, SOUND_PAN_TARGET
+	createsprite gSharpTeethSpriteTemplate, ANIM_ATTACKER, 2, 32, -32, 7, -819, 819, 10
+	createsprite gSharpTeethSpriteTemplate, ANIM_ATTACKER, 2, -32, 32, 3, 819, -819, 10
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, 0, ANIM_TARGET, 1
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 8, 4, 2
+	waitforvisualfinish
+	call RisingWaterHitEffect
+	clearmonbg ANIM_TARGET
+	blendoff
+	delay 1
+	restorebg
+	waitbgfadein
+	end
+
+Move_INSTALL::
+	loadspritegfx ANIM_TAG_ORBS
+	setalpha 11, 5
+	monbg_static ANIM_DEF_PARTNER
+	splitbgprio_all
+	panse SE_M_MINIMIZE, SOUND_PAN_TARGET, SOUND_PAN_ATTACKER, -3, 0
+	createvisualtask AnimTask_ShrinkTargetCopy, 5, 128, 24
+	delay 15
+	createsprite gMimicOrbSpriteTemplate, ANIM_TARGET, 2, -12, 24
+	delay 10
+	setarg 7, 0xFFFF
+	waitforvisualfinish
+	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 0, 2, 0, 11, RGB_WHITE
+	waitforvisualfinish
+	clearmonbg_static ANIM_DEF_PARTNER
+	blendoff
+	end
+
+Move_WILD_SPAM::
+
+Move_DIGIDASH::	
+
+Move_MEMORY_LEAK::
+	loadspritegfx ANIM_TAG_ORBS
+	loadspritegfx ANIM_TAG_BLUE_STAR
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_DEF_PARTNER
+	splitbgprio_foes ANIM_TARGET
+	setalpha 12, 8
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 8, RGB(13, 12, 31)
+	waitforvisualfinish
+	playsewithpan SE_M_ABSORB, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 1
+	delay 2
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 5, 5, 1
+	waitforvisualfinish
+	delay 3
+	call MegaDrainAbsorbEffect
+	waitforvisualfinish
+	delay 15
+	call HealingEffect
+	waitforvisualfinish
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 8, 0, RGB(13, 12, 31)
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	end
+
+Move_SHED_CACHE::
+
+Move_DATA_FLOOD::
+
+Move_TURBO_CUTTER::
+
+Move_SYSTEM_CRASH::
+
+Move_FUSE_BURN::
+
+Move_OVERLOAD::
+
+Move_BYTE::
+	goto Move_BITE
+
+Move_ANTIVIRUS::
+
+Move_BLUE_SCREEN::
+
+Move_RED_RINGER::
+
+Move_GIGABYTE::
+	goto Move_CRUNCH
+
+Move_SLEEP_MODE::
+
+Move_HOLO_STRIKE::
+
+Move_BACKUP::
+
+Move_DATA_TRANSFER::
+	loadspritegfx ANIM_TAG_COLORED_ORBS
+	playsewithpan SE_M_DOUBLE_TEAM, 0
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 0, 42, -32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 0, 42, -32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 0, 42, -32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 0, 42, -32
+	delay 2
+	playsewithpan SE_M_DOUBLE_TEAM, 0
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1, 42, 32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 1, 42, 32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 1, 42, 32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 1, 42, 32
+
+	waitforvisualfinish
+	playsewithpan SE_M_DOUBLE_TEAM, 0
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 0, 42, -32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 0, 42, -32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 0, 42, -32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 0, 42, -32
+	delay 2
+	playsewithpan SE_M_DOUBLE_TEAM, 0
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1, 42, 32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 1, 42, 32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 1, 42, 32
+	delay 2
+	createsprite gPowerSwapGuardSwapSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 1, 42, 32
+	delay 2
+	waitforvisualfinish
+	end
+
+Move_CONVERSION_3::
+
+Move_DEBUG::
+
+Move_RANDOM_ACCESS::
+
+Move_NEGATIVE_ROOM::
+
+Move_OPTIMIZE::
+
+Move_OVERWRITE::
+
+Move_SPEED_TEST::
+
+Move_RANDOMIZE::
+
