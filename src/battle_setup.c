@@ -382,6 +382,7 @@ static void CreateBattleStartTask(u8 transition, u16 song)
     u8 taskId = CreateTask(Task_BattleStart, 1);
 
     gTasks[taskId].tTransition = transition;
+    gBattleStruct->finalMonMusicPlaying = 0;
     PlayMapChosenOrBattleBGM(song);
 }
 
@@ -982,7 +983,7 @@ static void CB2_GiveStarter(void)
 
     *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterMon = GetStarterPokemon(gSpecialVar_Result);
-    ScriptGiveMon(starterMon, 2, ITEM_ORAN_BERRY, 0, 0, 0);
+    ScriptGiveMon(starterMon, 3, ITEM_ORAN_BERRY, 0, 0, 0);
     ResetTasks();
     PlayBattleBGM();
     SetMainCallback2(CB2_StartFirstBattle);

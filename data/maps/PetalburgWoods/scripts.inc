@@ -318,13 +318,26 @@ PetalburgWoods_EventScript_JamesRematch::
 	msgbox PetalburgWoods_Text_IveBeenTrainingHard, MSGBOX_AUTOCLOSE
 	end
 
+PetalburgWoods_EventScript_MysteriousVine::
+	lock
+	msgbox PetalburgWoods_Text_MysteriousVine, MSGBOX_YESNO
+	switch VAR_RESULT
+	case YES, PetalburgWoods_EventScript_WarpToThicket
+	end
+
+PetalburgWoods_EventScript_WarpToThicket::
+	warp MAP_PETALBURG_THICKET, 4, 56
+	waitstate
+	release
+	end		
+
 PetalburgWoods_Text_NotAOneToBeFound:
 	.string "Hmmm…\n"
 	.string "Not a one to be found…$"
 
 PetalburgWoods_Text_HaveYouSeenShroomish:
 	.string "Hello, have you seen any POKéMON\n"
-	.string "called SHROOMISH around here?\p"
+	.string "called GALACTIVY around here?\p"
 	.string "I really love that POKéMON.$"
 
 PetalburgWoods_Text_IWasGoingToAmbushYou:
@@ -473,4 +486,8 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "make moves during battle.\p"
 	.string "If a POKéMON runs out of PP, it must be\n"
 	.string "taken to a POKéMON CENTER.$"
+
+PetalburgWoods_Text_MysteriousVine:
+	.string "Light is coming from behind the trees.\n"
+	.string "Go through?$"	
 

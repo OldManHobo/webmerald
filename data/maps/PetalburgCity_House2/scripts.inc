@@ -10,10 +10,11 @@ PetalburgCity_House2_EventScript_SchoolKid::
 	end
 
 PetalburgCity_House2_Text_NormanBecameGymLeader:
-	.string "NORMAN became our town's new\n"
-	.string "GYM LEADER.\p"
-	.string "I think he called his family over from\n"
-	.string "somewhere far away.$"
+	.string "DATA is a recently discovered\n"
+	.string "type of POKéMON.\p"
+	.string "They possess the power to \n"
+	.string "control technology, whatever\p"
+	.string "that means...$"
 
 PetalburgCity_House2_Text_BattledNormanOnce:
 	.string "I battled NORMAN once, but, whew,\n"
