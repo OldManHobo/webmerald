@@ -2145,8 +2145,8 @@ static const u8 sGearGrindDescription[] = _(
     "that strike twice.");
 
 static const u8 sTechnoBlastDescription[] = _(
-    "The type varies with the\n"
-    "kind of Drive held.");
+    "Hits the foe with a potent\n"
+    "blast of code.");
 
 static const u8 sRelicSongDescription[] = _(
     "Attacks with an ancient\n"
@@ -3332,6 +3332,30 @@ static const u8 sMalignantChainDescription[] = _(
     "A corrosive chain attack\n"
     "that may badly poison.");
 
+static const u8 sVenomDrainDescription[] = _(
+    "Steals the opponent's HP.\n"
+    "Works better against poison.");
+
+static const u8 sExhaustFumeDescription[] = _(
+    "Releases a hot miasma that\n"
+    "may poison or burn the foe");
+
+static const u8 sDeepSunderDescription[] = _(
+    "The user bites the opponent\n"
+    "with deepwater_imbued fangs.");
+
+static const u8 sInstallDescription[] = _(
+    "Download the last move\n"
+    "used by the opponent.");
+
+static const u8 sMemoryLeakDescription[] = _(
+    "Heals the user by a large\n"
+    "portion of the damage dealt.");
+
+static const u8 sDataTransferDescription[] = _(
+    "Transfers the opponent's\n"
+    "data to switch stat changes");                    
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4190,4 +4214,10 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_PSYCHIC_NOISE - 1] = sPsychicNoiseDescription,
     [MOVE_UPPER_HAND - 1] = sUpperHandDescription,
     [MOVE_MALIGNANT_CHAIN - 1] = sMalignantChainDescription,
+    [MOVE_VENOM_DRAIN - 1] = sVenomDrainDescription,
+    [MOVE_EXHAUST_FUME - 1] = sExhaustFumeDescription,
+    [MOVE_DEEP_SUNDER - 1] = sDeepSunderDescription,
+    [MOVE_INSTALL - 1] = sInstallDescription,
+    [MOVE_MEMORY_LEAK - 1] = sMemoryLeakDescription,
+    [MOVE_DATA_TRANSFER - 1] = sDataTransferDescription,
 };

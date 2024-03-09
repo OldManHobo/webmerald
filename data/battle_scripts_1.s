@@ -443,6 +443,8 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectGlaiveRush              @ EFFECT_GLAIVE_RUSH
 	.4byte BattleScript_EffectBrickBreak              @ EFFECT_RAGING_BULL
 	.4byte BattleScript_EffectHit                     @ EFFECT_RAGE_FIST
+	.4byte BattleScript_EffectVenomDrain                    @ EFFECT_VENOM_DRAIN
+	.4byte BattleScript_EffectExhaustFume             @ EFFECT_EXHAUST_FUME
 
 BattleScript_EffectGlaiveRush::
 	call BattleScript_EffectHit_Ret
@@ -10807,3 +10809,12 @@ BattleScript_EffectSnow::
 	call BattleScript_CheckPrimalWeather
 	setsnow
 	goto BattleScript_MoveWeatherChange
+
+BattleScript_EffectVenomDrain::
+	jumpifsubstituteblocks BattleScript_EffectAbsorb
+	setmoveeffect MOVE_EFFECT_REMOVE_STATUS | MOVE_EFFECT_CERTAIN
+	goto BattleScript_EffectAbsorb
+
+BattleScript_EffectExhaustFume::
+	setmoveeffect MOVE_EFFECT_EXHAUST_FUME
+	goto BattleScript_EffectHit	

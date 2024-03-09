@@ -980,7 +980,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 100,
         .description = COMPOUND_STRING(
             "The whiskers on its head help navigate\n"
-            "the dense forests it lives in. A Felight\n"
+            "the dense forests it lives in. Felight\n"
             "knows it can enter a cranny if they\n"
             "don't brush up against the walls."),
         .pokemonScale = 424,
@@ -1332,10 +1332,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 3,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "A deadly plague nearly spelled the end\n"
-            "of Bananee many years ago. Thankfully,\n"
-            "the population has almost completely\n"
-            "recovered since then."),
+            "These Pokémon are shy and easily scared.\n"
+            "As their smell sense is overwhelmed by the\n"
+            "fragrance they constantly emit, they tend\n"
+            "to have very good eyesight and hearing."),
         .pokemonScale = 481,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -2741,7 +2741,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .description = COMPOUND_STRING(
             "These Pokemon have started to appear in\n"
             "the region in the last few years. They\n"
-            "have been relying strange signals emitted\n"
+            "have been relaying strange signals emitted\n"
             "by an mysterious entity."),
         .pokemonScale = 441,
         .pokemonOffset = 20,
@@ -2815,26 +2815,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_VULPIX
 #define VULPIX_FAMILY_MISC_INFO                             \
-        .genderRatio = PERCENT_FEMALE(75),                  \
+        .genderRatio = PERCENT_FEMALE(50),                  \
         .eggCycles = 20,                                    \
         .friendship = STANDARD_FRIENDSHIP,                  \
-        .growthRate = GROWTH_MEDIUM_FAST,                   \
+        .growthRate = GROWTH_MEDIUM_SLOW,                   \
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD }
 
 #define VULPIX_MISC_INFO                                \
-        .baseHP        = 38,                            \
-        .baseAttack    = 41,                            \
+        .baseHP        = 50,                            \
+        .baseAttack    = 55,                            \
         .baseDefense   = 40,                            \
         .baseSpeed     = 65,                            \
-        .baseSpAttack  = 50,                            \
-        .baseSpDefense = 65,                            \
-        .catchRate = 190,                               \
+        .baseSpAttack  = 40,                            \
+        .baseSpDefense = 50,                            \
+        .catchRate = 200,                               \
         .expYield = 60,                                 \
         .evYield_Speed = 1,                             \
-        .speciesName = _("Vulpix"),                     \
+        .speciesName = _("Bewander"),                     \
         .cryId = CRY_VULPIX,                            \
         .natDexNum = NATIONAL_DEX_VULPIX,               \
-        .categoryName = _("Fox"),                       \
+        .categoryName = _("Stray"),                       \
         .height = 6,                                    \
         .weight = 99,                                   \
         .pokemonScale = 542,                            \
@@ -2848,12 +2848,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #define NINETALES_MISC_INFO                                 \
         .catchRate = 75,                                    \
         .expYield = 177,                                    \
-        .evYield_Speed = 1,                                 \
-        .evYield_SpDefense = 1,                             \
-        .speciesName = _("Ninetales"),                      \
+        .evYield_Attack = 2,                                \
+        .speciesName = _("Bewarer"),                      \
         .cryId = CRY_NINETALES,                             \
         .natDexNum = NATIONAL_DEX_NINETALES,                \
-        .categoryName = _("Fox"),                           \
+        .categoryName = _("Feral"),                           \
         .height = 11,                                       \
         .weight = 199,                                      \
         .pokemonScale = 339,                                \
@@ -2867,15 +2866,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_VULPIX] =
     {
         VULPIX_MISC_INFO,
-        .types = { TYPE_FIRE, TYPE_FIRE },
-        .itemRare = ITEM_CHARCOAL,
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_DROUGHT },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
+        .abilities = { ABILITY_RATTLED, ABILITY_NONE, ABILITY_TANGLED_FEET },
         .bodyColor = BODY_COLOR_BROWN,
         .description = COMPOUND_STRING(
-            "It can freely control fire, making fiery\n"
-            "orbs fly like will-o'-the-wisps. Just\n"
-            "before evolution, its six tails grow hot \n"
-            "as if on fire."),
+            "Placid and easy to tame, Bewander is still\n"
+            "a force to be reckoned with. They nearly\n"
+            "went extinct but their population managed\n"
+            "to rise in recent years."),
         FRONT_PIC(Vulpix, 56, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = sAnims_Vulpix,
@@ -2886,27 +2884,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(Vulpix),
         ICON(Vulpix, 5),
         LEARNSETS(Vulpix),
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_NINETALES}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_NINETALES},
+                                {EVO_FRIENDSHIP, 0, SPECIES_JIGGLYPUFF}),
     },
 
     [SPECIES_NINETALES] =
     {
         NINETALES_MISC_INFO,
-        .baseHP        = 73,
-        .baseAttack    = 76,
-        .baseDefense   = 75,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 81,
-        .baseSpDefense = 100,
+        .baseHP        = 99,
+        .baseAttack    = 131,
+        .baseDefense   = 77,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 70,
         .types = { TYPE_FIRE, TYPE_FIRE },
         .itemRare = ITEM_CHARCOAL,
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_DROUGHT },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_FLAME_BODY, ABILITY_SHEER_FORCE},
+        .bodyColor = BODY_COLOR_RED,
         .description = COMPOUND_STRING(
-            "It has long been said that each of the\n"
-            "nine tails embody an enchanted power.\n"
-            "A long-lived Ninetales will have fur that\n"
-            "shines like gold."),
+            "The energy released from the stone\n"
+            "emphasized its wild side. It is told that\n"
+            "wherever this POKéMON goes, tall grass\n"
+            "never grow back again."),
         FRONT_PIC(Ninetales, 64, 64),
         .frontPicYOffset = 3,
         .frontAnimFrames = sAnims_Ninetales,
@@ -2979,13 +2978,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_VULPIX
 
-#if P_FAMILY_JIGGLYPUFF
-#if P_UPDATED_TYPES >= GEN_6
-    #define JIGGLYPUFF_FAMILY_TYPES { TYPE_NORMAL, TYPE_FAIRY}
-#else
-    #define JIGGLYPUFF_FAMILY_TYPES { TYPE_NORMAL, TYPE_NORMAL}
-#endif
-
 #if P_GEN_2_CROSS_EVOS
     [SPECIES_IGGLYBUFF] =
     {
@@ -2995,7 +2987,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 15,
         .baseSpAttack  = 40,
         .baseSpDefense = 20,
-        .types = JIGGLYPUFF_FAMILY_TYPES,
+        .types = { TYPE_ICE, TYPE_FAIRY },
         .catchRate = 170,
         .expYield = 42,
         .evYield_HP = 1,
@@ -3045,30 +3037,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 45,
         .baseSpDefense = 25,
-        .types = JIGGLYPUFF_FAMILY_TYPES,
-        .catchRate = 170,
-        .expYield = 95,
-        .evYield_HP = 2,
-        .itemRare = ITEM_MOON_STONE,
-        .genderRatio = PERCENT_FEMALE(75),
-        .eggCycles = 10,
+        .types = { TYPE_FAIRY, TYPE_FAIRY },
+        .catchRate = 75,
+        .expYield = 177,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
-        .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_FAIRY },
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_FRIEND_GUARD },
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD },
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_DAZZLING, ABILITY_SERENE_GRACE },
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
-        .speciesName = _("Jigglypuff"),
+        .speciesName = _("Bewonder"),
         .cryId = CRY_JIGGLYPUFF,
         .natDexNum = NATIONAL_DEX_JIGGLYPUFF,
-        .categoryName = _("Balloon"),
+        .categoryName = _("Domestic"),
         .height = 5,
         .weight = 55,
         .description = COMPOUND_STRING(
-            "Nothing can avoid falling asleep hearing a\n"
-            "Jigglypuff's song. The sound waves of its\n"
-            "singing voice match the brain waves of\n"
-            "someone in a deep sleep."),
+            "The friendship bonds with its trainer\n"
+            "emphasized its tame side. A strand of its\n"
+            "soft and silky fur brings good luck, but\n"
+            "it is also very difficult to take care of."),
         .pokemonScale = 433,
         .pokemonOffset = 2,
         .trainerScale = 256,
@@ -3084,41 +3075,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Jigglypuff, 0),
         .footprint = gMonFootprint_Jigglypuff,
         LEARNSETS(Jigglypuff),
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_WIGGLYTUFF}),
     },
 
     [SPECIES_WIGGLYTUFF] =
     {
-        .baseHP        = 140,
-        .baseAttack    = 70,
-        .baseDefense   = 45,
-        .baseSpeed     = 45,
-        .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 85 : 75,
-        .baseSpDefense = 50,
-        .types = JIGGLYPUFF_FAMILY_TYPES,
-        .catchRate = 50,
-        .expYield = 196,
-        .evYield_HP = 3,
-        .itemRare = ITEM_MOON_STONE,
-        .genderRatio = PERCENT_FEMALE(75),
+        .baseHP        = 45,
+        .baseAttack    = 45,
+        .baseDefense   = 35,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 25,
+        .baseSpDefense = 35,
+        .types = { TYPE_BUG, TYPE_DATA },
+        .catchRate = 200,
+        .expYield = 49,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
-        .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_FAIRY },
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_FRISK },
-        .bodyColor = BODY_COLOR_PINK,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_MINERAL },
+        .abilities = { ABILITY_TECHNICIAN, ABILITY_INFILTRATOR, ABILITY_RUN_AWAY },
+        .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
-        .speciesName = _("Wigglytuff"),
+        .speciesName = _("Rebugger"),
         .cryId = CRY_WIGGLYTUFF,
         .natDexNum = NATIONAL_DEX_WIGGLYTUFF,
-        .categoryName = _("Balloon"),
+        .categoryName = _("Prong"),
         .height = 10,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "Its fur is the ultimate in luxuriousness.\n"
-            "Sleeping alongside a Wigglytuff is simply\n"
-            "divine. Its body expands seemingly without\n"
-            "end when it inhales."),
+            "This strange POKéMON pierces cables\n"
+            "to feed on the electric current. It holds\n"
+            "a huge amount of data inside its body,\n"
+            "making it a small living hard drive."),
         .pokemonScale = 328,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -3134,40 +3123,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Wigglytuff, 0),
         .footprint = gMonFootprint_Wigglytuff,
         LEARNSETS(Wigglytuff),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_ZUBAT}),
     },
-#endif //P_FAMILY_JIGGLYPUFF
 
-#if P_FAMILY_ZUBAT
     [SPECIES_ZUBAT] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 45,
-        .baseDefense   = 35,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 40,
-        .types = { TYPE_POISON, TYPE_FLYING },
-        .catchRate = 255,
-        .expYield = 49,
-        .evYield_Speed = 1,
+        .baseHP        = 75,
+        .baseAttack    = 95,
+        .baseDefense   = 85,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 55,
+        .types = { TYPE_BUG, TYPE_DATA },
+        .catchRate = 90,
+        .expYield = 123,
+        .evYield_Speed = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = { EGG_GROUP_FLYING, EGG_GROUP_FLYING },
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_INFILTRATOR },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Zubat"),
+        .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_MINERAL },
+        .abilities = { ABILITY_TECHNICIAN, ABILITY_INFILTRATOR, ABILITY_SKILL_LINK },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Myrieprom"),
         .cryId = CRY_ZUBAT,
         .natDexNum = NATIONAL_DEX_ZUBAT,
-        .categoryName = _("Bat"),
+        .categoryName = _("Memory"),
         .height = 8,
         .weight = 75,
         .description = COMPOUND_STRING(
-            "While living in pitch-black caverns, their\n"
-            "eyes gradually grew shut and deprived\n"
-            "them of vision. They use ultrasonic waves\n"
-            "to detect obstacles."),
+            "The memories of every living thing are\n"
+            "stored inside Myrieprom, though a long\n"
+            "exposition to UV rays can erase all of it.\n"
+            "As such, it prefers to live in the dark."),
         .pokemonScale = 362,
         .pokemonOffset = -5,
         .trainerScale = 256,
@@ -3289,7 +3277,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         LEARNSETS(Crobat),
     },
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ZUBAT
 
 #if P_FAMILY_ODDISH
     [SPECIES_ODDISH] =

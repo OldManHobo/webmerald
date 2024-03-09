@@ -983,6 +983,7 @@ static const u16 sFinalStrikeOnlyEffects[] =
     EFFECT_RECOIL_HP_25,
     EFFECT_HIT_PREVENT_ESCAPE,
     EFFECT_HIT_SWITCH_TARGET,
+    EFFECT_VENOM_DRAIN,
 };
 
 static const u16 sNaturePowerMoves[BATTLE_TERRAIN_COUNT] =
@@ -3636,6 +3637,13 @@ void SetMoveEffect(bool32 primary, u32 certain)
                     SetMoveEffect(TRUE, 0);
                 }
                 break;
+            case MOVE_EFFECT_EXHAUST_FUME:
+                if (!gBattleMons[gEffectBattler].status1)
+                {   
+                    static const u8 sExhaustFumeEffects[] = { MOVE_EFFECT_TOXIC, MOVE_EFFECT_BURN };
+                    gBattleScripting.moveEffect = RandomElement(RNG_EXHAUST_FUME, sExhaustFumeEffects);
+                    SetMoveEffect(TRUE, 0);
+                }
             case MOVE_EFFECT_STEALTH_ROCK:
                 if (!(gSideStatuses[GetBattlerSide(gEffectBattler)] & SIDE_STATUS_STEALTH_ROCK))
                 {

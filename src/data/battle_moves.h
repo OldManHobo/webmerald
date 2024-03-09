@@ -14726,6 +14726,94 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .zMoveEffect = Z_EFFECT_NONE,
     },
 
+    [MOVE_VENOM_DRAIN] =
+    {
+        .effect = EFFECT_VENOM_DRAIN,
+        .power = 70,
+        .type = TYPE_POISON,
+        .accuracy = 95,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_PHYSICAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .makesContact = TRUE,
+    },
+
+    [MOVE_EXHAUST_FUME] =
+    {
+        .effect = EFFECT_EXHAUST_FUME,
+        .power = 75,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .ignoresKingsRock = TRUE,
+    },
+
+    [MOVE_DEEP_SUNDER] =
+    {
+        .effect = EFFECT_FLINCH_HIT,
+        .power = 80,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_PHYSICAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .makesContact = TRUE,
+        .bitingMove = TRUE,
+    },
+
+    [MOVE_INSTALL] =
+    {
+        .effect = EFFECT_MIMIC,
+        .power = 0,
+        .type = TYPE_DATA,
+        .accuracy = 0,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_STATUS,
+        .zMoveEffect = Z_EFFECT_NONE,
+    },
+
+    [MOVE_MEMORY_LEAK] =
+    {
+        .effect = EFFECT_ABSORB,
+        .power = 65,
+        .type = TYPE_DATA,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .argument = 75,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .ignoresKingsRock = TRUE,
+    },
+
+    [MOVE_DATA_TRANSFER] =
+    {
+        .effect = EFFECT_HEART_SWAP,
+        .power = 0,
+        .type = TYPE_DATA,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_STATUS,
+        .zMoveEffect = Z_EFFECT_NONE,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

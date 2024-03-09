@@ -743,6 +743,7 @@ struct BattleStruct
     u8 intrepidSwordBoost[NUM_BATTLE_SIDES];
     u8 dauntlessShieldBoost[NUM_BATTLE_SIDES];
     u8 stickySyrupdBy[MAX_BATTLERS_COUNT];
+    u8 finalMonMusicPlaying;
 };
 
 // The palaceFlags member of struct BattleStruct contains 1 flag per move to indicate which moves the AI should consider,
@@ -939,6 +940,10 @@ struct BattleSpriteData
     struct BattleAnimationInfo *animationData;
     struct BattleBarInfo *battleBars;
 };
+
+u8 GetRemainingOpponentMons();
+bool8 IsOpponentFinalMon();
+u16 GetFinalMonMusic();
 
 #include "sprite.h"
 
