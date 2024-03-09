@@ -26,6 +26,10 @@
 
 #define SKIP_OBJECT_EVENT_LOAD  1
 
+#define RESTRICT_SURF_MUSIC_FRESHWATER 1
+#define RESTRICT_SURF_MUSIC_OCEAN 2 
+#define RESTRICT_SURF_MUSIC_BOTH 3
+
 struct InitialPlayerAvatarState
 {
     u8 transitionFlags;
@@ -154,5 +158,7 @@ bool32 Overworld_RecvKeysFromLinkIsRunning(void);
 bool32 Overworld_SendKeysToLinkIsRunning(void);
 bool32 IsSendingKeysOverCable(void);
 void ClearLinkPlayerObjectEvents(void);
+bool8 SurfMusicAllowed(bool8 checkCurrentTile);
+bool8 BikeMusicAllowed(void);
 
 #endif // GUARD_OVERWORLD_H

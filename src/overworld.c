@@ -67,6 +67,8 @@
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
+#include "item.h"
+#include "constants/items.h"
 
 struct CableClubPlayer
 {
@@ -171,6 +173,7 @@ static void TransitionMapMusic(void);
 static u8 GetAdjustedInitialTransitionFlags(struct InitialPlayerAvatarState *, u16, u8);
 static u8 GetAdjustedInitialDirection(struct InitialPlayerAvatarState *, u8, u16, u8);
 static u16 GetCenterScreenMetatileBehavior(void);
+static bool8 CanLearnFlashInParty(void);
 
 static void *sUnusedOverworldCallback;
 static u8 sPlayerLinkStates[MAX_LINK_PLAYERS];
@@ -544,6 +547,50 @@ void SetObjEventTemplateMovementType(u8 localId, u8 movementType)
         }
     }
 }
+
+bool8 SurfMusicAllowed(bool8 checkCurrentTile) {
+
+
+    // determine type of water player is surfing on
+    u16 tileBehavior;
+    s16 x, y;
+    if (checkCurrentTile) {
+        PlayerGetDestCoords(&x, &y);
+    }
+    else {
+        GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
+    }
+
+    tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
+
+    switch (gMapHeader.surfMusicRestrictions)
+    {
+        case RESTRICT_SURF_MUSIC_FRESHWATER:
+            return MetatileBehavior_IsDeepOrOceanWater(tileBehavior);
+        case RESTRICT_SURF_MUSIC_OCEAN:
+            if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior) == TRUE) {
+                return FALSE;
+            }
+            else {
+                return TRUE;
+            }
+        case RESTRICT_SURF_MUSIC_BOTH:
+            return FALSE;
+        default:
+            return TRUE;
+    }
+}
+
+bool8 BikeMusicAllowed(void) {
+    switch (gMapHeader.mapType) {
+    case MAP_TYPE_INDOOR:
+    case MAP_TYPE_UNDERGROUND:
+        return FALSE;
+    default:
+        return TRUE;
+    }
+}
+
 
 static void InitMapView(void)
 {
@@ -994,6 +1041,20 @@ bool32 Overworld_IsBikingAllowed(void)
         return TRUE;
 }
 
+static bool8 CanLearnFlashInParty(void)
+{
+    u8 i;
+    u16 species;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (!GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL))
+            break;
+        if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG) && CanLearnTeachableMove(GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL), ITEM_HM05 - ITEM_TM01))
+            return TRUE;
+    }
+    return FALSE;
+}
+
 // Flash level of 0 is fully bright
 // Flash level of 1 is the largest flash radius
 // Flash level of 7 is the smallest flash radius
@@ -1177,9 +1238,7 @@ void Overworld_PlaySpecialMapMusic(void)
     {
         if (gSaveBlock1Ptr->savedMusic)
             music = gSaveBlock1Ptr->savedMusic;
-        else if (GetCurrentMapType() == MAP_TYPE_UNDERWATER)
-            music = MUS_UNDERWATER;
-        else if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
+        else if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING) && SurfMusicAllowed(TRUE))
             music = MUS_SURF;
     }
 
@@ -1205,8 +1264,6 @@ static void TransitionMapMusic(void)
         u16 currentMusic = GetCurrentMapMusic();
         if (newMusic != MUS_ABNORMAL_WEATHER && newMusic != MUS_NONE)
         {
-            if (currentMusic == MUS_UNDERWATER || currentMusic == MUS_SURF)
-                return;
             if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
                 newMusic = MUS_SURF;
         }

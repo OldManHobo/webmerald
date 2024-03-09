@@ -34,6 +34,8 @@
 #include "constants/rgb.h"
 #include "trainer_hill.h"
 #include "fldeff.h"
+#include "m4a.h"
+#include "constants/map_types.h"
 
 static void Task_ExitNonAnimDoor(u8);
 static void Task_ExitNonDoor(u8);
@@ -484,12 +486,17 @@ static bool32 WaitForWeatherFadeIn(void)
 void DoWarp(void)
 {
     LockPlayerFieldControls();
-    TryFadeOutOldMapMusic();
     WarpFadeOutScreen();
     PlayRainStoppingSoundEffect();
     PlaySE(SE_EXIT);
     gFieldCallback = FieldCB_DefaultWarpExit;
     CreateTask(Task_WarpAndLoadMap, 10);
+    if (GetWarpDestinationMusic() == GetCurrentMapMusic()) {
+        m4aMPlayVolumeControl(&gMPlayInfo_BGM, TRACKS_ALL, 256);
+    }
+    else {
+        FadeOutMapMusic(1);
+    }
 }
 
 void DoDiveWarp(void)
