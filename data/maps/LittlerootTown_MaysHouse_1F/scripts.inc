@@ -333,22 +333,21 @@ RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
 	.string "Our {STR_VAR_1} is upstairs, I think.$"
 
 RivalsHouse_1F_Text_LikeChildLikeFather:
-	.string "Like child, like father.\p"
-	.string "My husband is as wild about POKéMON\n"
-	.string "as our child.\p"
-	.string "If he's not at his LAB, he's likely\n"
-	.string "scrabbling about in grassy places.$"
+	.string "Like child, like mother.\p"
+	.string "I used to be a Pokémon Trainer when\n"
+	.string "I was the same age as our child.\p"
+	.string "Adventure builds character as they say.$"
 
 RivalsHouse_1F_Text_TooBusyToNoticeVisit:
 	.string "That {RIVAL}!\p"
-	.string "I guess our child is too busy with\n"
+	.string "I guess my child is too busy with\n"
 	.string "POKéMON to notice that you came\l"
 	.string "to visit, {PLAYER}{KUN}.$"
 
 RivalsHouse_1F_Text_WentOutToRoute103:
 	.string "Oh, {RIVAL} went out to ROUTE 103\n"
 	.string "just a little while ago.\p"
-	.string "Like father, like child.\n"
+	.string "She is a real piece of work.\n"
 	.string "{RIVAL} can't stay quietly at home.$"
 
 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften:
@@ -372,15 +371,15 @@ RivalsHouse_1F_Text_MayWhoAreYou:
 	.string "I have this dream of becoming friends\l"
 	.string "with POKéMON all over the world.\p"
 	.string "I… I heard about you, {PLAYER}{KUN}, from\n"
-	.string "my dad, PROF. BIRCH.\p"
+	.string "PROF. TAMBA.\p"
 	.string "I was hoping that you would be nice,\n"
 	.string "{PLAYER}{KUN}, and that we could be friends.\p"
 	.string "Oh, this is silly, isn't it?\n"
 	.string "I… I've just met you, {PLAYER}{KUN}.\p"
 	.string "Eheheh…\p"
 	.string "Oh, no! I forgot!\p"
-	.string "I was supposed to go help Dad catch\n"
-	.string "some wild POKéMON!\p"
+	.string "I was supposed to go outside catch some\n"
+	.string "wild POKéMON!\p"
 	.string "{PLAYER}{KUN}, I'll catch you later!$"
 
 RivalsHouse_1F_Text_BrendanWhoAreYou:
@@ -390,7 +389,7 @@ RivalsHouse_1F_Text_BrendanWhoAreYou:
 	.string "Oh, you're {PLAYER}, aren't you?\n"
 	.string "Moved in next door, right?\p"
 	.string "I didn't know that you're a girl.\p"
-	.string "Dad, PROF. BIRCH, said that our new\n"
+	.string "PROF. TAMBA, said that our new\n"
 	.string "next-door neighbor is a GYM LEADER's\l"
 	.string "kid, so I assumed you'd be a guy.\p"
 	.string "My name's BRENDAN.\n"
@@ -399,7 +398,7 @@ RivalsHouse_1F_Text_BrendanWhoAreYou:
 	.string "a POKéMON?\p"
 	.string "Do you want me to go catch you one?\p"
 	.string "Aw, darn, I forgot…\p"
-	.string "I'm supposed to go help my dad catch\n"
+	.string "I'm supposed to go outside catch\n"
 	.string "some wild POKéMON.\p"
 	.string "Some other time, okay?$"
 
