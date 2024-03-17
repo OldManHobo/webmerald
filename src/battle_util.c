@@ -6381,7 +6381,9 @@ bool32 IsBattlerTerrainAffected(u32 battler, u32 terrainFlag)
 bool32 CanSleep(u32 battler)
 {
     u16 ability = GetBattlerAbility(battler);
-    if (ability == ABILITY_INSOMNIA
+    
+    if (IS_BATTLER_OF_TYPE(battler, TYPE_PSYCHIC)
+      || ability == ABILITY_INSOMNIA
       || ability == ABILITY_VITAL_SPIRIT
       || ability == ABILITY_COMATOSE
       || ability == ABILITY_PURIFYING_SALT
@@ -6476,7 +6478,8 @@ bool32 CanGetFrostbite(u32 battler)
 
 bool32 CanBeConfused(u32 battler)
 {
-    if (GetBattlerAbility(battler) == ABILITY_OWN_TEMPO
+    if (IS_BATTLER_OF_TYPE(battler, TYPE_BUG)
+      || GetBattlerAbility(battler) == ABILITY_OWN_TEMPO
       || gBattleMons[battler].status2 & STATUS2_CONFUSION
       || IsBattlerTerrainAffected(battler, STATUS_FIELD_MISTY_TERRAIN))
         return FALSE;
