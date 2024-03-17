@@ -1,4 +1,4 @@
 Common_EventScript_FindItem::
-	callnative GetObjectEventTrainerRangeFromTemplate
-	finditem VAR_RESULT
-	end	
+	callnative GetItemBallIdAndAmountFromTemplate
+	finditem VAR_RESULT VAR_0x8009
+	end
