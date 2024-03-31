@@ -8582,10 +8582,6 @@ static inline u32 CalcMoveBasePower(u32 move, u32 battlerAtk, u32 battlerDef, u3
         if ((gBattleMons[battlerDef].status1 | (STATUS1_SLEEP * (abilityDef == ABILITY_COMATOSE))) & gMovesInfo[move].argument)
             basePower *= 2;
         break;
-    case EFFECT_SMELLING_SALTS:
-        if (gBattleMons[battlerDef].status1 & STATUS1_PARALYSIS)
-            basePower *= 2;
-        break;
     case EFFECT_VENOM_DRAIN:
         if(gBattleMons[battlerDef].status1 & (STATUS1_POISON || STATUS1_TOXIC_POISON))
             basePower *= 2;
@@ -8593,10 +8589,6 @@ static inline u32 CalcMoveBasePower(u32 move, u32 battlerAtk, u32 battlerDef, u3
     case EFFECT_VARY_POWER_BASED_ON_HP:
         basePower = gMovesInfo[move].argument * gBattleMons[battlerDef].hp / gBattleMons[battlerDef].maxHP;
         break;
-    case EFFECT_HEX:
-    case EFFECT_INFERNAL_PARADE:
-        if (gBattleMons[battlerDef].status1 & STATUS1_ANY || abilityDef == ABILITY_COMATOSE)
-            basePower *= 2;
     case EFFECT_ASSURANCE:
         if (gProtectStructs[battlerDef].physicalDmg != 0 || gProtectStructs[battlerDef].specialDmg != 0 || gProtectStructs[battlerDef].confusionSelfDmg)
             basePower *= 2;
@@ -8883,7 +8875,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     case ABILITY_TOUGH_CLAWS:
-        if (gBattleMoves[move].slicingMove)
+        if (gMovesInfo[move].slicingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     case ABILITY_STRONG_JAW:
@@ -8952,7 +8944,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
              modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
         case ABILITY_REFRACTION:
-        if (gBattleMoves[move].beamMove) 
+        if (gMovesInfo[move].beamMove) 
              modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
     case ABILITY_ROCKY_PAYLOAD:
         if (moveType == TYPE_ROCK)

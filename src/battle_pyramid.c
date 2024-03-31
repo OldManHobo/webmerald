@@ -1413,7 +1413,7 @@ void GenerateBattlePyramidWildMon(void)
 
     while (1)
     {
-        species = Random() % FORMS_START;
+        species = Random() % NUM_SPECIES;
         // check type
         if (reqs->type != TYPE_MYSTERY && gSpeciesInfo[species].types[0] != reqs->type && gSpeciesInfo[species].types[1] != reqs->type)
             continue;

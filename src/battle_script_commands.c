@@ -13138,7 +13138,7 @@ static void Cmd_cursetarget(void)
 {
     CMD_ARGS(const u8 *failInstr);
 
-    if (gBattleMons[gBattlerTarget].status2 & STATUS2_CURSED || IS_BATTLER_OF_TYPE(battler, TYPE_FAIRY))
+    if (gBattleMons[gBattlerTarget].status2 & STATUS2_CURSED)
     {
         gBattlescriptCurrInstr = cmd->failInstr;
     }

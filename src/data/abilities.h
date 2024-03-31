@@ -2599,4 +2599,39 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_VAMPIRIC] =
+    {
+        .name = _("Vampiric"),
+        .description = COMPOUND_STRING("Ups draining moves' effects."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_ARROGANCE] =
+    {
+        .name = _("Arrogance"),
+        .description = COMPOUND_STRING("K.O.'s raise Sp.Atk."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_SPELLBOUND] =
+    {
+        .name = _("Spellbound"),
+        .description = COMPOUND_STRING("Ups Sp.Atk and locks move."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_REFRACTION] =
+    {
+        .name = _("Refraction"),
+        .description = COMPOUND_STRING("Beam moves are stronger."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_DATA_ABSORB] =
+    {
+        .name = _("Data Absorb"),
+        .description = COMPOUND_STRING("Turns Data into HP."),
+        .aiRating = 8,
+    },
 };

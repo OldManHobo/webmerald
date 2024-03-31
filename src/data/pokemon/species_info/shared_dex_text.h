@@ -12,10 +12,10 @@ const u8 gPichuPokedexText[] = _(
     "power as it grows older.");
 
 const u8 gPikachuPokedexText[] = _(
-    "It stores electricity in the electric sacs\n"
-    "on its cheeks. When it releases pent-up\n"
-    "energy in a burst, the electric power is\n"
-    "equal to a lightning bolt.");
+    "The light foam from its mouth protects\n"
+    "it and keeps it afloat. It explores its\n"
+    "surroundings with an unquenchable\n"
+    "curiosity.");
 
 const u8 gMarowakAlolanPokedexText[] = _(
     "The cursed flames that light up the bone\n"
