@@ -3471,7 +3471,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "An attack that steals half\n"
             "the damage inflicted."),
         .effect = EFFECT_ABSORB,
-        .power = 40,
+        .power = 50,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 15,

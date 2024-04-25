@@ -495,9 +495,7 @@ static const union AnimCmd sAnim_Clefable_1[] =
 static const union AnimCmd sAnim_Vulpix_1[] =
 {
     ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
@@ -555,19 +553,11 @@ static const union AnimCmd sAnim_Wigglytuff_1[] =
 #if P_FAMILY_ZUBAT
 static const union AnimCmd sAnim_Zubat_1[] =
 {
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
 

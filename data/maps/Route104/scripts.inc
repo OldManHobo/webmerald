@@ -423,6 +423,12 @@ Route104_EventScript_LandedInDewford::
 	releaseall
 	end
 
+Route104_EventScript_DemoEnd::
+	lockall
+	msgbox Route104_Text_ThanksForPlaying, MSGBOX_DEFAULT
+	releaseall
+	end
+
 Route104_Movement_SailToDewfordBeforeDadCalls:
 	walk_down
 	walk_down
@@ -1170,3 +1176,7 @@ Route104_Text_BrendanPostBattle:
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
+
+Route104_Text_ThanksForPlaying:
+	.string "That's the end of this demo.\n"
+	.string "Thanks for playing!"
