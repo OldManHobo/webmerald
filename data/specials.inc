@@ -309,7 +309,7 @@ gSpecials::
 	def_special Script_ClearHeldMovement
 	def_special InitRoamer
 	def_special TryUpdateRusturfTunnelState
-	def_special IsGrassTypeInParty
+	def_special IsTypeInParty
 	def_special DoContestHallWarp
 	def_special LoadWallyZigzagoon
 	def_special IsStarterInParty

@@ -11,7 +11,8 @@ Route123_EventScript_GigaDrainGirl::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_GIGA_DRAIN, Route123_EventScript_ReceivedGigaDrain
 	msgbox Route123_Text_LoveGrassMonsHaveAny, MSGBOX_DEFAULT
-	special IsGrassTypeInParty
+	setvar VAR_0x8000, TYPE_GRASS
+	special IsTypeInParty
 	goto_if_eq VAR_RESULT, FALSE, Route123_EventScript_NoGrassMons
 	msgbox Route123_Text_YouLikeGrassMonsTooHaveThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_GIGA_DRAIN

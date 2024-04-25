@@ -1240,7 +1240,7 @@ bool8 CheckLeadMonTough(void)
     return TRUE;
 }
 
-void IsGrassTypeInParty(void)
+void IsTypeInParty(void)
 {
     u8 i;
     u16 species;
@@ -1251,7 +1251,7 @@ void IsGrassTypeInParty(void)
         if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
         {
             species = GetMonData(pokemon, MON_DATA_SPECIES);
-            if (gSpeciesInfo[species].types[0] == TYPE_GRASS || gSpeciesInfo[species].types[1] == TYPE_GRASS)
+            if (gSpeciesInfo[species].types[0] == gSpecialVar_0x8000 || gSpeciesInfo[species].types[1] == gSpecialVar_0x8000)
             {
                 gSpecialVar_Result = TRUE;
                 return;
