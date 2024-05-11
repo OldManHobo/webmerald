@@ -4780,6 +4780,69 @@ Route134_Text_HudsonPostBattle:
 	.string "My buddy's a timid fellow, so I'm\n"
 	.string "worried about him.$"
 
+DewfordShore_Text_JeanIntro:
+	.string "There was a weird looking lady lurking\n"
+	.string "here a while ago.\p"
+	.string "She ran away somewhere once we tried\n"
+	.string "talking to her…$"
+ 
+DewfordShore_Text_JeanDefeat:
+	.string "Oh, the battle is already over?$"
+
+DewfordShore_Text_JeanPostBattle:
+	.string "I swear, some people are weird…$"
+
+DewfordShore_Text_TrevorIntro:
+	.string "Hiking among these dunes is so much fun!$"
+
+DewfordShore_Text_TrevorDefeat:
+	.string "Suddenly, I don't feel like hiking\n"
+	.string "anymore…$"
+
+DewfordShore_Text_TrevorPostBattle:
+	.string "I'm exhausted…\p"
+	.string "Time for a break.$"
+
+DewfordShore_Text_ChaytonIntro:
+	.string "Battle time!$"
+
+DewfordShore_Text_ChaytonDefeat:
+	.string "Woah! I didn't expect you to be so\n"
+	.string "strong!$"
+
+DewfordShore_Text_ChaytonPostBattle:
+	.string "Guess I got a little carried away…$"
+
+DewfordShore_Text_EmilyIntro:
+	.string "I'm looking for a SWORMO but I've not\n"
+	.string "found any yet.$"
+
+DewfordShore_Text_EmilyDefeat:
+	.string "I've been looking for hours now…$"
+
+DewfordShore_Text_EmilyPostBattle:
+	.string "SWORMOOOO!! WHERE ARE YOU??$"
+
+DewfordShore_Text_BrittanyIntro:
+	.string "Hey! Don't bother us!\p"
+	.string "We've been doing a staring contest!$"
+
+DewfordShore_Text_BrittanyDefeat:
+	.string "I was close to winning too!$"
+
+DewfordShore_Text_BrittanyPostBattle:
+	.string "The loser has to go get food for tonight.$\n"
+
+DewfordShore_Text_ChristopherIntro:
+	.string "Come on! You made us lose our three-hour\n"
+	.string "streak!$"
+
+DewfordShore_Text_ChristopherDefeat:
+	.string "My eyes are all dry…$"
+
+DewfordShore_Text_ChristopherPostBattle:
+	.string "I feel like I'm gonna lose this one…$"
+
 VSSeeker_Text_BatteryNotChargedNeedXSteps::
 	.string "The battery isn't charged enough.\p"
 	.string "No. of steps required to fully\n"

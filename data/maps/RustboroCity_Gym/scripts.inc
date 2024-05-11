@@ -205,10 +205,11 @@ RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 	.string "Please take this with you, too.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
-	.string "That TECHNICAL MACHINE, TM20,\n"
-	.string "contains SAFEGUARD.\p"
-	.string "It makes your POKéMON team immune\n"
-	.string "to bad statuses.\p"
+	.string "That TECHNICAL MACHINE, TM42,\n"
+	.string "contains FACADE.\p"
+	.string "This move increases in strength\n"
+	.string "if your POKEMON has been hit\l"
+	.string "by bad statuses.\p"
 	.string "Isn't that convenient?\n"
 	.string "If you use a TM, it instantly teaches\p"
 	.string "the move to a POKéMON.\p"

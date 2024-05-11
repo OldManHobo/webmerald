@@ -21136,6 +21136,59 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboMoves = {COMBO_STARTER_SCARY_FACE},
     },
 
+    [MOVE_BYTE] =
+    {
+        .name = COMPOUND_STRING("Byte"),
+        .description = COMPOUND_STRING(
+            "The user attacks with sharp\n"
+            "digital fangs."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_DATA,
+        .accuracy = 0,
+        .pp = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .zMove = { .effect = Z_EFFECT_ACC_UP_1 },
+        .makesContact = TRUE,
+        .bitingMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 20,
+        }),
+        .contestEffect = CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONE,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
+
+    [MOVE_GIGABYTE] =
+    {
+        .name = COMPOUND_STRING("Gigabyte"),
+        .description = COMPOUND_STRING(
+            "Digital jaws crush the foe.\n"
+            "May cause the opponent to flinch."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_DATA,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .bitingMove = TRUE,
+            .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 10,
+        }),
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SCARY_FACE},
+    },
+
     [MOVE_INSTALL] =
     {
         .name = COMPOUND_STRING("Install"),

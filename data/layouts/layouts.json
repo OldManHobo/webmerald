@@ -2417,7 +2417,7 @@
       "width": 58,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "0",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/UnusedOutdoorArea/border.bin",
       "blockdata_filepath": "data/layouts/UnusedOutdoorArea/map.bin"
     },
@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/LittlerootTown_House/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootTown_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_SHORE",
+      "name": "DewfordShore_Layout",
+      "width": 85,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/DewfordShore/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordShore/map.bin"
     }
   ]
 }

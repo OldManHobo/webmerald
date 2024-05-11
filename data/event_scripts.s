@@ -1075,3 +1075,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PetalburgThicket/scripts.inc"
 
 	.include "data/maps/LittlerootTown_House/scripts.inc"
+
+	.include "data/maps/DewfordShore/scripts.inc"

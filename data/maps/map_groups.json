@@ -431,7 +431,8 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "PetalburgThicket"
+    "PetalburgThicket",
+    "DewfordShore"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
