@@ -915,7 +915,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_RUN_AWAY, ABILITY_TANGLED_FEET, ABILITY_MIMICRY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Coattail"),
-        .cryId = CRY_CATERPIE,
+        .cryId = CRY_SENTRET,
         .natDexNum = NATIONAL_DEX_CATERPIE,
         .categoryName = _("Tail"),
         .height = 3,
@@ -969,7 +969,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_RUN_AWAY, ABILITY_TANGLED_FEET, ABILITY_MIMICRY },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Coatoac"),
-        .cryId = CRY_METAPOD,
+        .cryId = CRY_FURRET,
         .natDexNum = NATIONAL_DEX_METAPOD,
         .categoryName = _("Reversal"),
         .height = 7,
@@ -1023,7 +1023,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_STURDY, ABILITY_SPEED_BOOST },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Cyclil"),
-        .cryId = CRY_BUTTERFREE,
+        .cryId = CRY_RATTATA,
         .natDexNum = NATIONAL_DEX_BUTTERFREE,
         .categoryName = _("Bound"),
         .height = 11,
@@ -1144,7 +1144,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_STURDY, ABILITY_SPEED_BOOST },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Roadillo"),
-        .cryId = CRY_WEEDLE,
+        .cryId = CRY_RATICATE,
         .natDexNum = NATIONAL_DEX_WEEDLE,
         .categoryName = _("Bound"),
         .height = 3,
@@ -1198,7 +1198,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_BIG_PECKS, ABILITY_EARLY_BIRD, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Felight"),
-        .cryId = CRY_KAKUNA,
+        .cryId = CRY_SPEAROW,
         .natDexNum = NATIONAL_DEX_KAKUNA,
         .categoryName = _("Cat Bird"),
         .height = 6,
@@ -1255,7 +1255,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_BIG_PECKS, ABILITY_EARLY_BIRD, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Silwing"),
-        .cryId = CRY_BEEDRILL,
+        .cryId = CRY_FEAROW,
         .natDexNum = NATIONAL_DEX_BEEDRILL,
         .categoryName = _("Cat Raptor"),
         .height = 10,
@@ -1371,7 +1371,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_RECEIVER, ABILITY_PICKUP },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Discuttle"),
-        .cryId = CRY_PIDGEY,
+        .cryId = CRY_CATERPIE,
         .natDexNum = NATIONAL_DEX_PIDGEY,
         .categoryName = _("World"),
         .height = 3,
@@ -1424,7 +1424,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_RECEIVER, ABILITY_PICKUP },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Tennadish"),
-        .cryId = CRY_PIDGEOTTO,
+        .cryId = CRY_METAPOD,
         .natDexNum = NATIONAL_DEX_PIDGEOTTO,
         .categoryName = _("Wide"),
         .height = 11,
@@ -1477,7 +1477,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_RECEIVER, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Webillite"),
-        .cryId = CRY_PIDGEOT,
+        .cryId = CRY_BUTTERFREE,
         .natDexNum = NATIONAL_DEX_PIDGEOT,
         .categoryName = _("Web"),
         .height = 15,
@@ -1592,7 +1592,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SHED_SKIN, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Bananee"),
-        .cryId = CRY_RATTATA,
+        .cryId = CRY_ODDISH,
         .natDexNum = NATIONAL_DEX_RATTATA,
         .categoryName = _("Banana"),
         .height = 3,
@@ -1651,7 +1651,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SHED_SKIN, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Banagon"),
-        .cryId = CRY_RATICATE,
+        .cryId = CRY_GLOOM,
         .natDexNum = NATIONAL_DEX_RATICATE,
         .categoryName = _("Banana"),
         .height = 7,
@@ -1873,7 +1873,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SHED_SKIN, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Salanana"),
-        .cryId = CRY_SPEAROW,
+        .cryId = CRY_VILEPLUME,
         .natDexNum = NATIONAL_DEX_SPEAROW,
         .categoryName = _("Banana Split"),
         .height = 3,
@@ -1926,7 +1926,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ARROGANCE, ABILITY_DRY_SKIN, ABILITY_SPELLBOUND },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Tadea"),
-        .cryId = CRY_FEAROW,
+        .cryId = CRY_POLIWAG,
         .natDexNum = NATIONAL_DEX_FEAROW,
         .categoryName = _("Gem"),
         .height = 12,
@@ -1983,7 +1983,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ARROGANCE, ABILITY_DRY_SKIN, ABILITY_SPELLBOUND },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Batrachite"),
-        .cryId = CRY_EKANS,
+        .cryId = CRY_POLIWHIRL,
         .natDexNum = NATIONAL_DEX_EKANS,
         .categoryName = _("Magic Stone"),
         .height = 20,
@@ -2037,7 +2037,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ARROGANCE, ABILITY_DRY_SKIN, ABILITY_SPELLBOUND },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Toagnitive"),
-        .cryId = CRY_ARBOK,
+        .cryId = CRY_POLIWRATH,
         .natDexNum = NATIONAL_DEX_ARBOK,
         .categoryName = _("Wizard"),
         .height = 35,
@@ -2194,7 +2194,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_HYDRATION, ABILITY_OWN_TEMPO, ABILITY_WATER_BUBBLE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Fompous"),
-        .cryId = CRY_PIKACHU,
+        .cryId = CRY_WEEDLE,
         .natDexNum = NATIONAL_DEX_PIKACHU,
         .categoryName = _("Explorer"),
         .height = 4,
@@ -3111,7 +3111,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_HYDRATION, ABILITY_OWN_TEMPO, ABILITY_WATER_BUBBLE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Astrohaut"),
-        .cryId = CRY_RAICHU,
+        .cryId = CRY_KAKUNA,
         .natDexNum = NATIONAL_DEX_RAICHU,
         .categoryName = _("Explorer"),
         .height = 8,
@@ -3226,7 +3226,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_HYDRATION, ABILITY_OWN_TEMPO, ABILITY_WATER_BUBBLE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Wirlixplor"),
-        .cryId = CRY_SANDSHREW,
+        .cryId = CRY_BEEDRILL,
         .natDexNum = NATIONAL_DEX_SANDSHREW,
         .categoryName = _("Explorer"),
         .height = 6,
@@ -3278,7 +3278,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_IMMUNITY, ABILITY_TELEPATHY, ABILITY_NEUROFORCE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Galactivy"),
-        .cryId = CRY_SANDSLASH,
+        .cryId = CRY_TANGELA,
         .natDexNum = NATIONAL_DEX_SANDSLASH,
         .categoryName = _("Invasive"),
         .height = 10,
@@ -3447,7 +3447,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_TELEPATHY, ABILITY_NEUROFORCE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Xenoweed"),
-        .cryId = CRY_NIDORAN_F,
+        .cryId = CRY_TANGROWTH,
         .natDexNum = NATIONAL_DEX_NIDORAN_F,
         .categoryName = _("Invader"),
         .height = 4,
@@ -3500,7 +3500,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_SWARM, ABILITY_SHIELD_DUST, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Coilarva"),
-        .cryId = CRY_NIDORINA,
+        .cryId = CRY_VENIPEDE,
         .natDexNum = NATIONAL_DEX_NIDORINA,
         .categoryName = _("Batesian"),
         .height = 8,
@@ -3554,7 +3554,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_SWARM, ABILITY_SHIELD_DUST, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Morphydra"),
-        .cryId = CRY_NIDOQUEEN,
+        .cryId = CRY_WHIRLIPEDE,
         .natDexNum = NATIONAL_DEX_NIDOQUEEN,
         .categoryName = _("Batesian"),
         .height = 13,
@@ -3607,7 +3607,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_SHEER_FORCE, ABILITY_SHIELD_DUST, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Dramago"),
-        .cryId = CRY_NIDORAN_M,
+        .cryId = CRY_SCOLIPEDE,
         .natDexNum = NATIONAL_DEX_NIDORAN_M,
         .categoryName = _("Emsleyan"),
         .height = 5,
@@ -3659,7 +3659,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STORM_DRAIN, ABILITY_TANGLED_FEET, ABILITY_TRIAGE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Rumoss"),
-        .cryId = CRY_NIDORINO,
+        .cryId = CRY_SANDSHREW,
         .natDexNum = NATIONAL_DEX_NIDORINO,
         .categoryName = _("Ruse"),
         .height = 9,
@@ -3712,7 +3712,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STORM_DRAIN, ABILITY_TANGLED_FEET, ABILITY_TRIAGE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Liayard"),
-        .cryId = CRY_NIDOKING,
+        .cryId = CRY_SANDSLASH,
         .natDexNum = NATIONAL_DEX_NIDOKING,
         .categoryName = _("Ruse"),
         .height = 14,
@@ -3826,7 +3826,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
         .speciesName = _("Cybird"),
-        .cryId = CRY_CLEFAIRY,
+        .cryId = CRY_MAGNEMITE,
         .natDexNum = NATIONAL_DEX_CLEFAIRY,
         .categoryName = _("Bandwidth"),
         .height = 6,
@@ -3881,7 +3881,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
         .speciesName = _("Pterocast"),
-        .cryId = CRY_CLEFABLE,
+        .cryId = CRY_MAGNETON,
         .natDexNum = NATIONAL_DEX_CLEFABLE,
         .categoryName = _("Broadcast"),
         .height = 13,
@@ -3992,7 +3992,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_INTIMIDATE, ABILITY_FLAME_BODY, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Bewarer"),
-        .cryId = CRY_NINETALES,
+        .cryId = CRY_TAUROS,
         .natDexNum = NATIONAL_DEX_NINETALES,
         .categoryName = _("Feral"),
         .height = 11,
@@ -4219,7 +4219,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
         .speciesName = _("Bewonder"),
-        .cryId = CRY_JIGGLYPUFF,
+        .cryId = CRY_MILTANK,
         .natDexNum = NATIONAL_DEX_JIGGLYPUFF,
         .categoryName = _("Domesticated"),
         .height = 5,
@@ -4272,7 +4272,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Rebugger"),
-        .cryId = CRY_WIGGLYTUFF,
+        .cryId = CRY_SPINARAK,
         .natDexNum = NATIONAL_DEX_WIGGLYTUFF,
         .categoryName = _("Prong"),
         .height = 10,
@@ -4327,7 +4327,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_TECHNICIAN, ABILITY_INFILTRATOR, ABILITY_SKILL_LINK },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Myrieprom"),
-        .cryId = CRY_ZUBAT,
+        .cryId = CRY_ARIADOS,
         .natDexNum = NATIONAL_DEX_ZUBAT,
         .categoryName = _("Memory"),
         .height = 8,
@@ -4383,16 +4383,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_INSOMNIA, ABILITY_VITAL_SPIRIT, ABILITY_STALL },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Amprabica"),
-        .cryId = CRY_GOLBAT,
+        .cryId = CRY_MUNCHLAX,
         .natDexNum = NATIONAL_DEX_GOLBAT,
         .categoryName = _("Lethargic"),
         .height = 16,
         .weight = 550,
         .description = COMPOUND_STRING(
-            "Its fangs easily puncture even thick\n"
-            "animal hide. It loves to feast on the blood\n"
-            "of people and Pokémon. It flits about in\n"
-            "darkness and strikes from behind."),
+            "Very picky eater, Amprabica can only feed\n"
+            "itself on the berries that grow on its\n"
+            "body. Unfortunately, it loses the ability\n"
+            "to sleep from that unhealthy habit."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -4504,16 +4504,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_HUSTLE, ABILITY_ANGER_POINT, ABILITY_MOODY },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Caffinergy"),
-        .cryId = CRY_ODDISH,
+        .cryId = CRY_SNORLAX,
         .natDexNum = NATIONAL_DEX_ODDISH,
         .categoryName = _("Exalted"),
         .height = 5,
         .weight = 54,
         .description = COMPOUND_STRING(
-            "This Pokémon grows by absorbing moonlight.\n"
-            "During the daytime, it buries itself in the\n"
-            "ground, leaving only its leaves exposed to\n"
-            "avoid detection by its enemies."),
+            "They can be defined as “the storm after\n"
+            "the calm”. Even though their fury is\n"
+            "immense, they can be easily defeated with\n"
+            "one flick."),
         .pokemonScale = 423,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -4556,16 +4556,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_CHLOROPHYLL, ABILITY_IMMUNITY },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Nittle"),
-        .cryId = CRY_GLOOM,
+        .cryId = CRY_BUDEW,
         .natDexNum = NATIONAL_DEX_GLOOM,
         .categoryName = _("Stinging"),
         .height = 8,
         .weight = 86,
         .description = COMPOUND_STRING(
-            "A horribly noxious honey drools from its\n"
-            "mouth. One whiff of the honey can result\n"
-            "in memory loss. Some fans are said to\n"
-            "enjoy this overwhelming stink, however."),
+            "The stinging sensation that comes from\n"
+            "touching one will only disappear after\n"
+            "a few days. Their eyes gleam in the night,\n"
+            "not unlike will-o'-wisps."),
         .pokemonScale = 329,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -4614,16 +4614,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_CHLOROPHYLL, ABILITY_FLASH_FIRE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Seartica"),
-        .cryId = CRY_VILEPLUME,
+        .cryId = CRY_ROSELIA,
         .natDexNum = NATIONAL_DEX_VILEPLUME,
         .categoryName = _("Burning"),
         .height = 12,
         .weight = 186,
         .description = COMPOUND_STRING(
-            "In seasons when it produces more pollen,\n"
-            "the air around a Vileplume turns yellow\n"
-            "with the powder as it walks. The pollen is\n"
-            "highly toxic and causes paralysis."),
+            "Local stories tell of men going into the\n"
+            "woods at night, only to become bewitched\n"
+            "by Seartica. Their leaves are said to have\n"
+            "curative properties."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -4736,16 +4736,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_CHLOROPHYLL, ABILITY_QUEENLY_MAJESTY },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Amblazia"),
-        .cryId = CRY_PARAS,
+        .cryId = CRY_ROSERADE,
         .natDexNum = NATIONAL_DEX_PARAS,
         .categoryName = _("Scorching"),
         .height = 3,
         .weight = 54,
         .description = COMPOUND_STRING(
-            "A Paras has parasitic tochukaso\n"
-            "mushrooms growing on its back. They grow\n"
-            "by drawing nutrients from the host. They\n"
-            "are valued as a medicine for long life."),
+            "A prominent creature in myths and legends.\n"
+            "Their extraordinary beauty is only equal\n"
+            "to their cruelty, as they're sometimes\n"
+            "called “the Sylvan Siren”."),
         .pokemonScale = 593,
         .pokemonOffset = 22,
         .trainerScale = 256,
@@ -4791,7 +4791,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_PRISM_ARMOR, ABILITY_REFRACTION },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Silictal"),
-        .cryId = CRY_PARASECT,
+        .cryId = CRY_GEODUDE,
         .natDexNum = NATIONAL_DEX_PARASECT,
         .categoryName = _("Quartz"),
         .height = 10,
@@ -4849,7 +4849,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_PRISM_ARMOR, ABILITY_REFRACTION },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Crysturdy"),
-        .cryId = CRY_VENONAT,
+        .cryId = CRY_GRAVELER,
         .natDexNum = NATIONAL_DEX_VENONAT,
         .categoryName = _("Quartz"),
         .height = 10,
@@ -4905,7 +4905,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_PRISM_ARMOR, ABILITY_REFRACTION },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Quardian"),
-        .cryId = CRY_VENOMOTH,
+        .cryId = CRY_GOLEM,
         .natDexNum = NATIONAL_DEX_VENOMOTH,
         .categoryName = _("Quartz"),
         .height = 15,
@@ -5188,16 +5188,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STATIC, ABILITY_POISON_TOUCH, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Yocku"),
-        .cryId = CRY_MEOWTH,
+        .cryId = CRY_ELEKID,
         .natDexNum = NATIONAL_DEX_MEOWTH,
         .categoryName = _("Jellyfish"),
         .height = 4,
         .weight = 42,
         .description = COMPOUND_STRING(
-            "Meowth withdraw their sharp claws into\n"
-            "their paws to silently sneak about.\n"
-            "For some reason, this Pokémon loves\n"
-            "shiny coins that glitter with light."),
+            "Yocku used to be sealife hundreds of\n"
+            "thousands of years ago. Even though they\n"
+            "are venomous, they prefer using their\n"
+            "electric powers to defend themselves."),
         .pokemonScale = 480,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -5244,16 +5244,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STATIC, ABILITY_POISON_TOUCH, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Kuraijin"),
-        .cryId = CRY_PERSIAN,
+        .cryId = CRY_ELECTABUZZ,
         .natDexNum = NATIONAL_DEX_PERSIAN,
         .categoryName = _("Jellybeast"),
         .height = 10,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "A Persian's six bold whiskers sense air\n"
-            "movements to determine what is in its\n"
-            "vicinity. It becomes docile if grabbed\n"
-            "by the whiskers."),
+            "Some Trainers expose themselves to this\n"
+            "Pokémon's venom and electricity in order\n"
+            "to build tolerance. This proves to be quite\n"
+            "useful as Kuraijin is rather deadly."),
         .pokemonScale = 320,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -5580,16 +5580,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STATIC, ABILITY_POISON_TOUCH, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Thundaiju"),
-        .cryId = CRY_PSYDUCK,
+        .cryId = CRY_ELECTIVIRE,
         .natDexNum = NATIONAL_DEX_PSYDUCK,
         .categoryName = _("Jellybeast"),
         .height = 8,
         .weight = 196,
         .description = COMPOUND_STRING(
-            "When its headache intensifies, it starts\n"
-            "using strange powers. However, it has no\n"
-            "recollection of its powers, so it always\n"
-            "looks befuddled and bewildered."),
+            "Its roars are deafening and can be heard\n"
+            "from very far away. It is also said that\n"
+            "they can trigger lightning. It can infuse\n"
+            "its claws with poison for deadly slashes."),
         .pokemonScale = 369,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -5632,7 +5632,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_SAND_SPIT, ABILITY_HUGE_POWER, ABILITY_NORMALIZE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Swormo"),
-        .cryId = CRY_GOLDUCK,
+        .cryId = CRY_LICKITUNG,
         .natDexNum = NATIONAL_DEX_GOLDUCK,
         .categoryName = _("Sock Worm"),
         .height = 17,
@@ -5686,16 +5686,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ILLUMINATE, ABILITY_REFRACTION, ABILITY_PRISM_ARMOR },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Silkrystal"),
-        .cryId = CRY_MANKEY,
+        .cryId = CRY_JOLTIK,
         .natDexNum = NATIONAL_DEX_MANKEY,
         .categoryName = _("Mineral"),
         .height = 5,
         .weight = 280,
         .description = COMPOUND_STRING(
-            "When it starts shaking and its nasal\n"
-            "breathing turns rough, it's a sure sign\n"
-            "of anger. However, since this happens\n"
-            "instantly, there is no time to flee."),
+            "The cristal on their back grows during all\n"
+            "of their life. The light passing through it\n"
+            "feels oddly soothing. Silkrystal tend to\n"
+            "have contests for the prettiest crystal."),
         .pokemonScale = 404,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -5732,6 +5732,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .catchRate = 75,
         .expYield = 149,
         .evYield_Defense = 2,
+        .itemRare = ITEM_STARDUST,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
@@ -5740,16 +5741,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ILLUMINATE, ABILITY_REFRACTION, ABILITY_PRISM_ARMOR },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Gemeret"),
-        .cryId = CRY_PRIMEAPE,
+        .cryId = CRY_GALVANTULA,
         .natDexNum = NATIONAL_DEX_PRIMEAPE,
         .categoryName = _("Mineral"),
         .height = 10,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "When it becomes furious, its blood\n"
-            "circulation becomes more robust, and\n"
-            "its muscles are made stronger. But it\n"
-            "also becomes much less intelligent."),
+            "Gemeret's crystals are known to be the\n"
+            "most beautiful, shiniest ones existing.\n"
+            "As this Pokémon is very common however,\n"
+            "they're not worth a lot of money."),
         .pokemonScale = 326,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -5848,16 +5849,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_SAND_STREAM },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Cragoyle"),
-        .cryId = CRY_GROWLITHE,
+        .cryId = CRY_ZUBAT,
         .natDexNum = NATIONAL_DEX_GROWLITHE,
         .categoryName = _("Gargoyle"),
         .height = 7,
         .weight = 190,
         .description = COMPOUND_STRING(
-            "Its superb sense of smell ensures that\n"
-            "this Pokémon won't forget any scent,\n"
-            "no matter what. It uses its sense of smell\n"
-            "to detect the emotions of others."),
+            "It screams loudly to distract prey and\n"
+            "then attacks it ferociously. Its wings are\n"
+            "too stiff to fly but it can jump from a\n"
+            "high place and glide on several meters."),
         .pokemonScale = 346,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -5903,16 +5904,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_SAND_STREAM },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Gargantic"),
-        .cryId = CRY_ARCANINE,
+        .cryId = CRY_GOLBAT,
         .natDexNum = NATIONAL_DEX_ARCANINE,
         .categoryName = _("Gargoyle"),
         .height = 19,
         .weight = 1550,
         .description = COMPOUND_STRING(
-            "This fleet-footed Pokémon is said to run\n"
-            "over 6,200 miles in a single day and night.\n"
-            "The fire that blazes wildly within its body\n"
-            "is its source of power."),
+            "It is strong enough to carry an adult\n"
+            "for a long distance. They actually\n"
+            "prefer staying in the shade as the sun is\n"
+            "too strong for their fragile eyes."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 312,
@@ -5964,10 +5965,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 8,
         .weight = 227,
         .description = COMPOUND_STRING(
-            "They patrol their territory in pairs.\n"
-            "It's believed the igneous rock components\n"
-            "in the fur of this species are the result\n"
-            "of volcanic activity in its habitat."),
+            "It is strong enough to carry an adult\n"
+            "for a long distance. They actually\n"
+            "prefer staying in the shade as the sun is\n"
+            "too strong for their fragile eyes."),
         .pokemonScale = 346,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -6071,16 +6072,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Pupette"),
-        .cryId = CRY_POLIWAG,
+        .cryId = CRY_SHUPPET,
         .natDexNum = NATIONAL_DEX_POLIWAG,
         .categoryName = _("Puppet"),
         .height = 6,
         .weight = 124,
         .description = COMPOUND_STRING(
-            "It is possible to see this Pokémon's spiral\n"
-            "innards right through its thin skin.\n"
-            "However, the skin is also very flexible.\n"
-            "Even sharp fangs bounce right off it."),
+            "A very shy Pokémon, Pupette live in dark\n"
+            "caves, far away from other living beings.\n"
+            "As it yearns for friendship, however,\n"
+            "it hunts Swormo to practice socializing."),
         .pokemonScale = 369,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -6126,16 +6127,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Ventrilette"),
-        .cryId = CRY_POLIWHIRL,
+        .cryId = CRY_DUSCLOPS,
         .natDexNum = NATIONAL_DEX_POLIWHIRL,
         .categoryName = _("Puppet"),
         .height = 10,
         .weight = 200,
         .description = COMPOUND_STRING(
-            "Its body surface is always wet and slick\n"
-            "with an oily fluid. Because of this greasy\n"
-            "covering, it can easily slip and slide out\n"
-            "of the clutches of any enemy in battle."),
+            "Ventrilette enjoys making imaginary\n"
+            "friends out of the past Swormos it has\n"
+            "hunted. It even starts to take itself for\n"
+            "and acts like one."),
         .pokemonScale = 288,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -6181,16 +6182,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Carrionette"),
-        .cryId = CRY_POLIWRATH,
+        .cryId = CRY_BANETTE,
         .natDexNum = NATIONAL_DEX_POLIWRATH,
         .categoryName = _("Puppet"),
         .height = 13,
         .weight = 540,
         .description = COMPOUND_STRING(
-            "Its highly developed muscles never grow\n"
-            "fatigued, however much it exercises.\n"
-            "This Pokémon can swim back and forth\n"
-            "across the Pacific Ocean without effort."),
+            "It has now completely forgotten its\n"
+            "original identity. Masquerading as its\n"
+            "prey, it keeps looking for potential\n"
+            "friends."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 256,
@@ -6302,16 +6303,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_LIMBER, ABILITY_RECKLESS, ABILITY_FRISK },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Feistycuff"),
-        .cryId = CRY_ABRA,
+        .cryId = CRY_MACHOP,
         .natDexNum = NATIONAL_DEX_ABRA,
         .categoryName = _("Brawl"),
         .height = 9,
         .weight = 195,
         .description = COMPOUND_STRING(
-            "A Pokémon that sleeps 18 hours a day.\n"
-            "Observation revealed that it uses\n"
-            "Teleport to change its location once\n"
-            "every hour."),
+            "It communicates by the gestures it makes\n"
+            "with the appendages on its head. Their\n"
+            "friendly and easy-going nature makes\n"
+            "them very popular."),
         .pokemonScale = 363,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -6357,16 +6358,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
         .speciesName = _("Knuckout"),
-        .cryId = CRY_KADABRA,
+        .cryId = CRY_MACHAMP,
         .natDexNum = NATIONAL_DEX_KADABRA,
         .categoryName = _("Champion"),
         .height = 13,
         .weight = 565,
         .description = COMPOUND_STRING(
-            "It is rumored that a boy with psychic\n"
-            "abilities suddenly transformed into\n"
-            "Kadabra while he was assisting research\n"
-            "into extrasensory powers."),
+            "Knuckout is always up for a fight, in any\n"
+            "category whatsoever. These very strong-\n"
+            "willed Pokémon always train to be the\n"
+            "best."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -6413,16 +6414,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_WATER_VEIL, ABILITY_GOOEY, ABILITY_MOODY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Phishooke"),
-        .cryId = CRY_ALAKAZAM,
+        .cryId = CRY_MAGIKARP,
         .natDexNum = NATIONAL_DEX_ALAKAZAM,
         .categoryName = _("Baiting"),
         .height = 15,
         .weight = 480,
         .description = COMPOUND_STRING(
-            "While it has strong psychic abilities and\n"
-            "high intelligence, an Alakazam's muscles\n"
-            "are very weak. It uses psychic power to\n"
-            "move its body."),
+            "Phishooke tricks inexperienced fishers\n"
+            "into reeling their line too early. It then\n"
+            "laughs at them for their gullibility.\n"
+            "best."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -6532,16 +6533,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_WATER_VEIL, ABILITY_GOOEY, ABILITY_MOODY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Mackarrel"),
-        .cryId = CRY_MACHOP,
+        .cryId = CRY_FEEBAS,
         .natDexNum = NATIONAL_DEX_MACHOP,
         .categoryName = _("Gotcha"),
         .height = 8,
         .weight = 195,
         .description = COMPOUND_STRING(
-            "It continually undertakes strenuous\n"
-            "training to master all forms of martial\n"
-            "arts. Its strength lets it easily hoist\n"
-            "a sumo wrestler onto its shoulders."),
+            "Mackarrel doesn't like to fight fairly.\n"
+            "If there's any low blows possible, it goes\n"
+            "straight for it without leaving any\n"
+            "chance to his opponent."),
         .pokemonScale = 342,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -6585,7 +6586,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Snoutussle"),
-        .cryId = CRY_MACHOKE,
+        .cryId = CRY_HORSEA,
         .natDexNum = NATIONAL_DEX_MACHOKE,
         .categoryName = _("Fused Jaw"),
         .height = 15,
@@ -6638,7 +6639,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_NO_GUARD, ABILITY_GUTS, ABILITY_PARENTAL_BOND },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Grappouch"),
-        .cryId = CRY_MACHAMP,
+        .cryId = CRY_KINGDRA,
         .natDexNum = NATIONAL_DEX_MACHAMP,
         .categoryName = _("Guardian"),
         .height = 16,
@@ -6752,16 +6753,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ANGER_POINT, ABILITY_RIVALRY, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Banchark"),
-        .cryId = CRY_BELLSPROUT,
+        .cryId = CRY_CARVANHA,
         .natDexNum = NATIONAL_DEX_BELLSPROUT,
         .categoryName = _("Ruffian"),
         .height = 7,
         .weight = 40,
         .description = COMPOUND_STRING(
-            "A Bellsprout's thin and flexible body lets\n"
-            "it bend and sway to avoid any attack,\n"
-            "however strong it may be. From its mouth,\n"
-            "it leaks a fluid that melts even iron."),
+            "These Pokémon like to bully smaller\n"
+            "Pokémon into doing things for them.\n"
+            "However, they lose their self-confidence\n"
+            "in front of bigger Pokémon."),
         .pokemonScale = 354,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -6805,16 +6806,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ANGER_POINT, ABILITY_RIVALRY, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Sobandit"),
-        .cryId = CRY_WEEPINBELL,
+        .cryId = CRY_SHARPEDO,
         .natDexNum = NATIONAL_DEX_WEEPINBELL,
         .categoryName = _("Hoodlum"),
         .height = 10,
         .weight = 64,
         .description = COMPOUND_STRING(
-            "At night, a Weepinbell hangs on to a tree\n"
-            "branch with its hooked rear and sleeps.\n"
-            "If it moves around in its sleep, it may\n"
-            "wake up to find itself on the ground."),
+            "Sobandit only fights weaker Pokémon as\n"
+            "they hate losing. On the opposite, they\n"
+            "have no qualms running away from a\n"
+            "stronger threat."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
