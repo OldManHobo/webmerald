@@ -14771,8 +14771,8 @@ bool32 DoesSubstituteBlockMove(u32 battlerAtk, u32 battlerDef, u32 move)
 
 bool32 DoesDisguiseBlockMove(u32 battler, u32 move)
 {
-    if (!(gBattleMons[battlerDef].species == SPECIES_POLIWAG_DISGUISED || gBattleMons[battlerDef].species == SPECIES_POLIWHIRL_DISGUISED || gBattleMons[battlerDef].species == SPECIES_POLIWRATH_DISGUISED)
-        || gBattleMons[battlerDef].status2 & STATUS2_TRANSFORMED
+    if (!(gBattleMons[battler].species == SPECIES_POLIWAG_DISGUISED || gBattleMons[battler].species == SPECIES_POLIWHIRL_DISGUISED || gBattleMons[battler].species == SPECIES_POLIWRATH_DISGUISED)
+        || gBattleMons[battler].status2 & STATUS2_TRANSFORMED
         || (!gProtectStructs[battler].confusionSelfDmg && (IS_MOVE_STATUS(move) || gHitMarker & HITMARKER_PASSIVE_DAMAGE))
         || gHitMarker & HITMARKER_IGNORE_DISGUISE
         || GetBattlerAbility(battler) != ABILITY_DISGUISE)
