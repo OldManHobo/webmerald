@@ -904,10 +904,10 @@ MatchCall_PersonalizedText24::
 MatchCall_PersonalizedText25::
 	.string "Snivel… It's… {STR_VAR_1}…\n"
 	.string "…Sob…\p"
-	.string "ROXANNE chewed me out in class\n"
+	.string "ERMA chewed me out in class\n"
 	.string "today.\p"
 	.string "But I don't dislike her or anything.\p"
-	.string "ROXANNE tells me exactly what\n"
+	.string "ERMA tells me exactly what\n"
 	.string "I did wrong so I can learn from it.\p"
 	.string "You bet I'll be going to\n"
 	.string "the TRAINER'S SCHOOL tomorrow!\p"
@@ -915,11 +915,11 @@ MatchCall_PersonalizedText25::
 
 MatchCall_PersonalizedText26::
 	.string "It's {STR_VAR_1}!\p"
-	.string "ROXANNE let me battle with her\n"
+	.string "ERMA let me battle with her\n"
 	.string "yesterday.\p"
 	.string "The results…\n"
 	.string "Terrible, like you needed to ask.\p"
-	.string "But I was delighted that ROXANNE\n"
+	.string "But I was delighted that ERMA\n"
 	.string "would even let me challenge her!\p"
 	.string "You wouldn't believe how much\n"
 	.string "more I admire her!\p"
@@ -1302,18 +1302,13 @@ MatchCall_PersonalizedText59::
 	.string "This is {STR_VAR_1}!\p"
 	.string "I went to DEWFORD's GYM again\n"
 	.string "for training.\p"
-	.string "BRAWLY, the GYM LEADER, seems\n"
+	.string "SHADY, the GYM LEADER, seems\n"
 	.string "to be tougher now.\p"
 	.string "Something about being toughened\n"
-	.string "by the wild waves…\p"
+	.string "by the shadows…\p"
 	.string "But he's still as cool as ever.\n"
 	.string "The ladies adore him!\l"
 	.string "It makes me envious, frankly.\p"
-	.string "I wonder… Is his friend BRUNO\n"
-	.string "the same way as BRAWLY?\p"
-	.string "You know, all sweaty or smelly,\n"
-	.string "and prone to calling people\l"
-	.string "“big wave,” that sort of thing.\p"
 	.string "But, hey, this jealousy thing isn't\n"
 	.string "very seemly, is it?\p"
 	.string "Forget this chat ever happened,\n"
@@ -2039,7 +2034,7 @@ MatchCall_Text_Mom3::
 	.string "they fall apart, honey!$"
 
 MatchCall_Text_Roxanne1::
-	.string "ROXANNE: Oh, hello, {PLAYER}!\p"
+	.string "ERMA: Oh, hello, {PLAYER}!\p"
 	.string "I've been hard at work retraining\n"
 	.string "since we met.\p"
 	.string "I will still need some more time\n"
@@ -2048,7 +2043,7 @@ MatchCall_Text_Roxanne1::
 	.string "for a rematch!$"
 
 MatchCall_Text_Roxanne2::
-	.string "ROXANNE: Is this {PLAYER}?\n"
+	.string "ERMA: Is this {PLAYER}?\n"
 	.string "Congratulations!\l"
 	.string "I've been hearing about you!\p"
 	.string "As for me, I need some more time\n"
@@ -2057,21 +2052,21 @@ MatchCall_Text_Roxanne2::
 	.string "for a rematch!$"
 
 MatchCall_Text_Roxanne3::
-	.string "ROXANNE: {PLAYER}!\n"
+	.string "ERMA: {PLAYER}!\n"
 	.string "My GYM is ready!\p"
 	.string "Please visit RUSTBORO whenever\n"
 	.string "you can!$"
 
 MatchCall_Text_Roxanne4::
-	.string "ROXANNE: At the RUSTBORO GYM,\n"
+	.string "ERMA: At the RUSTBORO GYM,\n"
 	.string "the fact that we battled, {PLAYER},\l"
 	.string "is a matter of pride.$"
 
 MatchCall_Text_Brawly1::
-	.string "BRAWLY: Hey, there, {PLAYER}{KUN}!\p"
+	.string "SHADY: Hey, there, {PLAYER}{KUN}!\p"
 	.string "I learned a lot from the battle we\n"
 	.string "had together.\p"
-	.string "I intend to do my training over,\n"
+	.string "I intend to find new tricks,\n"
 	.string "then reopen the GYM.\p"
 	.string "It's going to take some time before\n"
 	.string "I'm ready to run the GYM again.\p"
@@ -2079,10 +2074,10 @@ MatchCall_Text_Brawly1::
 	.string "I want you to challenge us again.$"
 
 MatchCall_Text_Brawly2::
-	.string "BRAWLY: Hey, {PLAYER}{KUN}!\n"
+	.string "SHADY: Hey, {PLAYER}{KUN}!\n"
 	.string "Congratulations!\p"
 	.string "Word about your exploits arrived\n"
-	.string "on tidal winds!\p"
+	.string "by some of my informants!\p"
 	.string "It appears as if I need to work on\n"
 	.string "my training some more.\p"
 	.string "It's going to take some time before\n"
@@ -2091,13 +2086,13 @@ MatchCall_Text_Brawly2::
 	.string "I want you to challenge us again.$"
 
 MatchCall_Text_Brawly3::
-	.string "BRAWLY: Hey, {PLAYER}{KUN}!\n"
+	.string "SHADY: Hey, {PLAYER}{KUN}!\n"
 	.string "My GYM's ready for action!\p"
 	.string "Come back to DEWFORD anytime\n"
 	.string "for another challenge!$"
 
 MatchCall_Text_Brawly4::
-	.string "BRAWLY: {PLAYER}{KUN}, I don't think\n"
+	.string "SHADY: {PLAYER}{KUN}, I don't think\n"
 	.string "I'll ever get bored of battling you!$"
 
 MatchCall_Text_Wattson1::

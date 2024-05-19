@@ -4268,7 +4268,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_MINERAL),
-        .abilities = { EGG_GROUP_BUG, EGG_GROUP_MINERAL },
+        .abilities = { ABILITY_TECHNICIAN, ABILITY_INFILTRATOR, ABILITY_SKILL_LINK },
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Rebugger"),
@@ -6051,7 +6051,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_FAMILY_GROWLITHE
 
 #if P_FAMILY_POLIWAG
-    [SPECIES_POLIWAG] =
+    [SPECIES_POLIWAG_DISGUISED] =
     {
         .baseHP        = 25,
         .baseAttack    = 40,
@@ -6063,7 +6063,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .catchRate = 200,
         .expYield = 77,
         .evYield_Speed = 1,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -6102,10 +6102,68 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Poliwag)
         .levelUpLearnset = sPoliwagLevelUpLearnset,
         .teachableLearnset = sPoliwagTeachableLearnset,
+        .formSpeciesIdTable = sPoliwagFormSpeciesIdTable,
+        .formChangeTable = sPoliwagFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_POLIWHIRL}),
     },
 
-    [SPECIES_POLIWHIRL] =
+    [SPECIES_POLIWAG_BUSTED] =
+    {
+        .baseHP        = 25,
+        .baseAttack    = 40,
+        .baseDefense   = 25,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 25,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
+        .catchRate = 200,
+        .expYield = 77,
+        .evYield_Speed = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .noFlip = TRUE,
+        .speciesName = _("Pupette"),
+        .cryId = CRY_SHUPPET,
+        .natDexNum = NATIONAL_DEX_POLIWAG,
+        .categoryName = _("Puppet"),
+        .height = 6,
+        .weight = 124,
+        .description = COMPOUND_STRING(
+            "A very shy Pokémon, Pupette live in dark\n"
+            "caves, far away from other living beings.\n"
+            "As it yearns for friendship, however,\n"
+            "it hunts Swormo to practice socializing."),
+        .pokemonScale = 369,
+        .pokemonOffset = 20,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Poliwag,
+        .frontPicSize = MON_COORDS_SIZE(64, 40),
+        .frontPicYOffset = 13,
+        .frontAnimFrames = sAnims_Poliwag,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Poliwag,
+        .backPicSize = MON_COORDS_SIZE(48, 32),
+        .backPicYOffset = 18,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
+        .palette = gMonPalette_Poliwag,
+        .shinyPalette = gMonShinyPalette_Poliwag,
+        .iconSprite = gMonIcon_Poliwag,
+        .iconPalIndex = 0,
+        FOOTPRINT(Poliwag)
+        .levelUpLearnset = sPoliwagLevelUpLearnset,
+        .teachableLearnset = sPoliwagTeachableLearnset,
+        .formSpeciesIdTable = sPoliwagFormSpeciesIdTable,
+        .formChangeTable = sPoliwagFormChangeTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_POLIWHIRL}),
+    },
+
+    [SPECIES_POLIWHIRL_DISGUISED] =
     {
         .baseHP        = 30,
         .baseAttack    = 75,
@@ -6118,7 +6176,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .expYield = 135,
         .evYield_Attack = 1,
         .evYield_SpAttack = 1,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -6158,10 +6216,70 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Poliwhirl)
         .levelUpLearnset = sPoliwhirlLevelUpLearnset,
         .teachableLearnset = sPoliwhirlTeachableLearnset,
+        .formSpeciesIdTable = sPoliwhirlFormSpeciesIdTable,
+        .formChangeTable = sPoliwhirlFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_POLIWRATH}),
     },
 
-    [SPECIES_POLIWRATH] =
+    [SPECIES_POLIWHIRL_BUSTED] =
+    {
+        .baseHP        = 30,
+        .baseAttack    = 75,
+        .baseDefense   = 55,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
+        .catchRate = 120,
+        .expYield = 135,
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .noFlip = TRUE,
+        .speciesName = _("Ventrilette"),
+        .cryId = CRY_DUSCLOPS,
+        .natDexNum = NATIONAL_DEX_POLIWHIRL,
+        .categoryName = _("Puppet"),
+        .height = 10,
+        .weight = 200,
+        .description = COMPOUND_STRING(
+            "Ventrilette enjoys making imaginary\n"
+            "friends out of the past Swormos it has\n"
+            "hunted. It even starts to take itself for\n"
+            "and acts like one."),
+        .pokemonScale = 288,
+        .pokemonOffset = 11,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Poliwhirl,
+        .frontPicSize = MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = 9,
+        .frontAnimFrames = sAnims_Poliwhirl,
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
+        .frontAnimDelay = 5,
+        .backPic = gMonBackPic_Poliwhirl,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 13,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Poliwhirl,
+        .shinyPalette = gMonShinyPalette_Poliwhirl,
+        .iconSprite = gMonIcon_Poliwhirl,
+        .iconPalIndex = 0,
+        FOOTPRINT(Poliwhirl)
+        .levelUpLearnset = sPoliwhirlLevelUpLearnset,
+        .teachableLearnset = sPoliwhirlTeachableLearnset,
+        .formSpeciesIdTable = sPoliwhirlFormSpeciesIdTable,
+        .formChangeTable = sPoliwhirlFormChangeTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_POLIWRATH}),
+    },
+
+    [SPECIES_POLIWRATH_DISGUISED] =
     {
         .baseHP        = 45,
         .baseAttack    = 120,
@@ -6173,7 +6291,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .catchRate = 45,
         .expYield = 255,
         .evYield_Attack = 3,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -6212,6 +6330,63 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Poliwrath)
         .levelUpLearnset = sPoliwrathLevelUpLearnset,
         .teachableLearnset = sPoliwrathTeachableLearnset,
+        .formSpeciesIdTable = sPoliwrathFormSpeciesIdTable,
+        .formChangeTable = sPoliwrathFormChangeTable,
+    },
+
+    [SPECIES_POLIWRATH_BUSTED] =
+    {
+        .baseHP        = 45,
+        .baseAttack    = 120,
+        .baseDefense   = 75,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
+        .catchRate = 45,
+        .expYield = 255,
+        .evYield_Attack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .noFlip = TRUE,
+        .speciesName = _("Carrionette"),
+        .cryId = CRY_BANETTE,
+        .natDexNum = NATIONAL_DEX_POLIWRATH,
+        .categoryName = _("Puppet"),
+        .height = 13,
+        .weight = 540,
+        .description = COMPOUND_STRING(
+            "It has now completely forgotten its\n"
+            "original identity. Masquerading as its\n"
+            "prey, it keeps looking for potential\n"
+            "friends."),
+        .pokemonScale = 256,
+        .pokemonOffset = 6,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Poliwrath,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_Poliwrath,
+        .frontAnimId = ANIM_V_SHAKE_TWICE,
+        .backPic = gMonBackPic_Poliwrath,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_Poliwrath,
+        .shinyPalette = gMonShinyPalette_Poliwrath,
+        .iconSprite = gMonIcon_Poliwrath,
+        .iconPalIndex = 0,
+        FOOTPRINT(Poliwrath)
+        .levelUpLearnset = sPoliwrathLevelUpLearnset,
+        .teachableLearnset = sPoliwrathTeachableLearnset,
+        .formSpeciesIdTable = sPoliwrathFormSpeciesIdTable,
+        .formChangeTable = sPoliwrathFormChangeTable,
     },
 
 #if P_GEN_2_CROSS_EVOS

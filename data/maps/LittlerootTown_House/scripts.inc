@@ -10,7 +10,7 @@ LittlerootTown_House_Text_DataTypeMatchups:
 	.string "recently.\p"
 	.string "POKéMONs of that type are strong\n"
 	.string "against mystical creatures thanks\l"
-	.string "to their technologically improved.\l"
+	.string "to their technologically improved\l"
 	.string "senses.\p"
 	.string "Albeit they're weak to types that\n"
 	.string "can overload or jam their systems.$"  

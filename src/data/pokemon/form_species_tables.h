@@ -174,6 +174,26 @@ static const u16 sArcanineFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GROWLITHE
 
+#if P_FAMILY_POLIWAG
+static const u16 sPoliwagFormSpeciesIdTable[] = {
+    SPECIES_POLIWAG_DISGUISED,
+    SPECIES_POLIWAG_BUSTED,
+    FORM_SPECIES_END,
+};
+
+static const u16 sPoliwhirlFormSpeciesIdTable[] = {
+    SPECIES_POLIWHIRL_DISGUISED,
+    SPECIES_POLIWHIRL_BUSTED,
+    FORM_SPECIES_END,
+};
+
+static const u16 sPoliwrathFormSpeciesIdTable[] = {
+    SPECIES_POLIWRATH_DISGUISED,
+    SPECIES_POLIWRATH_BUSTED,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_POLIWAG
+
 #if P_FAMILY_ABRA
 static const u16 sAlakazamFormSpeciesIdTable[] = {
     SPECIES_ALAKAZAM,

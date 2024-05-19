@@ -61,6 +61,26 @@ static const struct FormChange sMeowthFormChangeTable[] =
 };
 #endif //P_FAMILY_MEOWTH
 
+#if P_FAMILY_POLIWAG
+static const struct FormChange sPoliwagFormChangeTable[] = {
+    {FORM_CHANGE_FAINT,         SPECIES_POLIWAG_DISGUISED},
+    {FORM_CHANGE_END_BATTLE,    SPECIES_POLIWAG_DISGUISED},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPoliwhirlFormChangeTable[] = {
+    {FORM_CHANGE_FAINT,         SPECIES_POLIWHIRL_DISGUISED},
+    {FORM_CHANGE_END_BATTLE,    SPECIES_POLIWHIRL_DISGUISED},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPoliwrathFormChangeTable[] = {
+    {FORM_CHANGE_FAINT,         SPECIES_POLIWRATH_DISGUISED},
+    {FORM_CHANGE_END_BATTLE,    SPECIES_POLIWRATH_DISGUISED},
+    {FORM_CHANGE_TERMINATOR},
+};
+#endif //P_FAMILY_POLIWAG
+
 #if P_FAMILY_ABRA
 static const struct FormChange sAlakazamFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_ALAKAZAM_MEGA, ITEM_ALAKAZITE},

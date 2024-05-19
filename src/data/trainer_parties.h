@@ -3220,27 +3220,27 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     .moves = {MOVE_SCRATCH, MOVE_PECK, MOVE_BITE, MOVE_LEER}
     },
     {
-    .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .lvl = 14,
+    .iv = TRAINER_PARTY_IVS(12, 6, 12, 12, 12, 12),
+    .lvl = 13,
     .species = SPECIES_BUTTERFREE,
-    .heldItem = ITEM_BERRY_JUICE,
+    .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_FACADE, MOVE_ROLLOUT, MOVE_DEFENSE_CURL}
     }
 };
 
 static const struct TrainerMon sParty_Brawly1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 16,
     .species = SPECIES_ABRA,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_HEADBUTT, MOVE_TAUNT, MOVE_METRONOME, MOVE_ARM_THRUST}
     },
     {
-    .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 17,
     .species = SPECIES_BELLSPROUT,
-    .heldItem = ITEM_SITRUS_BERRY,
+    .heldItem = ITEM_BERRY_JUICE,
     .moves = {MOVE_TAUNT, MOVE_BULK_UP, MOVE_WATER_PULSE, MOVE_BITE}
     },
     {

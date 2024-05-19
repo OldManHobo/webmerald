@@ -61,9 +61,12 @@
 #define SPECIES_PRIMEAPE                                57
 #define SPECIES_GROWLITHE                               58
 #define SPECIES_ARCANINE                                59
-#define SPECIES_POLIWAG                                 60
-#define SPECIES_POLIWHIRL                               61
-#define SPECIES_POLIWRATH                               62
+#define SPECIES_POLIWAG                                 SPECIES_POLIWAG_DISGUISED
+#define SPECIES_POLIWAG_DISGUISED                       60
+#define SPECIES_POLIWHIRL                               SPECIES_POLIWHIRL_DISGUISED
+#define SPECIES_POLIWHIRL_DISGUISED                     61
+#define SPECIES_POLIWRATH                               SPECIES_POLIWRATH_DISGUISED
+#define SPECIES_POLIWRATH_DISGUISED                     62
 #define SPECIES_ABRA                                    63
 #define SPECIES_KADABRA                                 64
 #define SPECIES_ALAKAZAM                                65
@@ -1628,8 +1631,11 @@
 #define SPECIES_URSHIFU_SINGLE_STRIKE_STYLE_GIGANTAMAX  1521
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GIGANTAMAX   1522
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    1523
+#define SPECIES_POLIWAG_BUSTED                          1524
+#define SPECIES_POLIWHIRL_BUSTED                        1525
+#define SPECIES_POLIWRATH_BUSTED                        1526
 
-#define SPECIES_EGG SPECIES_MIMIKYU_TOTEM_BUSTED + 1
+#define SPECIES_EGG SPECIES_POLIWRATH_BUSTED + 1
 
 #define NUM_SPECIES SPECIES_EGG
 
