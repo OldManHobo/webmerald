@@ -124,6 +124,7 @@ static const u8 sText_Stats_Speed[] = _("Spe");
 static const u8 sText_Stats_SpAttack[] = _("SpA");
 static const u8 sText_Stats_SpDefense[] = _("SpD");
 static const u8 sText_Abilities_Slash[] = _(" / ");
+static const u8 sText_Data_WhileKnowing[] = _("while knowing ");
 
 // For scrolling search parameter
 #define MAX_SEARCH_PARAM_ON_SCREEN   6
@@ -3883,40 +3884,64 @@ static void PrintDataScreen_Name(u32 num, u32 value)
 {
     u8 str[48];
     u8 strNum[2];
+    u32 i;
     u16 species = NationalPokedexNumToSpecies(sPokedexListItem->dexNum);
     const struct Evolution *evolutions = GetSpeciesEvolutions(species);
 
     if (evolutions == NULL)
         StringCopy(str, sText_Data_DoesNotEvolve);
     else {
-        StringCopy(str, sText_Data_Evolves);
-        if (evolutions[species].method == EVO_LEVEL  
-		|| evolutions[species].method == EVO_LEVEL_DAY 
-		|| evolutions[species].method == EVO_LEVEL_NIGHT 
-		|| evolutions[species].method == EVO_LEVEL_SILCOON 
-		|| evolutions[species].method == EVO_LEVEL_CASCOON 
-		|| evolutions[species].method == EVO_LEVEL_FEMALE 
-		|| evolutions[species].method == EVO_LEVEL_MALE) {
-            StringAppend(str, sText_Data_AtLevel);
-        } else if (evolutions[species].method == EVO_ITEM) {
-            StringAppend(str, sText_Data_WithAn);
-        } else {
-            StringAppend(str, sText_Data_WithFriendship);
+        for(i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
+        {
+            StringCopy(str, sText_Data_Evolves);
+            if (evolutions[i].method == EVO_LEVEL
+            || evolutions[i].method == EVO_LEVEL_DAY
+            || evolutions[i].method == EVO_LEVEL_NIGHT
+            || evolutions[i].method == EVO_LEVEL_SILCOON
+            || evolutions[i].method == EVO_LEVEL_CASCOON
+            || evolutions[i].method == EVO_LEVEL_FEMALE
+            || evolutions[i].method == EVO_LEVEL_MALE) {
+                StringAppend(str, sText_Data_AtLevel);
+            } else if (evolutions[i].method == EVO_ITEM) {
+                if (evolutions[i].param == ITEM_MOON_STONE
+                || evolutions[i].param == ITEM_WATER_STONE
+                || evolutions[i].param == ITEM_LEAF_STONE
+                || evolutions[i].param == ITEM_FIRE_STONE
+                || evolutions[i].param == ITEM_THUNDER_STONE
+                || evolutions[i].param == ITEM_SUN_STONE
+                || evolutions[i].param == ITEM_DUSK_STONE
+                || evolutions[i].param == ITEM_SHINY_STONE) {
+                    StringAppend(str, sText_Data_WithA);
+                } else {
+                    StringAppend(str, sText_Data_WithAn);
+                }
+            } else if (evolutions[i].method == EVO_FRIENDSHIP
+            || evolutions[i].method == EVO_FRIENDSHIP_DAY
+            || evolutions[i].method == EVO_FRIENDSHIP_NIGHT) {
+                StringAppend(str, sText_Data_WithFriendship);
+            } else if (evolutions[i].method == EVO_MOVE) {
+                StringAppend(str, sText_Data_WhileKnowing);
+            }
+
+            if (evolutions[i].method == EVO_LEVEL_DAY || evolutions[i].method == EVO_FRIENDSHIP_DAY) 
+                StringAppend(str, sText_Data_DuringTheDay);
+            else if (evolutions[i].method == EVO_LEVEL_NIGHT || evolutions[i].method == EVO_FRIENDSHIP_NIGHT)
+                StringAppend(str, sText_Data_DuringTheNight);
+
         }
     }
     
-    
     //Name
-    //PrintDataScreenText(WIN_INFO, FONT_NORMAL, str, GetStringCenterAlignXOffset(FONT_NORMAL, str, DISPLAY_WIDTH), 121);
+    PrintDataScreenText(WIN_INFO, FONT_NORMAL, str, 10, 135);
 }
 
 static void PrintDataScreen_Stats()
 {
     u8 base_x = 0;
-    u8 base_x_offset = 80;
+    u8 base_x_offset = 90;
     u8 base_x_first_row = 25;
-    u8 base_x_second_row = 55;
-    u8 base_y_offset = 14;
+    u8 base_x_second_row = 65;
+    u8 base_y_offset = 15;
     u8 base_i = 0;
     u8 base_y = 5;
     u8 strBase[14];
@@ -4090,8 +4115,9 @@ static void PrintDataScreen_Stats()
 
 static void PrintDataScreen_Abilities()
 {
-    u8 abilities_x = 0;
-    u8 abilities_y = 0;
+    u8 abilities_x = 10;
+    u8 abilities_y = 105;
+    u8 abilities_y_offset = 15;
     u16 ability0;
     u16 ability1;
 	u8 abilityString[48];
@@ -4100,14 +4126,14 @@ static void PrintDataScreen_Abilities()
     ability0 = sPokedexView->ability0;
     ability1 = sPokedexView->ability1;
 	StringCopy(abilityString, gAbilitiesInfo[ability0].name);
+    PrintDataScreenText(WIN_INFO, FONT_NORMAL, abilityString, abilities_x, abilities_y);
 
     if (ability1 != ABILITY_NONE && ability1 != ability0)
     {
-		StringAppend(abilityString, sText_Abilities_Slash);
-		StringAppend(abilityString, gAbilitiesInfo[ability1].name);
+		StringCopy(abilityString, gAbilitiesInfo[ability1].name);
+        PrintDataScreenText(WIN_INFO, FONT_NORMAL, abilityString, abilities_x, abilities_y+abilities_y_offset);
     }
-	abilities_x = GetStringCenterAlignXOffset(FONT_SMALL, abilityString, 148);
-	PrintDataScreenText(WIN_INFO, FONT_NORMAL, abilityString, abilities_x, abilities_y);
+	
 }
 
 static void Task_LoadDataScreen(u8 taskId)
