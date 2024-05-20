@@ -4282,16 +4282,16 @@ static const struct TrainerMon sParty_Andrew[] = {
 
 static const struct TrainerMon sParty_Ivan[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_FEAROW,
-    },
-    {
     .lvl = 6,
     .species = SPECIES_FEAROW,
     },
     {
     .lvl = 7,
     .species = SPECIES_FEAROW,
+    },
+    {
+    .lvl = 8,
+    .species = SPECIES_ALAKAZAM,
     }
 };
 
@@ -4312,24 +4312,23 @@ static const struct TrainerMon sParty_Claude[] = {
 
 static const struct TrainerMon sParty_Elliot1[] = {
     {
-    .lvl = 10,
-    .species = SPECIES_MAGIKARP,
+    .lvl = 12,
+    .species = SPECIES_ALAKAZAM,
     },
     {
-    .lvl = 7,
-    .species = SPECIES_TENTACOOL,
+    .lvl = 12,
+    .species = SPECIES_FEAROW,
     },
     {
-    .lvl = 10,
-    .species = SPECIES_MAGIKARP,
+    .lvl = 12,
+    .species = SPECIES_ALAKAZAM,
     }
 };
 
 static const struct TrainerMon sParty_Ned[] = {
     {
-    .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-    .lvl = 11,
-    .species = SPECIES_TENTACOOL,
+    .lvl = 14,
+    .species = SPECIES_ALAKAZAM,
     }
 };
 
@@ -8912,8 +8911,8 @@ static const struct TrainerMon sParty_Sarah[] = {
 
 static const struct TrainerMon sParty_Darian[] = {
     {
-    .lvl = 9,
-    .species = SPECIES_FEAROW,
+    .lvl = 8,
+    .species = SPECIES_ALAKAZAM,
     }
 };
 

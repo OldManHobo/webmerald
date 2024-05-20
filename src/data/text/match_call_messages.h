@@ -323,15 +323,15 @@ const u8 gText_MatchCallPkmnTrainer_Wally_Pokemon[] = _("The 1st POKéMON I caug
 const u8 gText_MatchCallPkmnTrainer_Wally_Intro1[] = _("POKéMON and I have grown");
 const u8 gText_MatchCallPkmnTrainer_Wally_Intro2[] = _("stronger together.");
 
-const u8 gText_MatchCallRockinWhiz_Roxanne_Strategy[] = _("ROCK-type power attack.");
-const u8 gText_MatchCallRockinWhiz_Roxanne_Pokemon[] = _("I prefer rock-hard POKéMON.");
+const u8 gText_MatchCallRockinWhiz_Roxanne_Strategy[] = _("Preferably NORMAL attacks.");
+const u8 gText_MatchCallRockinWhiz_Roxanne_Pokemon[] = _("The ones for novices.");
 const u8 gText_MatchCallRockinWhiz_Roxanne_Intro1[] = _("A LEADER of a big GYM bears");
 const u8 gText_MatchCallRockinWhiz_Roxanne_Intro2[] = _("a lot of responsibility.");
 
-const u8 gText_MatchCallTheBigHit_Brawly_Strategy[] = _("Direct physical action!");
-const u8 gText_MatchCallTheBigHit_Brawly_Pokemon[] = _("FIGHTING POKéMON rule!");
-const u8 gText_MatchCallTheBigHit_Brawly_Intro1[] = _("The world awaits me as the");
-const u8 gText_MatchCallTheBigHit_Brawly_Intro2[] = _("next big wave!");
+const u8 gText_MatchCallTheBigHit_Brawly_Strategy[] = _("Hitting behind your back.");
+const u8 gText_MatchCallTheBigHit_Brawly_Pokemon[] = _("Sly POKéMON rule!");
+const u8 gText_MatchCallTheBigHit_Brawly_Intro1[] = _("I'm keeping my mouth shut");
+const u8 gText_MatchCallTheBigHit_Brawly_Intro2[] = _("for this...");
 
 const u8 gText_MatchCallSwellShock_Wattson_Strategy[] = _("I choose to electrify.");
 const u8 gText_MatchCallSwellShock_Wattson_Pokemon[] = _("Get shocked by electricity!");
