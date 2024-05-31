@@ -727,7 +727,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .weight = 200,
         .description = COMPOUND_STRING(
             "A comparison revealed that Bidoof's front\n"
-            "teeth grow at the same rate as Rattata's.\n"
+            "teeth grow at the same rate as Bananee's.\n"
             "It constantly gnaws on logs and rocks to\n"
             "whittle down its front teeth."),
         .pokemonScale = 432,

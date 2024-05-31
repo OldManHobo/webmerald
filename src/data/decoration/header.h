@@ -924,16 +924,16 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_PICHU_DOLL,
     },
 
-    [DECOR_PIKACHU_DOLL] =
+    [DECOR_FOMPOUS_DOLL] =
     {
-        .id = DECOR_PIKACHU_DOLL,
-        .name = _("PIKACHU DOLL"),
+        .id = DECOR_FOMPOUS_DOLL,
+        .name = _("FOMPOUS DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_PIKACHU_DOLL,
-        .tiles = DecorGfx_PIKACHU_DOLL,
+        .description = DecorDesc_FOMPOUS_DOLL,
+        .tiles = DecorGfx_FOMPOUS_DOLL,
     },
 
     [DECOR_MARILL_DOLL] =
@@ -996,40 +996,40 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_TOTODILE_DOLL,
     },
 
-    [DECOR_JIGGLYPUFF_DOLL] =
+    [DECOR_BEWONDER_DOLL] =
     {
-        .id = DECOR_JIGGLYPUFF_DOLL,
-        .name = _("JIGGLYPUFF DOLL"),
+        .id = DECOR_BEWONDER_DOLL,
+        .name = _("BEWONDER DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_JIGGLYPUFF_DOLL,
-        .tiles = DecorGfx_JIGGLYPUFF_DOLL,
+        .description = DecorDesc_BEWONDER_DOLL,
+        .tiles = DecorGfx_BEWONDER_DOLL,
     },
 
-    [DECOR_MEOWTH_DOLL] =
+    [DECOR_YOCKU_DOLL] =
     {
-        .id = DECOR_MEOWTH_DOLL,
-        .name = _("MEOWTH DOLL"),
+        .id = DECOR_YOCKU_DOLL,
+        .name = _("YOCKU DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_MEOWTH_DOLL,
-        .tiles = DecorGfx_MEOWTH_DOLL,
+        .description = DecorDesc_YOCKU_DOLL,
+        .tiles = DecorGfx_YOCKU_DOLL,
     },
 
-    [DECOR_CLEFAIRY_DOLL] =
+    [DECOR_CYBIRD_DOLL] =
     {
-        .id = DECOR_CLEFAIRY_DOLL,
-        .name = _("CLEFAIRY DOLL"),
+        .id = DECOR_CYBIRD_DOLL,
+        .name = _("CYBIRD DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_CLEFAIRY_DOLL,
-        .tiles = DecorGfx_CLEFAIRY_DOLL,
+        .description = DecorDesc_CYBIRD_DOLL,
+        .tiles = DecorGfx_CYBIRD_DOLL,
     },
 
     [DECOR_DITTO_DOLL] =
@@ -1368,40 +1368,40 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_LAPRAS_DOLL,
     },
 
-    [DECOR_VENUSAUR_DOLL] =
+    [DECOR_KAZEIYAGA_DOLL] =
     {
-        .id = DECOR_VENUSAUR_DOLL,
-        .name = _("VENUSAUR DOLL"),
+        .id = DECOR_KAZEIYAGA_DOLL,
+        .name = _("KAZEIYAGA DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_VENUSAUR_DOLL,
-        .tiles = DecorGfx_VENUSAUR_DOLL,
+        .description = DecorDesc_KAZEIYAGA_DOLL,
+        .tiles = DecorGfx_KAZEIYAGA_DOLL,
     },
 
-    [DECOR_CHARIZARD_DOLL] =
+    [DECOR_SOLADOR_DOLL] =
     {
-        .id = DECOR_CHARIZARD_DOLL,
-        .name = _("CHARIZARD DOLL"),
+        .id = DECOR_SOLADOR_DOLL,
+        .name = _("SOLADOR DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_CHARIZARD_DOLL,
-        .tiles = DecorGfx_CHARIZARD_DOLL,
+        .description = DecorDesc_SOLADOR_DOLL,
+        .tiles = DecorGfx_SOLADOR_DOLL,
     },
 
-    [DECOR_BLASTOISE_DOLL] =
+    [DECOR_LEVIAMAWL_DOLL] =
     {
-        .id = DECOR_BLASTOISE_DOLL,
-        .name = _("BLASTOISE DOLL"),
+        .id = DECOR_LEVIAMAWL_DOLL,
+        .name = _("LEVIAMAWL DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_BLASTOISE_DOLL,
-        .tiles = DecorGfx_BLASTOISE_DOLL,
+        .description = DecorDesc_LEVIAMAWL_DOLL,
+        .tiles = DecorGfx_LEVIAMAWL_DOLL,
     },
 
     [DECOR_WAILMER_DOLL] =

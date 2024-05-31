@@ -987,7 +987,7 @@ static const struct InGameTrade sIngameTrades[] =
     [INGAME_TRADE_SEEDOT] =
     {
         .nickname = _("TUSS"),
-        .species = SPECIES_MACHOKE,
+        .species = SPECIES_SNOUTUSSLE,
         .ivs = {5, 4, 5, 4, 4, 4},
         .abilityNum = 0,
         .otId = 38726,
@@ -998,7 +998,7 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("KOBE"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_NIDORINO
+        .requestedSpecies = SPECIES_RUMOSS
     },
     [INGAME_TRADE_PLUSLE] =
     {
@@ -1032,10 +1032,10 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_BAGON
     },
-    [INGAME_TRADE_MEOWTH] =
+    [INGAME_TRADE_YOCKU] =
     {
         .nickname = _("MEOWOW"),
-        .species = SPECIES_MEOWTH,
+        .species = SPECIES_YOCKU,
         .ivs = {4, 5, 4, 5, 4, 4},
         .abilityNum = 0,
         .otId = 91481,
@@ -1076,7 +1076,7 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_THANK_YOU,
         EC_WORD_FOR,
         EC_POKEMON(SKITTY),
-        EC_POKEMON_NATIONAL(MEOWTH),
+        EC_POKEMON_NATIONAL(YOCKU),
         EC_WORD_CRIES,
         EC_WORD_IN,
         EC_WORD_A,

@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Steel Beam causes the user to take damage equal to half of i
 SINGLE_BATTLE_TEST("Steel Beam hp loss is prevented by Magic Guard")
 {
     GIVEN {
-        PLAYER(SPECIES_CLEFAIRY) { Ability(ABILITY_MAGIC_GUARD); }
+        PLAYER(SPECIES_CYBIRD) { Ability(ABILITY_MAGIC_GUARD); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_STEEL_BEAM); }

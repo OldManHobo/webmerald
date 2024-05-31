@@ -1323,26 +1323,26 @@ BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyReject::
 	.string "You'll regret not having my tough\n"
 	.string "POKéMON on your side!$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyIntro::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_AmblaziaolLadyIntro::
 	.string "Hello!\n"
 	.string "I'm PARASOL LADY {STR_VAR_1}!$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyMon1::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_AmblaziaolLadyMon1::
 	.string "Escorting me now are my {STR_VAR_2}\n"
 	.string "that uses {STR_VAR_1} and$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyMon2Ask::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_AmblaziaolLadyMon2Ask::
 	.string "one {STR_VAR_2} that uses\n"
 	.string "{STR_VAR_1}.\p"
 	.string "Aren't they nice?\n"
 	.string "Care to join us in a tag team?$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyAccept::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_AmblaziaolLadyAccept::
 	.string "Thanks a bunch!\p"
 	.string "I'll go register at the counter.\n"
 	.string "Let's not disappoint each other!$"
 
-BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyReject::
+BattleFrontier_BattleTowerMultiPartnerRoom_Text_AmblaziaolLadyReject::
 	.string "My POKéMON are tremendously strong.\n"
 	.string "How disappointing…$"
 

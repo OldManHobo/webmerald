@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Eject Pack does not activate if there are no Pokémon left t
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
         PLAYER(SPECIES_WOBBUFFET) { HP(0); }
-        OPPONENT(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_BATRACHITE) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { }
     } SCENE {

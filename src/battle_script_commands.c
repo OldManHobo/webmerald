@@ -14771,7 +14771,7 @@ bool32 DoesSubstituteBlockMove(u32 battlerAtk, u32 battlerDef, u32 move)
 
 bool32 DoesDisguiseBlockMove(u32 battler, u32 move)
 {
-    if (!(gBattleMons[battler].species == SPECIES_POLIWAG_DISGUISED || gBattleMons[battler].species == SPECIES_POLIWHIRL_DISGUISED || gBattleMons[battler].species == SPECIES_POLIWRATH_DISGUISED)
+    if (!(gBattleMons[battler].species == SPECIES_PUPPETTE_DISGUISED || gBattleMons[battler].species == SPECIES_VENTRILETTE_DISGUISED || gBattleMons[battler].species == SPECIES_CARRIONETTE_DISGUISED)
         || gBattleMons[battler].status2 & STATUS2_TRANSFORMED
         || (!gProtectStructs[battler].confusionSelfDmg && (IS_MOVE_STATUS(move) || gHitMarker & HITMARKER_PASSIVE_DAMAGE))
         || gHitMarker & HITMARKER_IGNORE_DISGUISE
@@ -15549,10 +15549,10 @@ static void Cmd_trainerslideout(void)
 
 static const u16 sTelekinesisBanList[] =
 {
-    SPECIES_DIGLETT,
-    SPECIES_DUGTRIO,
-    SPECIES_DIGLETT_ALOLAN,
-    SPECIES_DUGTRIO_ALOLAN,
+    SPECIES_SCRILL,
+    SPECIES_OVERSCRILL,
+    SPECIES_SCRILL_ALOLAN,
+    SPECIES_OVERSCRILL_ALOLAN,
     SPECIES_SANDYGAST,
     SPECIES_PALOSSAND,
     SPECIES_GENGAR_MEGA,

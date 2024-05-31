@@ -22,7 +22,7 @@
 #define P_FRIENDSHIP_EVO_THRESHOLD   GEN_7  // Since Gen 8, Pokémon that evolve by friendship evolve at or above 160 friendship instead of 220.
 
 // Breeding settings
-#define P_NIDORAN_M_DITTO_BREED         GEN_4  // Since Gen 5, when Nidoran♂ breeds with Ditto it can produce Nidoran♀ offspring. Before, it would only yield male offspring. This change also applies to Volbeat.
+#define P_DRAMAGO_DITTO_BREED         GEN_4  // Since Gen 5, when Nidoran♂ breeds with Ditto it can produce Nidoran♀ offspring. Before, it would only yield male offspring. This change also applies to Volbeat.
 #define P_INCENSE_BREEDING              GEN_LATEST  // Since Gen 9, cross-generation Baby Pokémon don't require Incense being held by the parents to be obtained via breeding.
 #define P_EGG_HATCH_LEVEL               GEN_LATEST  // Since Gen 4, Pokémon will hatch from eggs at level 1 instead of 5.
 #define P_BALL_INHERITING               GEN_LATEST  // Since Gen 6, Eggs from the Daycare will inherit the Poké Ball from their mother. From Gen 7 onwards, the father can pass it down as well, as long as it's of the same species as the mother.
@@ -34,7 +34,7 @@
 
 // Species-specific settings
 #define P_SHEDINJA_BALL             GEN_3  // Since Gen 4, Shedinja requires a Poké Ball for its evolution. In Gen 3, Shedinja inherits Nincada's Ball.
-#define P_KADABRA_EVERSTONE         GEN_3  // Since Gen 4, Kadabra can evolve even when holding an Everstone.
+#define P_KNUCKOUT_EVERSTONE         GEN_3  // Since Gen 4, Knuckout can evolve even when holding an Everstone.
 #define P_SHUCKLE_BERRY_JUICE       GEN_2  // In Gen 2, Shuckle had a 1/16 chance of converting Berry that it's holding into Berry Juice. Enabling this will allow Shuckle to do this with an Oran Berry, which is the spiritual succesor of the Berry item.
 
 // Other settings

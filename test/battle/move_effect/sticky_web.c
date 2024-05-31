@@ -108,11 +108,11 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - the 
     PARAMETRIZE {playerSetUpper = 1; opponentSetUpper = 1; }
 
     GIVEN {
-        PLAYER(SPECIES_SQUIRTLE);
-        PLAYER(SPECIES_CHARMANDER);
+        PLAYER(SPECIES_RELENTOOTH);
+        PLAYER(SPECIES_TEPILLA);
         PLAYER(SPECIES_CORVIKNIGHT) { Ability(ABILITY_MIRROR_ARMOR); Item(ITEM_IRON_BALL); } // Iron Ball, so that flying type Corviknight is affected by Sticky Web.
-        OPPONENT(SPECIES_CATERPIE);
-        OPPONENT(SPECIES_WEEDLE);
+        OPPONENT(SPECIES_COATTAIL);
+        OPPONENT(SPECIES_ROADILLO);
     } WHEN {
         TURN { MOVE(BATTLER_OPPONENT, MOVE_STICKY_WEB); }
         TURN { MOVE(BATTLER_PLAYER, MOVE_STICKY_WEB); }
@@ -128,9 +128,9 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - the 
         ABILITY_POPUP(playerRight, ABILITY_MIRROR_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, BATTLER_OPPONENT);
         if (opponentSetUpper == 0) {
-            MESSAGE("Foe Caterpie's Speed fell!");
+            MESSAGE("Foe Coattail's Speed fell!");
         } else {
-            MESSAGE("Foe Weedle's Speed fell!");
+            MESSAGE("Foe Roadillo's Speed fell!");
         }
     }
 }
@@ -147,12 +147,12 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
     PARAMETRIZE { speedPlayer = 10; speedOpponent = 5; }
 
     GIVEN {
-        PLAYER(SPECIES_SQUIRTLE) { Speed(speedPlayer); }
-        PLAYER(SPECIES_CHARMANDER) { Speed(speedPlayer); }
+        PLAYER(SPECIES_RELENTOOTH) { Speed(speedPlayer); }
+        PLAYER(SPECIES_TEPILLA) { Speed(speedPlayer); }
         PLAYER(SPECIES_CORVIKNIGHT) { Ability(ABILITY_MIRROR_ARMOR); Item(ITEM_IRON_BALL); Speed(speedOpponent); } // Iron Ball, so that flying type Corviknight is affected by Sticky Web.
-        OPPONENT(SPECIES_CATERPIE) { Speed(speedOpponent); }
-        OPPONENT(SPECIES_WEEDLE) { Speed(speedOpponent); }
-        OPPONENT(SPECIES_PIDGEY) { Speed(speedOpponent); } // Flying type,so not affected by Sticky Web.
+        OPPONENT(SPECIES_COATTAIL) { Speed(speedOpponent); }
+        OPPONENT(SPECIES_ROADILLO) { Speed(speedOpponent); }
+        OPPONENT(SPECIES_DISCUTTLE) { Speed(speedOpponent); } // Flying type,so not affected by Sticky Web.
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_STICKY_WEB); MOVE(playerRight, MOVE_STICKY_WEB); }
         TURN { SWITCH(opponentLeft, 2); }
@@ -192,13 +192,13 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_MEMENTO].effect == EFFECT_MEMENTO);
-        PLAYER(SPECIES_SQUIRTLE) {Speed(5); }
-        PLAYER(SPECIES_CHARMANDER) {Speed(5); }
+        PLAYER(SPECIES_RELENTOOTH) {Speed(5); }
+        PLAYER(SPECIES_TEPILLA) {Speed(5); }
         PLAYER(SPECIES_CORVIKNIGHT) {Ability(ABILITY_MIRROR_ARMOR); Item(ITEM_IRON_BALL); Speed(5); } // Iron Ball, so that flying type Corviknight is affected by Sticky Web.
-        OPPONENT(SPECIES_CATERPIE) {Speed(7); }
-        OPPONENT(SPECIES_WEEDLE) {Speed(7); }
+        OPPONENT(SPECIES_COATTAIL) {Speed(7); }
+        OPPONENT(SPECIES_ROADILLO) {Speed(7); }
         if (hasReplacement) {
-            OPPONENT(SPECIES_PIDGEY) {Speed(7); }
+            OPPONENT(SPECIES_DISCUTTLE) {Speed(7); }
         }
 
     } WHEN {
@@ -214,9 +214,9 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
         MESSAGE("A sticky web spreads out on the ground around your team!");
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MEMENTO, opponentLeft);
-        MESSAGE("Foe Caterpie fainted!");
+        MESSAGE("Foe Coattail fainted!");
         if (hasReplacement) {
-            MESSAGE("2 sent out Pidgey!");
+            MESSAGE("2 sent out Discuttle!");
         }
 
         MESSAGE("Go! Corviknigh!");

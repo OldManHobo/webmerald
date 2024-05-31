@@ -1,6 +1,6 @@
 // Gen 1 families
-const u8 gRaticateAlolanPokedexText[] = _(
-    "It forms a group of Rattata, which it \n"
+const u8 gBanagonAlolanPokedexText[] = _(
+    "It forms a group of Bananee, which it \n"
     "assumes command of. Each group\n"
     "has its own territory, and disputes\n"
     "over food happen often.");
@@ -11,7 +11,7 @@ const u8 gPichuPokedexText[] = _(
     "accidentally. It gets better at holding\n"
     "power as it grows older.");
 
-const u8 gPikachuPokedexText[] = _(
+const u8 gFompousPokedexText[] = _(
     "The light foam from its mouth protects\n"
     "it and keeps it afloat. It explores its\n"
     "surroundings with an unquenchable\n"

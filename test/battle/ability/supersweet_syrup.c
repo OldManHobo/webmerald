@@ -49,8 +49,8 @@ DOUBLE_BATTLE_TEST("Supersweet Syrup lowers evasion of both opposing mon's in ba
 SINGLE_BATTLE_TEST("Supersweet Syrup can not further lower opponents evasion if it is at minimum stages")
 {
     GIVEN {
-        PLAYER(SPECIES_ODDISH);
-        OPPONENT(SPECIES_ODDISH);
+        PLAYER(SPECIES_CAFFINERGY);
+        OPPONENT(SPECIES_CAFFINERGY);
         OPPONENT(SPECIES_HYDRAPPLE) { Ability(ABILITY_SUPERSWEET_SYRUP); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SWEET_SCENT); }
@@ -64,9 +64,9 @@ SINGLE_BATTLE_TEST("Supersweet Syrup can not further lower opponents evasion if 
         ABILITY_POPUP(opponent, ABILITY_SUPERSWEET_SYRUP);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Oddish's evasiveness fell!");
+            MESSAGE("Caffinergy's evasiveness fell!");
         }
-        MESSAGE("Oddish's evasiveness won't go lower!");
+        MESSAGE("Caffinergy's evasiveness won't go lower!");
     } THEN {
         EXPECT_EQ(player->statStages[STAT_EVASION], MIN_STAT_STAGE);
     }

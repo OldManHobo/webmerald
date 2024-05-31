@@ -10,14 +10,14 @@ SINGLE_BATTLE_TEST("Leech Seed doesn't affect Grass-type Pokémon")
 {
     PASSES_RANDOMLY(90, 100, RNG_ACCURACY);
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_ODDISH].types[0] == TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_CAFFINERGY].types[0] == TYPE_GRASS);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_ODDISH);
+        OPPONENT(SPECIES_CAFFINERGY);
     } WHEN {
         TURN { MOVE(player, MOVE_LEECH_SEED); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_LEECH_SEED, player);
-        MESSAGE("It doesn't affect Foe Oddish…");
+        MESSAGE("It doesn't affect Foe Caffinergy…");
     }
 }
 TO_DO_BATTLE_TEST("Leech Seed doesn't affect already seeded targets")

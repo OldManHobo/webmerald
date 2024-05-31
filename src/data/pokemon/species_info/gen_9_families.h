@@ -3239,7 +3239,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .description = COMPOUND_STRING(
             "A variety of fish Pokémon, Wugtrio\n"
             "was once considered to be a\n"
-            "regional form of Dugtrio."),
+            "regional form of Overscrill."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

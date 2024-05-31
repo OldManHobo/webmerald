@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Corrosion can poison or badly poison a Pokemon regardless of
 {
     u16 species;
 
-    PARAMETRIZE { species = SPECIES_ODDISH; }
+    PARAMETRIZE { species = SPECIES_CAFFINERGY; }
     PARAMETRIZE { species = SPECIES_BELDUM; }
 
     GIVEN {
@@ -76,7 +76,7 @@ SINGLE_BATTLE_TEST("Corrosion can poison Poison- and Steel-type targets if it us
         ASSUME(gItemsInfo[ITEM_POISON_BARB].holdEffect == HOLD_EFFECT_POISON_POWER);
         ASSUME(gItemsInfo[ITEM_TOXIC_ORB].holdEffect == HOLD_EFFECT_TOXIC_ORB);
         PLAYER(SPECIES_SALANDIT) { Ability(ABILITY_CORROSION); Item(heldItem); }
-        OPPONENT(SPECIES_ODDISH);
+        OPPONENT(SPECIES_CAFFINERGY);
     } WHEN {
         TURN { MOVE(player, MOVE_FLING); }
     } SCENE {
@@ -95,7 +95,7 @@ SINGLE_BATTLE_TEST("If a Poison- or Steel-type Pokémon with Corrosion holds a T
     GIVEN {
         ASSUME(gItemsInfo[ITEM_TOXIC_ORB].holdEffect == HOLD_EFFECT_TOXIC_ORB);
         PLAYER(SPECIES_SALANDIT) { Ability(ABILITY_CORROSION); Item(ITEM_TOXIC_ORB); }
-        OPPONENT(SPECIES_ODDISH);
+        OPPONENT(SPECIES_CAFFINERGY);
     } WHEN {
         TURN { }
     } SCENE {
@@ -109,7 +109,7 @@ SINGLE_BATTLE_TEST("If a Poison- or Steel-type Pokémon with Corrosion poisons a
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
         PLAYER(SPECIES_SALANDIT) { Ability(ABILITY_CORROSION); }
-        OPPONENT(SPECIES_ABRA) { Ability(ABILITY_SYNCHRONIZE); }
+        OPPONENT(SPECIES_FEISTYCUFF) { Ability(ABILITY_SYNCHRONIZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); }
     } SCENE {

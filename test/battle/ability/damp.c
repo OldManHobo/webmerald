@@ -9,7 +9,7 @@ SINGLE_BATTLE_TEST("Damp prevents explosion-like moves from enemies")
     PARAMETRIZE { move = MOVE_MIND_BLOWN; }
     PARAMETRIZE { move = MOVE_MISTY_EXPLOSION; }
     GIVEN {
-        PLAYER(SPECIES_PARAS) { Ability(ABILITY_DAMP); }
+        PLAYER(SPECIES_AMBLAZIA) { Ability(ABILITY_DAMP); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
@@ -27,7 +27,7 @@ DOUBLE_BATTLE_TEST("Damp prevents explosion-like moves from enemies in a double 
     PARAMETRIZE { move = MOVE_MIND_BLOWN; }
     PARAMETRIZE { move = MOVE_MISTY_EXPLOSION; }
     GIVEN {
-        PLAYER(SPECIES_PARAS) { Ability(ABILITY_DAMP); }
+        PLAYER(SPECIES_AMBLAZIA) { Ability(ABILITY_DAMP); }
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -47,7 +47,7 @@ SINGLE_BATTLE_TEST("Damp prevents explosion-like moves from self")
     PARAMETRIZE { move = MOVE_MIND_BLOWN; }
     PARAMETRIZE { move = MOVE_MISTY_EXPLOSION; }
     GIVEN {
-        PLAYER(SPECIES_PARAS) { Ability(ABILITY_DAMP); }
+        PLAYER(SPECIES_AMBLAZIA) { Ability(ABILITY_DAMP); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Damp prevents damage from aftermath")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
-        PLAYER(SPECIES_PARAS) { Ability(ABILITY_DAMP); }
+        PLAYER(SPECIES_AMBLAZIA) { Ability(ABILITY_DAMP); }
         OPPONENT(SPECIES_VOLTORB) { Ability(ABILITY_AFTERMATH); HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

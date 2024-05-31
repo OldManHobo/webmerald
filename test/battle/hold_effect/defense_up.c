@@ -40,14 +40,14 @@ SINGLE_BATTLE_TEST("Ganlon Berry raises the holder's Defense by one stage when H
 SINGLE_BATTLE_TEST("Ganlon Berry raises Defense by one stage when HP drops to 1/2 or below if holder has Gluttony")
 {
     GIVEN {
-        PLAYER(SPECIES_BELLSPROUT) { MaxHP(80); HP(80); Ability(ABILITY_GLUTTONY); Item(ITEM_GANLON_BERRY); }
+        PLAYER(SPECIES_BANSHARK) { MaxHP(80); HP(80); Ability(ABILITY_GLUTTONY); Item(ITEM_GANLON_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Using Ganlon Berry, the Defense of Bellsprout rose!");
+        MESSAGE("Using Ganlon Berry, the Defense of Banshark rose!");
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE + 1);
     }

@@ -570,9 +570,9 @@ static const u8 *const sPartnerTextsNinjaBoy[] =
     PARTNER_TEXTS(NinjaBoy)
 };
 
-static const u8 *const sPartnerTextsParasolLady[] =
+static const u8 *const sPartnerTextsAmblaziaolLady[] =
 {
-    PARTNER_TEXTS(ParasolLady)
+    PARTNER_TEXTS(AmblaziaolLady)
 };
 
 static const u8 *const sPartnerTextsBugManiac[] =
@@ -718,7 +718,7 @@ struct
     {FACILITY_CLASS_DRAGON_TAMER,          sPartnerTextsDragonTamer},
     {FACILITY_CLASS_BIRD_KEEPER,           sPartnerTextsBirdKeeper},
     {FACILITY_CLASS_NINJA_BOY,             sPartnerTextsNinjaBoy},
-    {FACILITY_CLASS_PARASOL_LADY,          sPartnerTextsParasolLady},
+    {FACILITY_CLASS_PARASOL_LADY,          sPartnerTextsAmblaziaolLady},
     {FACILITY_CLASS_BUG_MANIAC,            sPartnerTextsBugManiac},
     {FACILITY_CLASS_SAILOR,                sPartnerTextsSailor},
     {FACILITY_CLASS_COLLECTOR,             sPartnerTextsCollector},

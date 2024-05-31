@@ -1074,8 +1074,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     },
 #endif //P_FAMILY_GRUBBIN
 
-#if P_FAMILY_CRABRAWLER
-    [SPECIES_CRABRAWLER] =
+#if P_FAMILY_CRFEISTYCUFFWLER
+    [SPECIES_CRFEISTYCUFFWLER] =
     {
         .baseHP        = 47,
         .baseAttack    = 82,
@@ -1096,8 +1096,8 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_IRON_FIST, ABILITY_ANGER_POINT },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Crabrawler"),
-        .cryId = CRY_CRABRAWLER,
-        .natDexNum = NATIONAL_DEX_CRABRAWLER,
+        .cryId = CRY_CRFEISTYCUFFWLER,
+        .natDexNum = NATIONAL_DEX_CRFEISTYCUFFWLER,
         .categoryName = _("Boxing"),
         .height = 6,
         .weight = 70,
@@ -1182,7 +1182,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sCrabominableLevelUpLearnset,
         .teachableLearnset = sCrabominableTeachableLearnset,
     },
-#endif //P_FAMILY_CRABRAWLER
+#endif //P_FAMILY_CRFEISTYCUFFWLER
 
 #if P_FAMILY_ORICORIO
     [SPECIES_ORICORIO_BAILE] =
@@ -4948,7 +4948,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .speciesName = _("Nihilego"),
         .cryId = CRY_NIHILEGO,
         .natDexNum = NATIONAL_DEX_NIHILEGO,
-        .categoryName = _("Parasite"),
+        .categoryName = _("Amblaziaite"),
         .height = 12,
         .weight = 555,
         .description = COMPOUND_STRING(
@@ -5687,7 +5687,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .speciesName = _("Marshadow"),
         .cryId = CRY_MARSHADOW,
         .natDexNum = NATIONAL_DEX_MARSHADOW,
-        .categoryName = _("Gloomdwellr"),
+        .categoryName = _("Nittledwellr"),
         .height = 7,
         .weight = 222,
         .description = COMPOUND_STRING(

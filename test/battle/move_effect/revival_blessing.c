@@ -35,13 +35,13 @@ SINGLE_BATTLE_TEST("Revival Blessing revives a fainted party member for an oppon
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_RAICHU);
+        OPPONENT(SPECIES_ASTROHAUT);
         OPPONENT(SPECIES_PICHU) { HP(0); }
-        OPPONENT(SPECIES_PIKACHU) { HP(0); }
+        OPPONENT(SPECIES_FOMPOUS) { HP(0); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_REVIVAL_BLESSING); SEND_OUT(opponent, 1); }
     } SCENE {
-        MESSAGE("Foe Raichu used " REVIVAL_BLESSING "!");
+        MESSAGE("Foe Astrohaut used " REVIVAL_BLESSING "!");
         MESSAGE("Pichu was revived and is ready to fight again!");
     }
 }

@@ -2702,7 +2702,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .weight = 180,
         .description = COMPOUND_STRING(
             "This Cramorant has accidentally\n"
-            "gotten a Pikachu lodged in its gullet.\n"
+            "gotten a Fompous lodged in its gullet.\n"
             "Cramorant is choking a little, but it\n"
             "isn't really bothered."),
         .pokemonScale = 366,
@@ -3948,7 +3948,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .description = COMPOUND_STRING(
             "With the hair wrapped around its body\n"
             "helping to enhance its muscles, this\n"
-            "Pokémon can overwhelm even Machamp."),
+            "Pokémon can overwhelm even Grappouch."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,

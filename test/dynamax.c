@@ -91,12 +91,12 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon cannot be hit by OHKO moves")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FISSURE].effect == EFFECT_OHKO);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_MACHAMP) { Ability(ABILITY_NO_GUARD); }
+        OPPONENT(SPECIES_GRAPPOUCH) { Ability(ABILITY_NO_GUARD); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE, dynamax: TRUE); MOVE(opponent, MOVE_FISSURE); }
     } SCENE {
         MESSAGE("Wobbuffet used Max Strike!");
-        MESSAGE("Foe Machamp used Fissure!");
+        MESSAGE("Foe Grappouch used Fissure!");
         MESSAGE("Wobbuffet is unaffected!");
         NONE_OF { HP_BAR(player); }
     }
@@ -469,10 +469,10 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Pokemon with Gigantamax forms change upon Dynamaxi
 {
     u32 species;
     bool32 gigantamaxFactor;
-    PARAMETRIZE { gigantamaxFactor = FALSE; species = SPECIES_VENUSAUR; }
-    PARAMETRIZE { gigantamaxFactor = TRUE; species = SPECIES_VENUSAUR_GIGANTAMAX; }
+    PARAMETRIZE { gigantamaxFactor = FALSE; species = SPECIES_KAZEIYAGA; }
+    PARAMETRIZE { gigantamaxFactor = TRUE; species = SPECIES_KAZEIYAGA_GIGANTAMAX; }
     GIVEN {
-        PLAYER(SPECIES_VENUSAUR) { GigantamaxFactor(gigantamaxFactor); }
+        PLAYER(SPECIES_KAZEIYAGA) { GigantamaxFactor(gigantamaxFactor); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE, dynamax: TRUE); }
@@ -484,7 +484,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Pokemon with Gigantamax forms change upon Dynamaxi
 SINGLE_BATTLE_TEST("(DYNAMAX) Pokemon with Gigantamax forms revert upon switching")
 {
     GIVEN {
-        PLAYER(SPECIES_VENUSAUR);
+        PLAYER(SPECIES_KAZEIYAGA);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -492,7 +492,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Pokemon with Gigantamax forms revert upon switchin
         TURN { SWITCH(player, 1); }
         TURN { SWITCH(player, 0); }
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_VENUSAUR);
+        EXPECT_EQ(player->species, SPECIES_KAZEIYAGA);
     }
 }
 
@@ -942,14 +942,14 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Volt Crash paralyzes both opponents")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_VOLT_CRASH].argument == MAX_EFFECT_PARALYZE_FOES);
-        PLAYER(SPECIES_PIKACHU) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_FOMPOUS) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_PICHU);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_THUNDERBOLT, target: opponentLeft, dynamax: TRUE); }
     } SCENE {
-        MESSAGE("Pikachu used G-Max Volt Crash!");
+        MESSAGE("Fompous used G-Max Volt Crash!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponentLeft);
         STATUS_ICON(opponentLeft, paralysis: TRUE);
         MESSAGE("Foe Wobbuffet is paralyzed! It may be unable to move!");
@@ -1039,15 +1039,15 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Befuddle paralyzes, poisons, or sleeps both 
     PARAMETRIZE { statusAnim = B_ANIM_STATUS_SLP; rng = STATUS1_SLEEP; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_BEFUDDLE].argument == MAX_EFFECT_EFFECT_SPORE_FOES);
-        PLAYER(SPECIES_BUTTERFREE) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_CATERPIE);
+        PLAYER(SPECIES_CYCLIL) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_COATTAIL);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_BUG_BITE, target: opponentLeft, dynamax: TRUE,
                WITH_RNG(RNG_G_MAX_BEFUDDLE, rng)); }
     } SCENE {
-        MESSAGE("Butterfree used G-Max Befuddle!");
+        MESSAGE("Cyclil used G-Max Befuddle!");
         // opponent left
         ANIMATION(ANIM_TYPE_STATUS, statusAnim, opponentLeft);
         if (statusAnim == B_ANIM_STATUS_PSN) {
@@ -1083,14 +1083,14 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Gold Rush confuses both opponents and genera
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_GOLD_RUSH].argument == MAX_EFFECT_CONFUSE_FOES_PAY_DAY);
-        PLAYER(SPECIES_MEOWTH) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_PERSIAN);
+        PLAYER(SPECIES_YOCKU) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_KURAIJIN);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft, dynamax: TRUE); }
     } SCENE {
-        MESSAGE("Meowth used G-Max Gold Rush!");
+        MESSAGE("Yocku used G-Max Gold Rush!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponentLeft);
         MESSAGE("Foe Wobbuffet became confused!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponentRight);
@@ -1199,11 +1199,11 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
     s16 damage;
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_WILDFIRE].argument == MAX_EFFECT_WILDFIRE);
-        PLAYER(SPECIES_CHARIZARD) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_CHARMANDER);
+        PLAYER(SPECIES_SOLADOR) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_TEPILLA);
         OPPONENT(SPECIES_WOBBUFFET) { HP(600); MaxHP(600); }
         OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_ARCANINE);
+        OPPONENT(SPECIES_GARGANTIC);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EMBER, target: opponentLeft, dynamax: TRUE); }
         TURN { }
@@ -1212,7 +1212,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
         TURN { }
     } SCENE {
         // turn 1
-        MESSAGE("Charizard used G-Max Wildfire!");
+        MESSAGE("Solador used G-Max Wildfire!");
         MESSAGE("The opposing team was surrounded by flames!");
         MESSAGE("Foe Wobbuffet is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentLeft, captureDamage: &damage);
@@ -1224,7 +1224,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
         MESSAGE("Foe Wynaut is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 3
-        NONE_OF { MESSAGE("Foe Arcanine is burning up within G-Max Wildfire's flames!"); }
+        NONE_OF { MESSAGE("Foe Gargantic is burning up within G-Max Wildfire's flames!"); }
         MESSAGE("Foe Wynaut is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 4
@@ -1366,8 +1366,8 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Chi Strike boosts allies' crit chance")
     GIVEN {
         ASSUME(B_CRIT_CHANCE >= GEN_6);
         ASSUME(gMovesInfo[MOVE_G_MAX_CHI_STRIKE].argument == MAX_EFFECT_CRIT_PLUS);
-        PLAYER(SPECIES_MACHAMP) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_MACHOP);
+        PLAYER(SPECIES_GRAPPOUCH) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_MACKARREL);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -1379,14 +1379,14 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Chi Strike boosts allies' crit chance")
     } SCENE {
         // turn 1 - 3
         for (j = 0; j < 3; ++j) {
-            MESSAGE("Machamp used G-Max Chi Strike!");
+            MESSAGE("Grappouch used G-Max Chi Strike!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-            MESSAGE("Machamp is getting pumped!");
+            MESSAGE("Grappouch is getting pumped!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-            MESSAGE("Machop is getting pumped!");
+            MESSAGE("Mackarrel is getting pumped!");
         }
         // turn 4
-        MESSAGE("Machop used Tackle!"); // Machop is at +5 crit stages
+        MESSAGE("Mackarrel used Tackle!"); // Mackarrel is at +5 crit stages
         MESSAGE("A critical hit!");
     }
 }

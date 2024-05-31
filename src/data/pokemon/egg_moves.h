@@ -5,8 +5,8 @@
 #define egg_moves(species, moves...) (SPECIES_##species + EGG_MOVES_SPECIES_OFFSET), moves
 
 const u16 gEggMoves[] = {
-#if P_FAMILY_BULBASAUR
-    egg_moves(BULBASAUR,
+#if P_FAMILY_GANERA
+    egg_moves(GANERA,
         MOVE_SKULL_BASH,
         MOVE_CHARM,
         MOVE_PETAL_DANCE,
@@ -22,10 +22,10 @@ const u16 gEggMoves[] = {
         MOVE_ENDURE,
         MOVE_GIGA_DRAIN,
         MOVE_GRASSY_TERRAIN),
-#endif //P_FAMILY_BULBASAUR
+#endif //P_FAMILY_GANERA
 
-#if P_FAMILY_CHARMANDER
-    egg_moves(CHARMANDER,
+#if P_FAMILY_TEPILLA
+    egg_moves(TEPILLA,
         MOVE_BELLY_DRUM,
         MOVE_ANCIENT_POWER,
         MOVE_BITE,
@@ -40,10 +40,10 @@ const u16 gEggMoves[] = {
         MOVE_DRAGON_PULSE,
         MOVE_FOCUS_PUNCH,
         MOVE_AIR_CUTTER),
-#endif //P_FAMILY_CHARMANDER
+#endif //P_FAMILY_TEPILLA
 
-#if P_FAMILY_SQUIRTLE
-    egg_moves(SQUIRTLE,
+#if P_FAMILY_RELENTOOTH
+    egg_moves(RELENTOOTH,
         MOVE_MIRROR_COAT,
         MOVE_HAZE,
         MOVE_MIST,
@@ -60,10 +60,10 @@ const u16 gEggMoves[] = {
         MOVE_BRINE,
         MOVE_DRAGON_PULSE,
         MOVE_AURA_SPHERE),
-#endif //P_FAMILY_SQUIRTLE
+#endif //P_FAMILY_RELENTOOTH
 
-#if P_FAMILY_PIDGEY
-    egg_moves(PIDGEY,
+#if P_FAMILY_DISCUTTLE
+    egg_moves(DISCUTTLE,
         MOVE_PURSUIT,
         MOVE_FEINT_ATTACK,
         MOVE_FORESIGHT,
@@ -73,10 +73,10 @@ const u16 gEggMoves[] = {
         MOVE_BRAVE_BIRD,
         MOVE_UPROAR,
         MOVE_DEFOG),
-#endif //P_FAMILY_PIDGEY
+#endif //P_FAMILY_DISCUTTLE
 
-#if P_FAMILY_RATTATA
-    egg_moves(RATTATA,
+#if P_FAMILY_BANANEE
+    egg_moves(BANANEE,
         MOVE_SCREECH,
         MOVE_FLAME_WHEEL,
         MOVE_FURY_SWIPES,
@@ -90,7 +90,7 @@ const u16 gEggMoves[] = {
         MOVE_FINAL_GAMBIT),
 
 #if P_ALOLAN_FORMS
-    egg_moves(RATTATA_ALOLAN,
+    egg_moves(BANANEE_ALOLAN,
         MOVE_COUNTER,
         MOVE_FINAL_GAMBIT,
         MOVE_FURY_SWIPES,
@@ -103,10 +103,10 @@ const u16 gEggMoves[] = {
         MOVE_SWITCHEROO,
         MOVE_UPROAR),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_RATTATA
+#endif //P_FAMILY_BANANEE
 
-#if P_FAMILY_SPEAROW
-    egg_moves(SPEAROW,
+#if P_FAMILY_SALANANA
+    egg_moves(SALANANA,
         MOVE_FEINT_ATTACK,
         MOVE_SCARY_FACE,
         MOVE_QUICK_ATTACK,
@@ -118,10 +118,10 @@ const u16 gEggMoves[] = {
         MOVE_FEATHER_DANCE,
         MOVE_STEEL_WING,
         MOVE_RAZOR_WIND),
-#endif //P_FAMILY_SPEAROW
+#endif //P_FAMILY_SALANANA
 
-#if P_FAMILY_EKANS
-    egg_moves(EKANS,
+#if P_FAMILY_BATRACHITE
+    egg_moves(BATRACHITE,
         MOVE_PURSUIT,
         MOVE_SLAM,
         MOVE_SPITE,
@@ -134,9 +134,9 @@ const u16 gEggMoves[] = {
         MOVE_IRON_TAIL,
         MOVE_SUCKER_PUNCH,
         MOVE_SNATCH),
-#endif //P_FAMILY_EKANS
+#endif //P_FAMILY_BATRACHITE
 
-#if P_FAMILY_PIKACHU
+#if P_FAMILY_FOMPOUS
 #if P_GEN_2_CROSS_EVOS
     egg_moves(PICHU,
         MOVE_REVERSAL,
@@ -156,10 +156,10 @@ const u16 gEggMoves[] = {
         MOVE_DISARMING_VOICE,
         MOVE_ELECTRIC_TERRAIN),
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_PIKACHU
+#endif //P_FAMILY_FOMPOUS
 
-#if P_FAMILY_SANDSHREW
-    egg_moves(SANDSHREW,
+#if P_FAMILY_WIRLIXPLOR
+    egg_moves(WIRLIXPLOR,
         MOVE_FLAIL,
         MOVE_COUNTER,
         MOVE_RAPID_SPIN,
@@ -173,7 +173,7 @@ const u16 gEggMoves[] = {
         MOVE_ROTOTILLER,
         MOVE_HONE_CLAWS),
 #if P_ALOLAN_FORMS
-    egg_moves(SANDSHREW_ALOLAN,
+    egg_moves(WIRLIXPLOR_ALOLAN,
         MOVE_AMNESIA,
         MOVE_CHIP_AWAY,
         MOVE_COUNTER,
@@ -187,10 +187,10 @@ const u16 gEggMoves[] = {
         MOVE_METAL_CLAW,
         MOVE_NIGHT_SLASH),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_SANDSHREW
+#endif //P_FAMILY_WIRLIXPLOR
 
 #if P_FAMILY_NIDORAN
-    egg_moves(NIDORAN_F,
+    egg_moves(XENOWEED,
         MOVE_SUPERSONIC,
         MOVE_DISABLE,
         MOVE_TAKE_DOWN,
@@ -206,7 +206,7 @@ const u16 gEggMoves[] = {
         MOVE_CHIP_AWAY,
         MOVE_VENOM_DRENCH),
 
-    egg_moves(NIDORAN_M,
+    egg_moves(DRAMAGO,
         MOVE_COUNTER,
         MOVE_DISABLE,
         MOVE_SUPERSONIC,
@@ -223,7 +223,7 @@ const u16 gEggMoves[] = {
         MOVE_VENOM_DRENCH),
 #endif //P_FAMILY_NIDORAN
 
-#if P_FAMILY_CLEFAIRY
+#if P_FAMILY_CYBIRD
 #if P_GEN_2_CROSS_EVOS
     egg_moves(CLEFFA,
         MOVE_PRESENT,
@@ -241,10 +241,10 @@ const u16 gEggMoves[] = {
         MOVE_MISTY_TERRAIN,
         MOVE_HEAL_PULSE),
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_CLEFAIRY
+#endif //P_FAMILY_CYBIRD
 
-#if P_FAMILY_VULPIX
-    egg_moves(VULPIX,
+#if P_FAMILY_BEWANDER
+    egg_moves(BEWANDER,
         MOVE_FEINT_ATTACK,
         MOVE_HYPNOSIS,
         MOVE_FLAIL,
@@ -260,7 +260,7 @@ const u16 gEggMoves[] = {
         MOVE_TAIL_SLAP,
         MOVE_CAPTIVATE),
 #if P_ALOLAN_FORMS
-    egg_moves(VULPIX_ALOLAN,
+    egg_moves(BEWANDER_ALOLAN,
         MOVE_AGILITY,
         MOVE_CHARM,
         MOVE_DISABLE,
@@ -276,9 +276,9 @@ const u16 gEggMoves[] = {
         MOVE_SECRET_POWER,
         MOVE_TAIL_SLAP),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_VULPIX
+#endif //P_FAMILY_BEWANDER
 
-#if P_FAMILY_JIGGLYPUFF
+#if P_FAMILY_BEWONDER
 #if P_GEN_2_CROSS_EVOS
     egg_moves(IGGLYBUFF,
         MOVE_PERISH_SONG,
@@ -295,10 +295,10 @@ const u16 gEggMoves[] = {
         MOVE_MISTY_TERRAIN,
         MOVE_HEAL_PULSE),
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_JIGGLYPUFF
+#endif //P_FAMILY_BEWONDER
 
-#if P_FAMILY_ZUBAT
-    egg_moves(ZUBAT,
+#if P_FAMILY_MYRIEPROM
+    egg_moves(MYRIEPROM,
         MOVE_QUICK_ATTACK,
         MOVE_PURSUIT,
         MOVE_FEINT_ATTACK,
@@ -313,10 +313,10 @@ const u16 gEggMoves[] = {
         MOVE_STEEL_WING,
         MOVE_DEFOG,
         MOVE_VENOM_DRENCH),
-#endif //P_FAMILY_ZUBAT
+#endif //P_FAMILY_MYRIEPROM
 
-#if P_FAMILY_ODDISH
-    egg_moves(ODDISH,
+#if P_FAMILY_CAFFINERGY
+    egg_moves(CAFFINERGY,
         MOVE_RAZOR_LEAF,
         MOVE_FLAIL,
         MOVE_SYNTHESIS,
@@ -328,10 +328,10 @@ const u16 gEggMoves[] = {
         MOVE_NATURE_POWER,
         MOVE_AFTER_YOU,
         MOVE_STRENGTH_SAP),
-#endif //P_FAMILY_ODDISH
+#endif //P_FAMILY_CAFFINERGY
 
-#if P_FAMILY_PARAS
-    egg_moves(PARAS,
+#if P_FAMILY_AMBLAZIA
+    egg_moves(AMBLAZIA,
         MOVE_SCREECH,
         MOVE_COUNTER,
         MOVE_PSYBEAM,
@@ -349,10 +349,10 @@ const u16 gEggMoves[] = {
         MOVE_ROTOTILLER,
         MOVE_FELL_STINGER,
         MOVE_GRASSY_TERRAIN),
-#endif //P_FAMILY_PARAS
+#endif //P_FAMILY_AMBLAZIA
 
-#if P_FAMILY_VENONAT
-    egg_moves(VENONAT,
+#if P_FAMILY_CRYSTURDY
+    egg_moves(CRYSTURDY,
         MOVE_BATON_PASS,
         MOVE_SCREECH,
         MOVE_GIGA_DRAIN,
@@ -364,10 +364,10 @@ const u16 gEggMoves[] = {
         MOVE_SECRET_POWER,
         MOVE_SKILL_SWAP,
         MOVE_RAGE_POWDER),
-#endif //P_FAMILY_VENONAT
+#endif //P_FAMILY_CRYSTURDY
 
-#if P_FAMILY_DIGLETT
-    egg_moves(DIGLETT,
+#if P_FAMILY_SCRILL
+    egg_moves(SCRILL,
         MOVE_FEINT_ATTACK,
         MOVE_SCREECH,
         MOVE_ANCIENT_POWER,
@@ -382,7 +382,7 @@ const u16 gEggMoves[] = {
         MOVE_FINAL_GAMBIT,
         MOVE_MEMENTO),
 #if P_ALOLAN_FORMS
-    egg_moves(DIGLETT_ALOLAN,
+    egg_moves(SCRILL_ALOLAN,
         MOVE_ANCIENT_POWER,
         MOVE_BEAT_UP,
         MOVE_ENDURE,
@@ -395,10 +395,10 @@ const u16 gEggMoves[] = {
         MOVE_REVERSAL,
         MOVE_THRASH),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_DIGLETT
+#endif //P_FAMILY_SCRILL
 
-#if P_FAMILY_MEOWTH
-    egg_moves(MEOWTH,
+#if P_FAMILY_YOCKU
+    egg_moves(YOCKU,
         MOVE_SPITE,
         MOVE_CHARM,
         MOVE_HYPNOSIS,
@@ -413,7 +413,7 @@ const u16 gEggMoves[] = {
         MOVE_IRON_TAIL,
         MOVE_FOUL_PLAY),
 #if P_ALOLAN_FORMS
-    egg_moves(MEOWTH_ALOLAN,
+    egg_moves(YOCKU_ALOLAN,
         MOVE_AMNESIA,
         MOVE_ASSIST,
         MOVE_CHARM,
@@ -428,7 +428,7 @@ const u16 gEggMoves[] = {
         MOVE_SPITE),
 #endif //P_ALOLAN_FORMS
 #if P_GALARIAN_FORMS
-    egg_moves(MEOWTH_GALARIAN,
+    egg_moves(YOCKU_GALARIAN,
         MOVE_SPITE,
         MOVE_DOUBLE_EDGE,
         MOVE_CURSE,
@@ -436,10 +436,10 @@ const u16 gEggMoves[] = {
         MOVE_NIGHT_SLASH,
         MOVE_COVET),
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MEOWTH
+#endif //P_FAMILY_YOCKU
 
-#if P_FAMILY_PSYDUCK
-    egg_moves(PSYDUCK,
+#if P_FAMILY_THUNDAIJU
+    egg_moves(THUNDAIJU,
         MOVE_HYPNOSIS,
         MOVE_PSYBEAM,
         MOVE_FORESIGHT,
@@ -455,10 +455,10 @@ const u16 gEggMoves[] = {
         MOVE_SYNCHRONOISE,
         MOVE_SIMPLE_BEAM,
         MOVE_CLEAR_SMOG),
-#endif //P_FAMILY_PSYDUCK
+#endif //P_FAMILY_THUNDAIJU
 
-#if P_FAMILY_MANKEY
-    egg_moves(MANKEY,
+#if P_FAMILY_SILKRYSTAL
+    egg_moves(SILKRYSTAL,
         MOVE_FORESIGHT,
         MOVE_MEDITATE,
         MOVE_COUNTER,
@@ -472,10 +472,10 @@ const u16 gEggMoves[] = {
         MOVE_SLEEP_TALK,
         MOVE_NIGHT_SLASH,
         MOVE_POWER_TRIP),
-#endif //P_FAMILY_MANKEY
+#endif //P_FAMILY_SILKRYSTAL
 
-#if P_FAMILY_GROWLITHE
-    egg_moves(GROWLITHE,
+#if P_FAMILY_CRAGOYLE
+    egg_moves(CRAGOYLE,
         MOVE_BODY_SLAM,
         MOVE_CRUNCH,
         MOVE_THRASH,
@@ -490,10 +490,10 @@ const u16 gEggMoves[] = {
         MOVE_DOUBLE_KICK,
         MOVE_CLOSE_COMBAT,
         MOVE_BURN_UP),
-#endif //P_FAMILY_GROWLITHE
+#endif //P_FAMILY_CRAGOYLE
 
-#if P_FAMILY_POLIWAG
-    egg_moves(POLIWAG,
+#if P_FAMILY_PUPPETTE
+    egg_moves(PUPPETTE,
         MOVE_MIST,
         MOVE_SPLASH,
         MOVE_BUBBLE_BEAM,
@@ -507,10 +507,10 @@ const u16 gEggMoves[] = {
         MOVE_ENCORE,
         MOVE_ENDURE,
         MOVE_WATER_PULSE),
-#endif //P_FAMILY_POLIWAG
+#endif //P_FAMILY_PUPPETTE
 
-#if P_FAMILY_ABRA
-    egg_moves(ABRA,
+#if P_FAMILY_FEISTYCUFF
+    egg_moves(FEISTYCUFF,
         MOVE_ENCORE,
         MOVE_BARRIER,
         MOVE_KNOCK_OFF,
@@ -524,10 +524,10 @@ const u16 gEggMoves[] = {
         MOVE_PSYCHO_SHIFT,
         MOVE_ALLY_SWITCH,
         MOVE_PSYCHIC_TERRAIN),
-#endif //P_FAMILY_ABRA
+#endif //P_FAMILY_FEISTYCUFF
 
-#if P_FAMILY_MACHOP
-    egg_moves(MACHOP,
+#if P_FAMILY_MACKARREL
+    egg_moves(MACKARREL,
         MOVE_MEDITATE,
         MOVE_ROLLING_KICK,
         MOVE_ENCORE,
@@ -543,10 +543,10 @@ const u16 gEggMoves[] = {
         MOVE_KNOCK_OFF,
         MOVE_TICKLE,
         MOVE_QUICK_GUARD),
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_MACKARREL
 
-#if P_FAMILY_BELLSPROUT
-    egg_moves(BELLSPROUT,
+#if P_FAMILY_BANSHARK
+    egg_moves(BANSHARK,
         MOVE_ENCORE,
         MOVE_SYNTHESIS,
         MOVE_LEECH_LIFE,
@@ -563,7 +563,7 @@ const u16 gEggMoves[] = {
         MOVE_ACID_SPRAY,
         MOVE_BELCH,
         MOVE_STRENGTH_SAP),
-#endif //P_FAMILY_BELLSPROUT
+#endif //P_FAMILY_BANSHARK
 
 #if P_FAMILY_TENTACOOL
     egg_moves(TENTACOOL,
@@ -4671,13 +4671,13 @@ const u16 gEggMoves[] = {
         MOVE_ENDURE),
 #endif //P_FAMILY_GRUBBIN
 
-#if P_FAMILY_CRABRAWLER
-    egg_moves(CRABRAWLER,
+#if P_FAMILY_CRFEISTYCUFFWLER
+    egg_moves(CRFEISTYCUFFWLER,
         MOVE_WIDE_GUARD,
         MOVE_SUPERPOWER,
         MOVE_ENDEAVOR,
         MOVE_AMNESIA),
-#endif //P_FAMILY_CRABRAWLER
+#endif //P_FAMILY_CRFEISTYCUFFWLER
 
 #if P_FAMILY_ORICORIO
     egg_moves(ORICORIO_BAILE,

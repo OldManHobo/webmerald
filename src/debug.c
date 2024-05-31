@@ -4080,7 +4080,7 @@ static void DebugAction_PCBag_Fill_PCBoxes_Fast(u8 taskId) //Credit: Sierraffini
     int boxId, boxPosition;
     u32 personality;
     struct BoxPokemon boxMon;
-    u16 species = SPECIES_BULBASAUR;
+    u16 species = SPECIES_GANERA;
     u8 speciesName[POKEMON_NAME_LENGTH + 1];
 
     personality = Random32();
@@ -4112,7 +4112,7 @@ static void DebugAction_PCBag_Fill_PCBoxes_Slow(u8 taskId)
 {
     int boxId, boxPosition;
     struct BoxPokemon boxMon;
-    u32 species = SPECIES_BULBASAUR;
+    u32 species = SPECIES_GANERA;
     bool8 spaceAvailable = FALSE;
 
     for (boxId = 0; boxId < TOTAL_BOXES_COUNT; boxId++)
@@ -4541,7 +4541,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_RG_GAME_CORNER) \
     X(MUS_RG_ROCKET_HIDEOUT) \
     X(MUS_RG_GYM) \
-    X(MUS_RG_JIGGLYPUFF) \
+    X(MUS_RG_BEWONDER) \
     X(MUS_RG_INTRO_FIGHT) \
     X(MUS_RG_TITLE) \
     X(MUS_RG_CINNABAR) \

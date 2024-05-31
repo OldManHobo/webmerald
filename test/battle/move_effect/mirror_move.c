@@ -42,9 +42,9 @@ SINGLE_BATTLE_TEST("Mirror Move's called powder move fails against Grass Types")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STUN_SPORE].powderMove);
-        ASSUME(gSpeciesInfo[SPECIES_ODDISH].types[0] == TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_CAFFINERGY].types[0] == TYPE_GRASS);
         ASSUME(gMovesInfo[MOVE_STUN_SPORE].effect == EFFECT_PARALYZE);
-        PLAYER(SPECIES_ODDISH);
+        PLAYER(SPECIES_CAFFINERGY);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_STUN_SPORE); MOVE(opponent, MOVE_MIRROR_MOVE); }
@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Mirror Move's called powder move fails against Grass Types")
         MESSAGE("Foe Wobbuffet used Mirror Move!");
         MESSAGE("Foe Wobbuffet used Stun Spore!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, opponent);
-        MESSAGE("It doesn't affect Oddish…");
+        MESSAGE("It doesn't affect Caffinergy…");
         NOT STATUS_ICON(player, paralysis: TRUE);
     }
 }

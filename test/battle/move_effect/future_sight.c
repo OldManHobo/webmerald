@@ -17,8 +17,8 @@ SINGLE_BATTLE_TEST("Future Sight uses Sp. Atk stat of the original user without 
     PARAMETRIZE { item = ITEM_PSYCHIC_GEM; }
 
     GIVEN {
-        PLAYER(SPECIES_PIKACHU) { Item(item); }
-        PLAYER(SPECIES_RAICHU) { Item(item); }
+        PLAYER(SPECIES_FOMPOUS) { Item(item); }
+        PLAYER(SPECIES_ASTROHAUT) { Item(item); }
         OPPONENT(SPECIES_REGICE);
     } WHEN {
         TURN { MOVE(player, MOVE_SEED_FLARE, WITH_RNG(RNG_SECONDARY_EFFECT, FALSE)); }
@@ -43,8 +43,8 @@ SINGLE_BATTLE_TEST("Future Sight is not boosted by Life Orb is original user if 
     s16 futureSightDmg;
 
     GIVEN {
-        PLAYER(SPECIES_PIKACHU);
-        PLAYER(SPECIES_RAICHU) { Item(ITEM_LIFE_ORB); }
+        PLAYER(SPECIES_FOMPOUS);
+        PLAYER(SPECIES_ASTROHAUT) { Item(ITEM_LIFE_ORB); }
         OPPONENT(SPECIES_REGICE);
     } WHEN {
         TURN { MOVE(player, MOVE_SEED_FLARE, WITH_RNG(RNG_SECONDARY_EFFECT, FALSE)); }
@@ -58,7 +58,7 @@ SINGLE_BATTLE_TEST("Future Sight is not boosted by Life Orb is original user if 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
         MESSAGE("Foe Regice took the Future Sight attack!");
         HP_BAR(opponent, captureDamage: &futureSightDmg);
-        NOT MESSAGE("Raichu was hurt by its Life Orb!");
+        NOT MESSAGE("Astrohaut was hurt by its Life Orb!");
     } THEN {
         EXPECT_EQ(seedFlareDmg, futureSightDmg);
     }
@@ -71,7 +71,7 @@ SINGLE_BATTLE_TEST("Future Sight receives STAB from party mon")
 
     GIVEN {
         PLAYER(SPECIES_RALTS);
-        PLAYER(SPECIES_RAICHU);
+        PLAYER(SPECIES_ASTROHAUT);
         OPPONENT(SPECIES_REGICE);
     } WHEN {
         TURN { MOVE(player, MOVE_SEED_FLARE, WITH_RNG(RNG_SECONDARY_EFFECT, FALSE)); }
@@ -92,8 +92,8 @@ SINGLE_BATTLE_TEST("Future Sight receives STAB from party mon")
 SINGLE_BATTLE_TEST("Future Sight is affected by type effectiveness")
 {
     GIVEN {
-        PLAYER(SPECIES_PIKACHU);
-        PLAYER(SPECIES_RAICHU);
+        PLAYER(SPECIES_FOMPOUS);
+        PLAYER(SPECIES_ASTROHAUT);
         OPPONENT(SPECIES_HOUNDOOM);
     } WHEN {
         TURN { MOVE(player, MOVE_SEED_FLARE, WITH_RNG(RNG_SECONDARY_EFFECT, FALSE)); }

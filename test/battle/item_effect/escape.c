@@ -41,7 +41,7 @@ WILD_BATTLE_TEST("Poke Toy lets the player escape from a wild battle even if an 
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_DIGLETT) { Ability(ABILITY_ARENA_TRAP); }
+        OPPONENT(SPECIES_SCRILL) { Ability(ABILITY_ARENA_TRAP); }
     } WHEN {
         TURN { USE_ITEM(player, ITEM_POKE_TOY); }
     } SCENE {

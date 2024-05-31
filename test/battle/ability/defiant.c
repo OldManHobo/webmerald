@@ -11,45 +11,45 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
     PARAMETRIZE { abilityLeft = ABILITY_DEFIANT; abilityRight = ABILITY_DEFIANT; }
 
     GIVEN {
-        PLAYER(SPECIES_MANKEY) { Ability(abilityLeft); }
-        PLAYER(SPECIES_PRIMEAPE) { Ability(abilityRight); }
+        PLAYER(SPECIES_SILKRYSTAL) { Ability(abilityLeft); }
+        PLAYER(SPECIES_ARACHTITE) { Ability(abilityRight); }
         OPPONENT(SPECIES_GYARADOS) { Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_TOAGNITIVE) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target:opponentLeft); MOVE(playerRight, MOVE_TACKLE, target:opponentRight); }
     } SCENE {
         //1st mon Intimidate
         ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Foe Gyarados's Intimidate cuts Mankey's attack!");
+        MESSAGE("Foe Gyarados's Intimidate cuts Silkrystal's attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-            MESSAGE("Mankey's Attack sharply rose!");
+            MESSAGE("Silkrystal's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("Foe Gyarados's Intimidate cuts Primeape's attack!");
+        MESSAGE("Foe Gyarados's Intimidate cuts Arachtite's attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-            MESSAGE("Primeape's Attack sharply rose!");
+            MESSAGE("Arachtite's Attack sharply rose!");
         }
 
         //2nd mon Intimidate
         ABILITY_POPUP(opponentRight, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Foe Arbok's Intimidate cuts Mankey's attack!");
+        MESSAGE("Foe Toagnitive's Intimidate cuts Silkrystal's attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-            MESSAGE("Mankey's Attack sharply rose!");
+            MESSAGE("Silkrystal's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("Foe Arbok's Intimidate cuts Primeape's attack!");
+        MESSAGE("Foe Toagnitive's Intimidate cuts Arachtite's attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-            MESSAGE("Primeape's Attack sharply rose!");
+            MESSAGE("Arachtite's Attack sharply rose!");
         }
     } FINALLY {
         // -2 from Intimidates and +4 from Defiants gets +2 total
@@ -69,45 +69,45 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises opponent's Attack after Intimidate")
     PARAMETRIZE { abilityLeft = ABILITY_DEFIANT; abilityRight = ABILITY_DEFIANT; }
 
     GIVEN {
-        OPPONENT(SPECIES_MANKEY) { Ability(abilityLeft); }
-        OPPONENT(SPECIES_PRIMEAPE) { Ability(abilityRight); }
+        OPPONENT(SPECIES_SILKRYSTAL) { Ability(abilityLeft); }
+        OPPONENT(SPECIES_ARACHTITE) { Ability(abilityRight); }
         PLAYER(SPECIES_GYARADOS) { Ability(ABILITY_INTIMIDATE); }
-        PLAYER(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_TOAGNITIVE) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TACKLE, target:playerLeft); MOVE(opponentRight, MOVE_TACKLE, target:playerRight); }
     } SCENE {
         //1st mon Intimidate
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("Gyarados's Intimidate cuts Foe Mankey's attack!");
+        MESSAGE("Gyarados's Intimidate cuts Foe Silkrystal's attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Foe Mankey's Attack sharply rose!");
+            MESSAGE("Foe Silkrystal's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Gyarados's Intimidate cuts Foe Primeape's attack!");
+        MESSAGE("Gyarados's Intimidate cuts Foe Arachtite's attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Foe Primeape's Attack sharply rose!");
+            MESSAGE("Foe Arachtite's Attack sharply rose!");
         }
 
         //2nd mon Intimidate
         ABILITY_POPUP(playerRight, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("Arbok's Intimidate cuts Foe Mankey's attack!");
+        MESSAGE("Toagnitive's Intimidate cuts Foe Silkrystal's attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Foe Mankey's Attack sharply rose!");
+            MESSAGE("Foe Silkrystal's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Arbok's Intimidate cuts Foe Primeape's attack!");
+        MESSAGE("Toagnitive's Intimidate cuts Foe Arachtite's attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Foe Primeape's Attack sharply rose!");
+            MESSAGE("Foe Arachtite's Attack sharply rose!");
         }
     } FINALLY {
         // -2 from Intimidates and +4 from Defiants gets +2 total
@@ -120,7 +120,7 @@ SINGLE_BATTLE_TEST("Defiant activates after Sticky Web lowers Speed")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); }
+        PLAYER(SPECIES_SILKRYSTAL) { Ability(ABILITY_DEFIANT); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_STICKY_WEB); }
@@ -128,14 +128,14 @@ SINGLE_BATTLE_TEST("Defiant activates after Sticky Web lowers Speed")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, opponent);
         // Switch-in - Sticky Web activates
-        MESSAGE("Go! Mankey!");
-        MESSAGE("Mankey was caught in a Sticky Web!");
+        MESSAGE("Go! Silkrystal!");
+        MESSAGE("Silkrystal was caught in a Sticky Web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Mankey's Speed fell!");
+        MESSAGE("Silkrystal's Speed fell!");
         // Defiant activates
         ABILITY_POPUP(player, ABILITY_DEFIANT);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Mankey's Attack sharply rose!");
+        MESSAGE("Silkrystal's Attack sharply rose!");
     }
 }
 
@@ -143,10 +143,10 @@ SINGLE_BATTLE_TEST("Defiant activates after Sticky Web lowers Speed")
 DOUBLE_BATTLE_TEST("Defiant is activated by Cotton Down for non-ally pokemon")
 {
     GIVEN {
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); }
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); }
+        PLAYER(SPECIES_SILKRYSTAL) { Ability(ABILITY_DEFIANT); }
+        PLAYER(SPECIES_SILKRYSTAL) { Ability(ABILITY_DEFIANT); }
         OPPONENT(SPECIES_ELDEGOSS) { Ability(ABILITY_COTTON_DOWN); }
-        OPPONENT(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); }
+        OPPONENT(SPECIES_SILKRYSTAL) { Ability(ABILITY_DEFIANT); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
     } SCENE {
@@ -154,19 +154,19 @@ DOUBLE_BATTLE_TEST("Defiant is activated by Cotton Down for non-ally pokemon")
         ABILITY_POPUP(opponentLeft, ABILITY_COTTON_DOWN);
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Mankey's Speed fell!");
+        MESSAGE("Silkrystal's Speed fell!");
         ABILITY_POPUP(playerLeft, ABILITY_DEFIANT);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Mankey's Attack sharply rose!");
+        MESSAGE("Silkrystal's Attack sharply rose!");
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("Mankey's Speed fell!");
+        MESSAGE("Silkrystal's Speed fell!");
         ABILITY_POPUP(playerRight, ABILITY_DEFIANT);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("Mankey's Attack sharply rose!");
+        MESSAGE("Silkrystal's Attack sharply rose!");
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Foe Mankey's Speed fell!");
+        MESSAGE("Foe Silkrystal's Speed fell!");
     } THEN {
         EXPECT_EQ(playerLeft->statStages[STAT_SPEED], DEFAULT_STAT_STAGE - 1);
         EXPECT_EQ(playerRight->statStages[STAT_SPEED], DEFAULT_STAT_STAGE - 1);
@@ -184,7 +184,7 @@ SINGLE_BATTLE_TEST("Defiant activates before White Herb")
     PARAMETRIZE { move = MOVE_GROWL; }
 
     GIVEN {
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); Item(ITEM_WHITE_HERB); }
+        PLAYER(SPECIES_SILKRYSTAL) { Ability(ABILITY_DEFIANT); Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
@@ -194,15 +194,15 @@ SINGLE_BATTLE_TEST("Defiant activates before White Herb")
 
         ABILITY_POPUP(player, ABILITY_DEFIANT);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Mankey's Attack sharply rose!");
+        MESSAGE("Silkrystal's Attack sharply rose!");
 
         if (move == MOVE_LEER) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Mankey's White Herb restored its status!");
+            MESSAGE("Silkrystal's White Herb restored its status!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Mankey's White Herb restored its status!");
+                MESSAGE("Silkrystal's White Herb restored its status!");
             }
         }
     } THEN {
@@ -219,7 +219,7 @@ SINGLE_BATTLE_TEST("Defiant activates for each stat that is lowered")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TICKLE].effect == EFFECT_TICKLE);
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); }
+        PLAYER(SPECIES_SILKRYSTAL) { Ability(ABILITY_DEFIANT); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TICKLE); }
@@ -227,15 +227,15 @@ SINGLE_BATTLE_TEST("Defiant activates for each stat that is lowered")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TICKLE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
 
-        MESSAGE("Mankey's Attack fell!");
+        MESSAGE("Silkrystal's Attack fell!");
         ABILITY_POPUP(player, ABILITY_DEFIANT);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Mankey's Attack sharply rose!");
+        MESSAGE("Silkrystal's Attack sharply rose!");
 
-        MESSAGE("Mankey's Defense fell!");
+        MESSAGE("Silkrystal's Defense fell!");
         ABILITY_POPUP(player, ABILITY_DEFIANT);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Mankey's Attack sharply rose!");
+        MESSAGE("Silkrystal's Attack sharply rose!");
 
     } THEN {
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 3);
@@ -256,7 +256,7 @@ SINGLE_BATTLE_TEST("Defiant doesn't activate if the pokemon lowers it's own stat
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_CLOSE_COMBAT, MOVE_EFFECT_DEF_SPDEF_DOWN));
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_MAKE_IT_RAIN, MOVE_EFFECT_SP_ATK_MINUS_1));
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_SPIN_OUT, MOVE_EFFECT_SPD_MINUS_2));
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); }
+        PLAYER(SPECIES_SILKRYSTAL) { Ability(ABILITY_DEFIANT); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
@@ -267,7 +267,7 @@ SINGLE_BATTLE_TEST("Defiant doesn't activate if the pokemon lowers it's own stat
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Mankey's Attack sharply rose!");
+            MESSAGE("Silkrystal's Attack sharply rose!");
         }
     } THEN {
         if (move == MOVE_SUPERPOWER)

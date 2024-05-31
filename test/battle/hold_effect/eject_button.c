@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Eject Button is not triggered when there is nothing to switc
 SINGLE_BATTLE_TEST("Eject Button is not activated by a Sheer Force boosted move")
 {
     GIVEN {
-        PLAYER(SPECIES_NIDOKING) { Ability(ABILITY_SHEER_FORCE); }
+        PLAYER(SPECIES_LIAYARD) { Ability(ABILITY_SHEER_FORCE); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_BUTTON); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Eject Button will not activate under Substitute")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_RAICHU) { Item(ITEM_EJECT_BUTTON); }
+        OPPONENT(SPECIES_ASTROHAUT) { Item(ITEM_EJECT_BUTTON); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
@@ -61,12 +61,12 @@ SINGLE_BATTLE_TEST("Eject Button will not activate under Substitute")
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, opponent);
-        MESSAGE("Foe Raichu made a SUBSTITUTE!");
+        MESSAGE("Foe Astrohaut made a SUBSTITUTE!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        MESSAGE("The SUBSTITUTE took damage for Foe Raichu!");
+        MESSAGE("The SUBSTITUTE took damage for Foe Astrohaut!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            MESSAGE("Foe Raichu is switched out with the Eject Button!");
+            MESSAGE("Foe Astrohaut is switched out with the Eject Button!");
         }
     }
 }
@@ -74,7 +74,7 @@ SINGLE_BATTLE_TEST("Eject Button will not activate under Substitute")
 SINGLE_BATTLE_TEST("Eject Button is not blocked by trapping abilities or moves")
 {
     GIVEN {
-        PLAYER(SPECIES_DUGTRIO) { Ability(ABILITY_ARENA_TRAP); }
+        PLAYER(SPECIES_OVERSCRILL) { Ability(ABILITY_ARENA_TRAP); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_BUTTON); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Eject Button is not blocked by trapping abilities or moves")
 SINGLE_BATTLE_TEST("Eject Button is not triggered after the mon loses Eject Button")
 {
     GIVEN {
-        PLAYER(SPECIES_RAICHU);
+        PLAYER(SPECIES_ASTROHAUT);
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_BUTTON); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

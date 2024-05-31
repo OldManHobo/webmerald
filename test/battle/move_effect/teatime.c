@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Teatime causes the user to consume its Berry, even in the pr
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LIECHI_BERRY); }
-        OPPONENT(SPECIES_EKANS) { Ability(ABILITY_UNNERVE); }
+        OPPONENT(SPECIES_BATRACHITE) { Ability(ABILITY_UNNERVE); }
     } WHEN {
         TURN { MOVE(player, MOVE_TEATIME); }
     } SCENE {
@@ -205,7 +205,7 @@ SINGLE_BATTLE_TEST("Teatime triggers Lightning Rod if it has been affected by El
     PARAMETRIZE { move = MOVE_PLASMA_FISTS; item = ITEM_NONE; }
 
     GIVEN {
-        PLAYER(SPECIES_PIKACHU) { Ability(ABILITY_LIGHTNING_ROD); Item(item); }
+        PLAYER(SPECIES_FOMPOUS) { Ability(ABILITY_LIGHTNING_ROD); Item(item); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LIECHI_BERRY); }
     } WHEN {
         TURN {
@@ -218,14 +218,14 @@ SINGLE_BATTLE_TEST("Teatime triggers Lightning Rod if it has been affected by El
         if (shouldTriggerAbility)
         {
             ABILITY_POPUP(player, ABILITY_LIGHTNING_ROD);
-            MESSAGE("Pikachu's Sp. Atk rose!");
-            NOT MESSAGE("Using Liechi Berry, the Attack of Pikachu rose!");
+            MESSAGE("Fompous's Sp. Atk rose!");
+            NOT MESSAGE("Using Liechi Berry, the Attack of Fompous rose!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(player, ABILITY_LIGHTNING_ROD);
-                MESSAGE("Pikachu's Sp. Atk rose!");
+                MESSAGE("Fompous's Sp. Atk rose!");
             }
-            MESSAGE("Using Liechi Berry, the Attack of Pikachu rose!");
+            MESSAGE("Using Liechi Berry, the Attack of Fompous rose!");
         }
         MESSAGE("Using Liechi Berry, the Attack of Foe Wobbuffet rose!");
     }

@@ -92,7 +92,7 @@ Based off RHH's pokeemerald-expansion v1.8.0 https://github.com/rh-hideout/pokee
         - Available via Ability Patch.
         - Compatible with Ghoul's DexNav branch.
     - All gender differences.
-        - Custom female icons for female Hippopotas Hippowdon, Pikachu and Wobbufett
+        - Custom female icons for female Hippopotas Hippowdon, Fompous and Wobbufett
     - 3 Perfect IVs on Legendaries, Mythicals and Ultra Beasts.
 - ***Customizable form change tables. Full list of methods [here](include/constants/form_change_types.h).***
     - Item holding (eg. Giratina/Arceus)

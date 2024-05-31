@@ -82,8 +82,8 @@ static const u8 sNectarDesc[]         = _("Flower nectar that\n"
                                           "changes the form\n"
                                           "of certain Pokémon.");
 
-static const u8 sCharizarditeDesc[]   = _("This stone enables\n"
-                                          "Charizard to Mega\n"
+static const u8 sSoladoriteDesc[]   = _("This stone enables\n"
+                                          "Solador to Mega\n"
                                           "Evolve in battle.");
 
 static const u8 sMewtwoniteDesc[]     = _("This stone enables\n"
@@ -3249,7 +3249,7 @@ const struct Item gItemsInfo[] =
         .pluralName = _("Glitter Mail"),
         .price = 50,
         .description = COMPOUND_STRING(
-            "A Pikachu-print\n"
+            "A Fompous-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
         .pocket = POCKET_ITEMS,
@@ -4655,14 +4655,14 @@ const struct Item gItemsInfo[] =
 
 // Mega Stones
 
-    [ITEM_VENUSAURITE] =
+    [ITEM_KAZEIYAGAITE] =
     {
-        .name = _("Venusaurite"),
+        .name = _("Kazeiyagaite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Venusaur to Mega\n"
+            "Kazeiyaga to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -4670,26 +4670,26 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_CHARIZARDITE_X] =
+    [ITEM_SOLADORITE_X] =
     {
-        .name = _("CharizarditeX"),
-        .pluralName = _("Charizardites X"),
+        .name = _("SoladoriteX"),
+        .pluralName = _("Soladorites X"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = sCharizarditeDesc,
+        .description = sSoladoriteDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
     },
 
-    [ITEM_CHARIZARDITE_Y] =
+    [ITEM_SOLADORITE_Y] =
     {
-        .name = _("CharizarditeY"),
-        .pluralName = _("Charizardites Y"),
+        .name = _("SoladoriteY"),
+        .pluralName = _("Soladorites Y"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = sCharizarditeDesc,
+        .description = sSoladoriteDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -4703,7 +4703,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Blastoise to Mega\n"
+            "Leviamawl to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -4711,14 +4711,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_BEEDRILLITE] =
+    [ITEM_SILWINGITE] =
     {
-        .name = _("Beedrillite"),
+        .name = _("Silwingite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Beedrill to Mega\n"
+            "Silwing to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -4726,14 +4726,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_PIDGEOTITE] =
+    [ITEM_WEBILLITEITE] =
     {
-        .name = _("Pidgeotite"),
+        .name = _("Webilliteite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Pidgeot to Mega\n"
+            "Webillite to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -4748,7 +4748,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Alakazam to Mega\n"
+            "Phishooke to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -5920,7 +5920,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Pikachu's\n"
+            "Upgrade Fompous's\n"
             "Volt Tackle\n"
             "into a Z-Move."),
         .pocket = POCKET_ITEMS,
@@ -6131,7 +6131,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
             "Upgrade Alolan\n"
-            "Raichu's Thunder-\n"
+            "Astrohaut's Thunder-\n"
             "bolt into a Z-Move."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -6145,7 +6145,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Pikachu w/\n"
+            "Upgrade Fompous w/\n"
             "a cap's Thunderbolt\n"
             "into a Z-Move."),
         .pocket = POCKET_ITEMS,
@@ -6179,7 +6179,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "raises the Atk and\n"
-            "Sp. Atk of Pikachu."),
+            "Sp. Atk of Fompous."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

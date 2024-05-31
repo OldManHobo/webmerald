@@ -28,7 +28,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_WHITE_HERB); }
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_TOAGNITIVE) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { ; }
     } SCENE {
@@ -47,7 +47,7 @@ DOUBLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
     GIVEN {
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_WYNAUT) { Item(ITEM_WHITE_HERB); }
-        PLAYER(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_TOAGNITIVE) { Ability(ABILITY_INTIMIDATE); }
         PLAYER(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { ; }
@@ -74,7 +74,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_TOAGNITIVE) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { SWITCH(opponent, 1); MOVE(player, MOVE_CLOSE_COMBAT); }
     } SCENE {
@@ -100,7 +100,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats after all hits of a multi hit move
     u16 ability;
 
     PARAMETRIZE { species = SPECIES_SLIGGOO_HISUIAN; ability = ABILITY_GOOEY; }
-    PARAMETRIZE { species = SPECIES_DUGTRIO_ALOLAN; ability = ABILITY_TANGLING_HAIR; }
+    PARAMETRIZE { species = SPECIES_OVERSCRILL_ALOLAN; ability = ABILITY_TANGLING_HAIR; }
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DUAL_WINGBEAT].strikeCount == 2);
@@ -191,11 +191,11 @@ SINGLE_BATTLE_TEST("White Herb has correct interactions with Intimidate triggere
     u16 ability;
 
     PARAMETRIZE { species = SPECIES_IGGLYBUFF; ability = ABILITY_COMPETITIVE; }
-    PARAMETRIZE { species = SPECIES_MANKEY; ability = ABILITY_DEFIANT; }
+    PARAMETRIZE { species = SPECIES_SILKRYSTAL; ability = ABILITY_DEFIANT; }
 
     GIVEN {
         PLAYER(species) { Ability(ability); Item(ITEM_WHITE_HERB); }
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_TOAGNITIVE) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { ; }
     } SCENE {

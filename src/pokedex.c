@@ -103,7 +103,6 @@ enum {
     WIN_CRY_WAVE,
     WIN_VU_METER,
     WIN_DATA_STATS,
-    WIN_DATA_ABILITIES,
 };
 
 static const u8 sText_Data_DoesNotEvolve[] = _("No evolution");
@@ -993,19 +992,9 @@ static const struct WindowTemplate sInfoScreen_WindowTemplates[] =
         .tilemapLeft = 14,
         .tilemapTop = 3,
         .width = 16,
-        .height = 8,
+        .height = 10,
         .paletteNum = 0,
         .baseBlock = 645,
-    },
-    [WIN_DATA_ABILITIES] =
-    {
-        .bg = 2,
-        .tilemapLeft = 11,
-        .tilemapTop = 9,
-        .width = 18,
-        .height = 4,
-        .paletteNum = 0,
-        .baseBlock = 645 + 144,
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -3932,7 +3921,7 @@ static void PrintDataScreen_Name(u32 num, u32 value)
     }
     
     //Name
-    PrintDataScreenText(WIN_INFO, FONT_NORMAL, str, 10, 135);
+    PrintDataScreenText(WIN_INFO, FONT_NORMAL, str, GetStringCenterAlignXOffset(FONT_NORMAL, str, DISPLAY_WIDTH), 135);
 }
 
 static void PrintDataScreen_Stats()
@@ -3949,23 +3938,23 @@ static void PrintDataScreen_Stats()
     //Base stats
     //HP
 	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_HP, base_x, base_y + base_y_offset*base_i);
-    if (sPokedexView->baseHP <= 19)
+    if (sPokedexView->baseHP <= 20)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseHP <= 49)
+    else if (sPokedexView->baseHP <= 50)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseHP <= 79)
+    else if (sPokedexView->baseHP <= 80)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseHP <= 99)
+    else if (sPokedexView->baseHP <= 100)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseHP <= 124)
+    else if (sPokedexView->baseHP <= 125)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
@@ -3976,23 +3965,23 @@ static void PrintDataScreen_Stats()
 
     //SpAttack
     PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_SpAttack, base_x+base_x_second_row, base_y + base_y_offset*base_i);
-	if (sPokedexView->baseSpAttack <= 19)
+	if (sPokedexView->baseSpAttack <= 20)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpAttack <= 49)
+    else if (sPokedexView->baseSpAttack <= 50)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpAttack <= 79)
+    else if (sPokedexView->baseSpAttack <= 80)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpAttack <= 99)
+    else if (sPokedexView->baseSpAttack <= 100)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpAttack <= 124)
+    else if (sPokedexView->baseSpAttack <= 125)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
@@ -4004,23 +3993,23 @@ static void PrintDataScreen_Stats()
 	base_i++;
     //Attack
 	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_Attack, base_x, base_y + base_y_offset*base_i);
-	if (sPokedexView->baseAttack <= 19)
+	if (sPokedexView->baseAttack <= 20)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseAttack <= 49)
+    else if (sPokedexView->baseAttack <= 50)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseAttack <= 79)
+    else if (sPokedexView->baseAttack <= 80)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseAttack <= 99)
+    else if (sPokedexView->baseAttack <= 100)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseAttack <= 124)
+    else if (sPokedexView->baseAttack <= 125)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
@@ -4031,23 +4020,23 @@ static void PrintDataScreen_Stats()
 
     //SpDefense
 	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_SpDefense, base_x+base_x_second_row, base_y + base_y_offset*base_i);
-	if (sPokedexView->baseSpDefense <= 19)
+	if (sPokedexView->baseSpDefense <= 20)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpDefense <= 49)
+    else if (sPokedexView->baseSpDefense <= 50)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpDefense <= 79)
+    else if (sPokedexView->baseSpDefense <= 80)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpDefense <= 99)
+    else if (sPokedexView->baseSpDefense <= 100)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpDefense <= 124)
+    else if (sPokedexView->baseSpDefense <= 125)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
@@ -4059,23 +4048,23 @@ static void PrintDataScreen_Stats()
 	base_i++;
     //Defense
 	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_Defense, base_x, base_y + base_y_offset*base_i);
-	if (sPokedexView->baseDefense <= 19)
+	if (sPokedexView->baseDefense <= 20)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseDefense <= 49)
+    else if (sPokedexView->baseDefense <= 50)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseDefense <= 79)
+    else if (sPokedexView->baseDefense <= 80)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseDefense <= 99)
+    else if (sPokedexView->baseDefense <= 100)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseDefense <= 124)
+    else if (sPokedexView->baseDefense <= 125)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_first_row, base_y + base_y_offset*base_i);
     }
@@ -4086,23 +4075,23 @@ static void PrintDataScreen_Stats()
 
     //Speed
 	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_Speed, base_x+base_x_second_row, base_y + base_y_offset*base_i);
-	if (sPokedexView->baseSpeed <= 19)
+	if (sPokedexView->baseSpeed <= 25)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpeed <= 49)
+    else if (sPokedexView->baseSpeed <= 50)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpeed <= 79)
+    else if (sPokedexView->baseSpeed <= 80)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpeed <= 99)
+    else if (sPokedexView->baseSpeed <= 100)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
-    else if (sPokedexView->baseSpeed <= 124)
+    else if (sPokedexView->baseSpeed <= 125)
     {
         PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_offset, base_y + base_y_offset*base_i);
     }
@@ -4115,7 +4104,7 @@ static void PrintDataScreen_Stats()
 
 static void PrintDataScreen_Abilities()
 {
-    u8 abilities_x = 10;
+    u8 abilities_x = 0;
     u8 abilities_y = 105;
     u8 abilities_y_offset = 15;
     u16 ability0;
@@ -4126,13 +4115,15 @@ static void PrintDataScreen_Abilities()
     ability0 = sPokedexView->ability0;
     ability1 = sPokedexView->ability1;
 	StringCopy(abilityString, gAbilitiesInfo[ability0].name);
-    PrintDataScreenText(WIN_INFO, FONT_NORMAL, abilityString, abilities_x, abilities_y);
 
     if (ability1 != ABILITY_NONE && ability1 != ability0)
     {
-		StringCopy(abilityString, gAbilitiesInfo[ability1].name);
-        PrintDataScreenText(WIN_INFO, FONT_NORMAL, abilityString, abilities_x, abilities_y+abilities_y_offset);
+        StringAppend(abilityString, sText_Abilities_Slash);
+		StringAppend(abilityString, gAbilitiesInfo[ability1].name);
     }
+
+    abilities_x = GetStringCenterAlignXOffset(FONT_SMALL, abilityString, DISPLAY_WIDTH);
+    PrintDataScreenText(WIN_INFO, FONT_NORMAL, abilityString, abilities_x, abilities_y);
 	
 }
 
@@ -4159,10 +4150,8 @@ static void Task_LoadDataScreen(u8 taskId)
         CopyToBgTilemapBuffer(3, gPokedexSizeScreen_Tilemap, 0, 0);
         FillWindowPixelBuffer(WIN_INFO, PIXEL_FILL(0));
         FillWindowPixelBuffer(WIN_DATA_STATS, PIXEL_FILL(0));
-        FillWindowPixelBuffer(WIN_DATA_ABILITIES, PIXEL_FILL(0));
         PutWindowTilemap(WIN_INFO);
         PutWindowTilemap(WIN_DATA_STATS);
-        PutWindowTilemap(WIN_DATA_ABILITIES);
         gMain.state++;
         break;
     case 2:
@@ -4193,7 +4182,6 @@ static void Task_LoadDataScreen(u8 taskId)
         gTasks[taskId].tMonSpriteId = spriteId;
         CopyWindowToVram(WIN_INFO, COPYWIN_FULL);
         CopyWindowToVram(WIN_DATA_STATS, COPYWIN_FULL);
-        CopyWindowToVram(WIN_DATA_ABILITIES, COPYWIN_FULL);
         CopyBgTilemapBufferToVram(1);
         CopyBgTilemapBufferToVram(2);
         CopyBgTilemapBufferToVram(3);

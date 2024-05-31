@@ -11,12 +11,12 @@ SINGLE_BATTLE_TEST("Safety Goggles block powder and spore moves")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STUN_SPORE].powderMove);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_ABRA) { Item(ITEM_SAFETY_GOGGLES); }
+        OPPONENT(SPECIES_FEISTYCUFF) { Item(ITEM_SAFETY_GOGGLES); }
     } WHEN {
         TURN { MOVE(player, MOVE_STUN_SPORE); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, player);
-        MESSAGE("Foe Abra is not affected thanks to its SafetyGoggles!");
+        MESSAGE("Foe Feistycuff is not affected thanks to its SafetyGoggles!");
     }
 }
 

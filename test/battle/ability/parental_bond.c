@@ -80,11 +80,11 @@ DOUBLE_BATTLE_TEST("Parental Bond does not convert multi-target moves into a two
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].strikeCount < 2);
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].target == MOVE_TARGET_FOES_AND_ALLY);
-        ASSUME(gSpeciesInfo[SPECIES_PIDGEY].types[1] == TYPE_FLYING);
+        ASSUME(gSpeciesInfo[SPECIES_DISCUTTLE].types[1] == TYPE_FLYING);
         PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
-        PLAYER(SPECIES_PIDGEY);
+        PLAYER(SPECIES_DISCUTTLE);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PIDGEY);
+        OPPONENT(SPECIES_DISCUTTLE);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE, megaEvolve: TRUE); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentLeft, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
@@ -93,8 +93,8 @@ DOUBLE_BATTLE_TEST("Parental Bond does not convert multi-target moves into a two
         MESSAGE("Kangaskhan has Mega Evolved into Mega Kangaskhan!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, playerLeft);
         HP_BAR(opponentLeft);
-        MESSAGE("It doesn't affect Pidgey…");
-        MESSAGE("It doesn't affect Foe Pidgey…");
+        MESSAGE("It doesn't affect Discuttle…");
+        MESSAGE("It doesn't affect Foe Discuttle…");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
@@ -106,7 +106,7 @@ DOUBLE_BATTLE_TEST("Parental Bond does not convert multi-target moves into a two
 SINGLE_BATTLE_TEST("Parental Bond-converted moves only hit once on Lightning Rod/Storm Drain mons")
 {
     u16 move, species, ability, type;
-    PARAMETRIZE { move = MOVE_THUNDERBOLT; ability = ABILITY_LIGHTNING_ROD; species = SPECIES_RAICHU; type = TYPE_ELECTRIC; }
+    PARAMETRIZE { move = MOVE_THUNDERBOLT; ability = ABILITY_LIGHTNING_ROD; species = SPECIES_ASTROHAUT; type = TYPE_ELECTRIC; }
     PARAMETRIZE { move = MOVE_SURF; ability = ABILITY_STORM_DRAIN; species = SPECIES_LILEEP; type = TYPE_WATER; }
     GIVEN {
         ASSUME(gMovesInfo[move].strikeCount < 2);

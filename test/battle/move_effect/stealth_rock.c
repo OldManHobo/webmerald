@@ -10,9 +10,9 @@ SINGLE_BATTLE_TEST("Stealth Rock damage on switch in based on typing")
 {
     u32 species, divisor;
 
-    PARAMETRIZE { species = SPECIES_CHARIZARD; divisor = 2; } // Fire / Flying
-    PARAMETRIZE { species = SPECIES_PIDGEOT; divisor = 4; } // Flying
-    PARAMETRIZE { species = SPECIES_RATICATE; divisor = 8; } // Normal dmg
+    PARAMETRIZE { species = SPECIES_SOLADOR; divisor = 2; } // Fire / Flying
+    PARAMETRIZE { species = SPECIES_WEBILLITE; divisor = 4; } // Flying
+    PARAMETRIZE { species = SPECIES_BANAGON; divisor = 8; } // Normal dmg
     PARAMETRIZE { species = SPECIES_GOLEM; divisor = 16; } // Ground not very effective
     PARAMETRIZE { species = SPECIES_STEELIX; divisor = 32; } // Ground/Steel not very effective
 
@@ -34,8 +34,8 @@ SINGLE_BATTLE_TEST("Stealth Rock damage on switch in based on typing")
 SINGLE_BATTLE_TEST("Stealth Rock damages the correct pokemon when Eject Button is triggered")
 {
     GIVEN {
-        PLAYER(SPECIES_METAPOD) { Item(ITEM_EJECT_BUTTON); }
-        PLAYER(SPECIES_METAPOD);
+        PLAYER(SPECIES_COATOAC) { Item(ITEM_EJECT_BUTTON); }
+        PLAYER(SPECIES_COATOAC);
         OPPONENT(SPECIES_JOLTEON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_STEALTH_ROCK); MOVE(player, MOVE_HARDEN); }
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Stealth Rock damages the correct pokemon when Eject Button i
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUICK_ATTACK, opponent);
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_HARDEN, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Go! Metapod!");
+        MESSAGE("Go! Coatoac!");
         HP_BAR(player);
     } THEN {
         EXPECT_EQ(opponent->hp, opponent->maxHP);
@@ -56,9 +56,9 @@ SINGLE_BATTLE_TEST("Stealth Rock damages the correct pokemon when Eject Button i
 DOUBLE_BATTLE_TEST("Stealth Rock damages the correct pokemon when Eject Button is triggered in double battle")
 {
     GIVEN {
-        PLAYER(SPECIES_METAPOD) { Item(ITEM_EJECT_BUTTON); }
-        PLAYER(SPECIES_METAPOD) { Item(ITEM_EJECT_BUTTON); }
-        PLAYER(SPECIES_METAPOD);
+        PLAYER(SPECIES_COATOAC) { Item(ITEM_EJECT_BUTTON); }
+        PLAYER(SPECIES_COATOAC) { Item(ITEM_EJECT_BUTTON); }
+        PLAYER(SPECIES_COATOAC);
         OPPONENT(SPECIES_JOLTEON);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -67,7 +67,7 @@ DOUBLE_BATTLE_TEST("Stealth Rock damages the correct pokemon when Eject Button i
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEALTH_ROCK, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-        MESSAGE("Go! Metapod!");
+        MESSAGE("Go! Coatoac!");
         HP_BAR(playerLeft);
     } THEN {
         EXPECT_EQ(opponentLeft->hp, opponentLeft->maxHP);

@@ -68,7 +68,7 @@ DOUBLE_BATTLE_TEST("Volt Absorb does not stop Electric Typed Explosion from dama
         ASSUME(gMovesInfo[MOVE_EXPLOSION].effect == EFFECT_EXPLOSION);
         ASSUME(gMovesInfo[MOVE_EXPLOSION].type == TYPE_NORMAL);
         PLAYER(SPECIES_JOLTEON) { Ability(ABILITY_VOLT_ABSORB); HP(1); MaxHP(100); }
-        PLAYER(SPECIES_ABRA);
+        PLAYER(SPECIES_FEISTYCUFF);
         OPPONENT(SPECIES_GRAVELER_ALOLAN) { Ability(ABILITY_GALVANIZE); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {

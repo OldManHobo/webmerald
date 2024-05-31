@@ -12,10 +12,10 @@ SINGLE_BATTLE_TEST("Ivy Cudgel changes the move type depending on the form of Og
     u16 ogerpon;
     u16 item;
 
-    PARAMETRIZE { species = SPECIES_BLASTOISE; ogerpon = SPECIES_OGERPON_TEAL_MASK; item = ITEM_NONE; }
-    PARAMETRIZE { species = SPECIES_CHARIZARD; ogerpon = SPECIES_OGERPON_CORNERSTONE_MASK; item = ITEM_CORNERSTONE_MASK; }
-    PARAMETRIZE { species = SPECIES_CHARIZARD; ogerpon = SPECIES_OGERPON_WELLSPRING_MASK; item = ITEM_WELLSPRING_MASK; }
-    PARAMETRIZE { species = SPECIES_VENUSAUR; ogerpon = SPECIES_OGERPON_HEARTHFLAME_MASK;  item = ITEM_HEARTHFLAME_MASK; }
+    PARAMETRIZE { species = SPECIES_LEVIAMAWL; ogerpon = SPECIES_OGERPON_TEAL_MASK; item = ITEM_NONE; }
+    PARAMETRIZE { species = SPECIES_SOLADOR; ogerpon = SPECIES_OGERPON_CORNERSTONE_MASK; item = ITEM_CORNERSTONE_MASK; }
+    PARAMETRIZE { species = SPECIES_SOLADOR; ogerpon = SPECIES_OGERPON_WELLSPRING_MASK; item = ITEM_WELLSPRING_MASK; }
+    PARAMETRIZE { species = SPECIES_KAZEIYAGA; ogerpon = SPECIES_OGERPON_HEARTHFLAME_MASK;  item = ITEM_HEARTHFLAME_MASK; }
 
     GIVEN {
         PLAYER(ogerpon) { Item(item); }
@@ -40,7 +40,7 @@ SINGLE_BATTLE_TEST("Ivy Cudgel does not change the move type if used by Pokémon
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(item); }
-        OPPONENT(SPECIES_BLASTOISE);
+        OPPONENT(SPECIES_LEVIAMAWL);
     } WHEN {
         TURN { MOVE(player, MOVE_IVY_CUDGEL); }
     } SCENE {

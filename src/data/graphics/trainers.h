@@ -196,8 +196,8 @@ const u32 gTrainerPalette_NinjaBoy[] = INCBIN_U32("graphics/trainers/front_pics/
 const u32 gTrainerFrontPic_BattleGirl[] = INCBIN_U32("graphics/trainers/front_pics/battle_girl.4bpp.lz");
 const u32 gTrainerPalette_BattleGirl[] = INCBIN_U32("graphics/trainers/front_pics/battle_girl.gbapal.lz");
 
-const u32 gTrainerFrontPic_ParasolLady[] = INCBIN_U32("graphics/trainers/front_pics/parasol_lady.4bpp.lz");
-const u32 gTrainerPalette_ParasolLady[] = INCBIN_U32("graphics/trainers/front_pics/parasol_lady.gbapal.lz");
+const u32 gTrainerFrontPic_AmblaziaolLady[] = INCBIN_U32("graphics/trainers/front_pics/parasol_lady.4bpp.lz");
+const u32 gTrainerPalette_AmblaziaolLady[] = INCBIN_U32("graphics/trainers/front_pics/parasol_lady.gbapal.lz");
 
 const u32 gTrainerFrontPic_SwimmerF[] = INCBIN_U32("graphics/trainers/front_pics/swimmer_f.4bpp.lz");
 const u32 gTrainerPalette_SwimmerF[] = INCBIN_U32("graphics/trainers/front_pics/swimmer_f.gbapal.lz");
@@ -376,7 +376,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(DRAGON_TAMER, DragonTamer),
     TRAINER_SPRITE(NINJA_BOY, NinjaBoy),
     TRAINER_SPRITE(BATTLE_GIRL, BattleGirl),
-    TRAINER_SPRITE(PARASOL_LADY, ParasolLady),
+    TRAINER_SPRITE(PARASOL_LADY, AmblaziaolLady),
     TRAINER_SPRITE(SWIMMER_F, SwimmerF),
     TRAINER_SPRITE(TWINS, Twins),
     TRAINER_SPRITE(SAILOR, Sailor),

@@ -4348,7 +4348,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "It licks its palms that are sweetened by\n"
             "being soaked in honey. A Teddiursa makes\n"
             "its own honey by blending fruits and pollen\n"
-            "collected by Beedrill."),
+            "collected by Silwing."),
         .pokemonScale = 455,
         .pokemonOffset = 19,
         .trainerScale = 256,

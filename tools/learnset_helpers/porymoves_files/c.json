@@ -1,5 +1,5 @@
 {
-  "BULBASAUR": {
+  "GANERA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -81,7 +81,7 @@
     ],
     "TutorMoves": []
   },
-  "IVYSAUR": {
+  "GYANNEX": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -171,7 +171,7 @@
     ],
     "TutorMoves": []
   },
-  "VENUSAUR": {
+  "KAZEIYAGA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -267,7 +267,7 @@
     ],
     "TutorMoves": []
   },
-  "CHARMANDER": {
+  "TEPILLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -353,7 +353,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "CHARMELEON": {
+  "ESCORCHES": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -443,7 +443,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "CHARIZARD": {
+  "SOLADOR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -547,7 +547,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "SQUIRTLE": {
+  "RELENTOOTH": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -638,7 +638,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "WARTORTLE": {
+  "SNARETHAN": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -737,7 +737,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "BLASTOISE": {
+  "LEVIAMAWL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -843,7 +843,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "CATERPIE": {
+  "COATTAIL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -859,7 +859,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "METAPOD": {
+  "COATOAC": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -878,7 +878,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "BUTTERFREE": {
+  "CYCLIL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -953,7 +953,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "WEEDLE": {
+  "ROADILLO": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -969,7 +969,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "KAKUNA": {
+  "FELIGHT": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -988,7 +988,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "BEEDRILL": {
+  "SILWING": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1054,7 +1054,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "PIDGEY": {
+  "DISCUTTLE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1119,7 +1119,7 @@
     ],
     "TutorMoves": []
   },
-  "PIDGEOTTO": {
+  "TENNADISH": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1192,7 +1192,7 @@
     ],
     "TutorMoves": []
   },
-  "PIDGEOT": {
+  "WEBILLITE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1270,7 +1270,7 @@
     ],
     "TutorMoves": []
   },
-  "RATTATA": {
+  "BANANEE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1340,7 +1340,7 @@
     ],
     "TutorMoves": []
   },
-  "RATICATE": {
+  "BANAGON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1423,7 +1423,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "SPEAROW": {
+  "SALANANA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1490,7 +1490,7 @@
     ],
     "TutorMoves": []
   },
-  "FEAROW": {
+  "TADEA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1566,7 +1566,7 @@
     ],
     "TutorMoves": []
   },
-  "EKANS": {
+  "BATRACHITE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1634,7 +1634,7 @@
     ],
     "TutorMoves": []
   },
-  "ARBOK": {
+  "TOAGNITIVE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1711,7 +1711,7 @@
     ],
     "TutorMoves": []
   },
-  "PIKACHU": {
+  "FOMPOUS": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1802,7 +1802,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "RAICHU": {
+  "ASTROHAUT": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1874,7 +1874,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "SANDSHREW": {
+  "WIRLIXPLOR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1951,7 +1951,7 @@
     ],
     "TutorMoves": []
   },
-  "SANDSLASH": {
+  "GALACTIVY": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2037,7 +2037,7 @@
     ],
     "TutorMoves": []
   },
-  "NIDORAN_F": {
+  "XENOWEED": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2111,7 +2111,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "NIDORINA": {
+  "COILARVA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2188,7 +2188,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "NIDOQUEEN": {
+  "MORPHYDRA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2272,7 +2272,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "NIDORAN_M": {
+  "DRAMAGO": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2346,7 +2346,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "NIDORINO": {
+  "RUMOSS": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2423,7 +2423,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "NIDOKING": {
+  "LIAYARD": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2507,7 +2507,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "CLEFAIRY": {
+  "CYBIRD": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2608,7 +2608,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "CLEFABLE": {
+  "PTEROCAST": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2692,7 +2692,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "VULPIX": {
+  "BEWANDER": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2760,7 +2760,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "NINETALES": {
+  "BEWARER": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2822,7 +2822,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "JIGGLYPUFF": {
+  "BEWONDER": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2915,7 +2915,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "WIGGLYTUFF": {
+  "REBUGGER": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2994,7 +2994,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "ZUBAT": {
+  "MYRIEPROM": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3056,7 +3056,7 @@
     ],
     "TutorMoves": []
   },
-  "GOLBAT": {
+  "AMPRABICA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3127,7 +3127,7 @@
     ],
     "TutorMoves": []
   },
-  "ODDISH": {
+  "CAFFINERGY": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3193,7 +3193,7 @@
     ],
     "TutorMoves": []
   },
-  "GLOOM": {
+  "NITTLE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3267,7 +3267,7 @@
     ],
     "TutorMoves": []
   },
-  "VILEPLUME": {
+  "SEARTICA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3323,7 +3323,7 @@
     ],
     "TutorMoves": []
   },
-  "PARAS": {
+  "AMBLAZIA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3396,7 +3396,7 @@
     ],
     "TutorMoves": []
   },
-  "PARASECT": {
+  "SILICTAL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3478,7 +3478,7 @@
     ],
     "TutorMoves": []
   },
-  "VENONAT": {
+  "CRYSTURDY": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3556,7 +3556,7 @@
     ],
     "TutorMoves": []
   },
-  "VENOMOTH": {
+  "QUARDIAN": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3644,7 +3644,7 @@
     ],
     "TutorMoves": []
   },
-  "DIGLETT": {
+  "SCRILL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3712,7 +3712,7 @@
     ],
     "TutorMoves": []
   },
-  "DUGTRIO": {
+  "OVERSCRILL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3793,7 +3793,7 @@
     ],
     "TutorMoves": []
   },
-  "MEOWTH": {
+  "YOCKU": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3869,7 +3869,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "PERSIAN": {
+  "KURAIJIN": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -3951,7 +3951,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "PSYDUCK": {
+  "THUNDAIJU": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4033,7 +4033,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "GOLDUCK": {
+  "SWORMO": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4129,7 +4129,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "MANKEY": {
+  "SILKRYSTAL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4217,7 +4217,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "PRIMEAPE": {
+  "ARACHTITE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4318,7 +4318,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "GROWLITHE": {
+  "CRAGOYLE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4389,7 +4389,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "ARCANINE": {
+  "GARGANTIC": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4454,7 +4454,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "POLIWAG": {
+  "PUPPETTE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4526,7 +4526,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "POLIWHIRL": {
+  "VENTRILETTE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4612,7 +4612,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "POLIWRATH": {
+  "CARRIONETTE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4690,7 +4690,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "ABRA": {
+  "FEISTYCUFF": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4735,7 +4735,7 @@
     ],
     "TutorMoves": []
   },
-  "KADABRA": {
+  "KNUCKOUT": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4817,7 +4817,7 @@
     ],
     "TutorMoves": []
   },
-  "ALAKAZAM": {
+  "PHISHOOKE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4900,7 +4900,7 @@
     ],
     "TutorMoves": []
   },
-  "MACHOP": {
+  "MACKARREL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4983,7 +4983,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "MACHOKE": {
+  "SNOUTUSSLE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -5070,7 +5070,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "MACHAMP": {
+  "GRAPPOUCH": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -5158,7 +5158,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "BELLSPROUT": {
+  "BANSHARK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -5233,7 +5233,7 @@
     ],
     "TutorMoves": []
   },
-  "WEEPINBELL": {
+  "SOBANDIT": {
     "LevelMoves": [
       {
         "Level": 1,
