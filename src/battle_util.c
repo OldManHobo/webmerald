@@ -8981,11 +8981,18 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         break;
     case ABILITY_SPELLBOUND:
         if (IS_MOVE_SPECIAL(move))
-             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
         case ABILITY_REFRACTION:
-        if (gMovesInfo[move].beamMove) 
-             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        if (gMovesInfo[move].beamMove 
+            && (gSideStatuses[GetBattlerSide(gBattlerAttacker)] & SIDE_STATUS_REFLECT
+            || gSideStatuses[GetBattlerSide(gBattlerAttacker)] & SIDE_STATUS_LIGHTSCREEN)) 
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        else if (gMovesInfo[move].beamMove 
+            && (gSideStatuses[GetBattlerSide(gBattlerAttacker)] & SIDE_STATUS_REFLECT
+            && gSideStatuses[GetBattlerSide(gBattlerAttacker)] & SIDE_STATUS_LIGHTSCREEN))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
+        break; 
     case ABILITY_ROCKY_PAYLOAD:
         if (moveType == TYPE_ROCK)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
@@ -9335,7 +9342,7 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
     case HOLD_EFFECT_LIGHT_BALL:
-        if (atkBaseSpeciesId == SPECIES_PIKACHU && (B_LIGHT_BALL_ATTACK_BOOST >= GEN_4 || IS_MOVE_SPECIAL(move)))
+        if (atkBaseSpeciesId == SPECIES_FOMPOUS && (B_LIGHT_BALL_ATTACK_BOOST >= GEN_4 || IS_MOVE_SPECIAL(move)))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
     case HOLD_EFFECT_CHOICE_BAND:
@@ -11074,7 +11081,10 @@ u32 GetBattlerMoveTargetType(u32 battler, u32 move)
     if (gMovesInfo[move].effect == EFFECT_EXPANDING_FORCE
         && IsBattlerTerrainAffected(battler, STATUS_FIELD_PSYCHIC_TERRAIN))
         return MOVE_TARGET_BOTH;
-    else
+    else if (gMovesInfo[move].beamMove 
+        && GetBattlerAbility(battler) == ABILITY_REFRACTION)
+        return MOVE_TARGET_BOTH;
+    else     
         return gMovesInfo[move].target;
 }
 
@@ -11289,7 +11299,7 @@ bool8 IsMonBannedFromSkyBattles(u16 species)
     switch (species)
     {
 #if B_SKY_BATTLE_STRICT_ELIGIBILITY == TRUE
-        case SPECIES_SPEAROW:
+        case SPECIES_SALANANA:
         case SPECIES_FARFETCHD:
         case SPECIES_DODUO:
         case SPECIES_DODRIO:
