@@ -8303,6 +8303,7 @@ bool32 IsBattlerProtected(u32 battler, u32 move)
 static bool32 IsBattlerGrounded2(u32 battler, bool32 considerInverse)
 {
     u32 holdEffect = GetBattlerHoldEffect(battler, TRUE);
+    u16 species;
 
     if (holdEffect == HOLD_EFFECT_IRON_BALL)
         return TRUE;
@@ -8319,6 +8320,8 @@ static bool32 IsBattlerGrounded2(u32 battler, bool32 considerInverse)
     if (holdEffect == HOLD_EFFECT_AIR_BALLOON)
         return FALSE;
     if (GetBattlerAbility(battler) == ABILITY_LEVITATE)
+        return FALSE;
+    if (gSpeciesInfo[species].canLevitate)
         return FALSE;
     if (IS_BATTLER_OF_TYPE(battler, TYPE_FLYING) && (!considerInverse || !FlagGet(B_FLAG_INVERSE_BATTLE)))
         return FALSE;

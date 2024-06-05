@@ -54,14 +54,14 @@ static const struct FormChange sSilwingFormChangeTable[] = {
 };
 #endif //P_FAMILY_ROADILLO
 
-#if P_FAMILY_DISCUTTLE
-static const struct FormChange sWebilliteFormChangeTable[] = {
+#if P_FAMILY_FUZZSNAP
+static const struct FormChange sFlutterpopFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_WEBILLITE_MEGA, ITEM_WEBILLITEITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_FLUTTERPOP_MEGA, ITEM_FLUTTERPOPITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_DISCUTTLE
+#endif //P_FAMILY_FUZZSNAP
 
 #if P_FAMILY_FOMPOUS
 static const struct FormChange sFompousFormChangeTable[] =

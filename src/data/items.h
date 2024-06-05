@@ -4726,14 +4726,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_WEBILLITEITE] =
+    [ITEM_FLUTTERPOPITE] =
     {
-        .name = _("Webilliteite"),
+        .name = _("Flutterpopite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Webillite to Mega\n"
+            "Flutterpop to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

@@ -38,14 +38,14 @@ gCryTable::
 	cry Cry_SilwingMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ROADILLO
-.if P_FAMILY_DISCUTTLE == TRUE
-	cry Cry_Discuttle
-	cry Cry_Tennadish
-	cry Cry_Webillite
+.if P_FAMILY_FUZZSNAP == TRUE
+	cry Cry_Fuzzsnap
+	cry Cry_Pupacrack
+	cry Cry_Flutterpop
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_WebilliteMega
+	cry Cry_FlutterpopMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_DISCUTTLE
+.endif @ P_FAMILY_FUZZSNAP
 .if P_FAMILY_BANANEE == TRUE
 	cry Cry_Bananee
 	cry Cry_Banagon
@@ -2464,14 +2464,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_SilwingMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ROADILLO
-.if P_FAMILY_DISCUTTLE == TRUE
-	cry_reverse Cry_Discuttle
-	cry_reverse Cry_Tennadish
-	cry_reverse Cry_Webillite
+.if P_FAMILY_FUZZSNAP == TRUE
+	cry_reverse Cry_Fuzzsnap
+	cry_reverse Cry_Pupacrack
+	cry_reverse Cry_Flutterpop
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_WebilliteMega
+	cry_reverse Cry_FlutterpopMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_DISCUTTLE
+.endif @ P_FAMILY_FUZZSNAP
 .if P_FAMILY_BANANEE == TRUE
 	cry_reverse Cry_Bananee
 	cry_reverse Cry_Banagon

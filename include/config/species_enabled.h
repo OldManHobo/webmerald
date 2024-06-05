@@ -61,7 +61,7 @@
 #define P_FAMILY_RELENTOOTH                P_GEN_1_POKEMON
 #define P_FAMILY_COATTAIL                P_GEN_1_POKEMON
 #define P_FAMILY_ROADILLO                  P_GEN_1_POKEMON
-#define P_FAMILY_DISCUTTLE                  P_GEN_1_POKEMON
+#define P_FAMILY_FUZZSNAP                  P_GEN_1_POKEMON
 #define P_FAMILY_BANANEE                 P_GEN_1_POKEMON
 #define P_FAMILY_SALANANA                 P_GEN_1_POKEMON
 #define P_FAMILY_BATRACHITE                   P_GEN_1_POKEMON

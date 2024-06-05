@@ -58,15 +58,15 @@ static const u16 sSilwingFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_ROADILLO
 
-#if P_FAMILY_DISCUTTLE
-static const u16 sWebilliteFormSpeciesIdTable[] = {
-    SPECIES_WEBILLITE,
+#if P_FAMILY_FUZZSNAP
+static const u16 sFlutterpopFormSpeciesIdTable[] = {
+    SPECIES_FLUTTERPOP,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_WEBILLITE_MEGA,
+    SPECIES_FLUTTERPOP_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_DISCUTTLE
+#endif //P_FAMILY_FUZZSNAP
 
 #if P_FAMILY_BANANEE
 static const u16 sBananeeFormSpeciesIdTable[] = {

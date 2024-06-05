@@ -3208,7 +3208,7 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 12,
-    .species = SPECIES_DISCUTTLE,
+    .species = SPECIES_FUZZSNAP,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_THUNDERSHOCK, MOVE_FACADE, MOVE_STRUGGLE_BUG, MOVE_CHARGE}
     },
@@ -7720,30 +7720,30 @@ static const struct TrainerMon sParty_Crissy[] = {
 static const struct TrainerMon sParty_Rick[] = {
     {
     .lvl = 4,
-    .species = SPECIES_DISCUTTLE,
+    .species = SPECIES_FUZZSNAP,
     },
     {
     .lvl = 4,
-    .species = SPECIES_DISCUTTLE,
+    .species = SPECIES_FUZZSNAP,
     }
 };
 
 static const struct TrainerMon sParty_Lyle[] = {
     {
     .lvl = 3,
-    .species = SPECIES_DISCUTTLE,
+    .species = SPECIES_FUZZSNAP,
     },
     {
     .lvl = 3,
-    .species = SPECIES_DISCUTTLE,
+    .species = SPECIES_FUZZSNAP,
     },
     {
     .lvl = 3,
-    .species = SPECIES_DISCUTTLE,
+    .species = SPECIES_FUZZSNAP,
     },
     {
     .lvl = 3,
-    .species = SPECIES_DISCUTTLE,
+    .species = SPECIES_FUZZSNAP,
     }
 };
 
@@ -7751,7 +7751,7 @@ static const struct TrainerMon sParty_Jose[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 8,
-    .species = SPECIES_DISCUTTLE,
+    .species = SPECIES_FUZZSNAP,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),

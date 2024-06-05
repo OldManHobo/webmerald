@@ -1123,7 +1123,7 @@
       "MOVE_SWORDS_DANCE"
     ]
   },
-  "DISCUTTLE": {
+  "FUZZSNAP": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1194,7 +1194,7 @@
       "MOVE_SUBSTITUTE"
     ]
   },
-  "TENNADISH": {
+  "PUPACRACK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1273,7 +1273,7 @@
       "MOVE_SUBSTITUTE"
     ]
   },
-  "WEBILLITE": {
+  "FLUTTERPOP": {
     "LevelMoves": [
       {
         "Level": 1,

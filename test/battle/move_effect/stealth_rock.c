@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Stealth Rock damage on switch in based on typing")
     u32 species, divisor;
 
     PARAMETRIZE { species = SPECIES_SOLADOR; divisor = 2; } // Fire / Flying
-    PARAMETRIZE { species = SPECIES_WEBILLITE; divisor = 4; } // Flying
+    PARAMETRIZE { species = SPECIES_FLUTTERPOP; divisor = 4; } // Flying
     PARAMETRIZE { species = SPECIES_BANAGON; divisor = 8; } // Normal dmg
     PARAMETRIZE { species = SPECIES_GOLEM; divisor = 16; } // Ground not very effective
     PARAMETRIZE { species = SPECIES_STEELIX; divisor = 32; } // Ground/Steel not very effective

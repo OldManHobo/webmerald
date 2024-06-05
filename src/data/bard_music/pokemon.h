@@ -132,7 +132,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_DISCUTTLE] = {
+    [SPECIES_FUZZSNAP] = {
         { .songLengthId = 17 },
         { .songLengthId = 12 },
         { .songLengthId = 51 },
@@ -140,7 +140,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_TENNADISH] = {
+    [SPECIES_PUPACRACK] = {
         { .songLengthId = 17 },
         { .songLengthId = 12 },
         { .songLengthId = 24 },
@@ -148,7 +148,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_WEBILLITE] = {
+    [SPECIES_FLUTTERPOP] = {
         { .songLengthId = 17 },
         { .songLengthId = 12 },
         { .songLengthId = 21 },

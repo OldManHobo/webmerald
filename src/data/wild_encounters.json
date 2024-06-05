@@ -323,7 +323,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_DISCUTTLE"
+                "species": "SPECIES_FUZZSNAP"
               },
               {
                 "min_level": 2,
@@ -343,7 +343,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_DISCUTTLE"
+                "species": "SPECIES_FUZZSNAP"
               },
               {
                 "min_level": 3,
@@ -363,7 +363,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_DISCUTTLE"
+                "species": "SPECIES_FUZZSNAP"
               }
             ]
           },
@@ -1831,7 +1831,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DISCUTTLE"
+                "species": "SPECIES_FUZZSNAP"
               },
               {
                 "min_level": 5,
@@ -1851,7 +1851,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DISCUTTLE"
+                "species": "SPECIES_FUZZSNAP"
               },
               {
                 "min_level": 5,
@@ -1871,7 +1871,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DISCUTTLE"
+                "species": "SPECIES_FUZZSNAP"
               },
               {
                 "min_level": 5,

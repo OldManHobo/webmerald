@@ -17,9 +17,9 @@
 #define SPECIES_ROADILLO                                  13
 #define SPECIES_FELIGHT                                  14
 #define SPECIES_SILWING                                15
-#define SPECIES_DISCUTTLE                                  16
-#define SPECIES_TENNADISH                               17
-#define SPECIES_WEBILLITE                                 18
+#define SPECIES_FUZZSNAP                                  16
+#define SPECIES_PUPACRACK                               17
+#define SPECIES_FLUTTERPOP                                 18
 #define SPECIES_BANANEE                                 19
 #define SPECIES_BANAGON                                20
 #define SPECIES_SALANANA                                 21
@@ -972,7 +972,7 @@
 #define SPECIES_SOLADOR_MEGA_Y                        908
 #define SPECIES_LEVIAMAWL_MEGA                          909
 #define SPECIES_SILWING_MEGA                           910
-#define SPECIES_WEBILLITE_MEGA                            911
+#define SPECIES_FLUTTERPOP_MEGA                            911
 #define SPECIES_PHISHOOKE_MEGA                           912
 #define SPECIES_SLOWBRO_MEGA                            913
 #define SPECIES_GENGAR_MEGA                             914

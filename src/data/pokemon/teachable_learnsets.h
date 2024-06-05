@@ -564,8 +564,8 @@ static const u16 sSilwingTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ROADILLO
 
-#if P_FAMILY_DISCUTTLE
-static const u16 sDiscuttleTeachableLearnset[] = {
+#if P_FAMILY_FUZZSNAP
+static const u16 sFuzzsnapTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_LIGHT_SCREEN,
     MOVE_FRUSTRATION,
@@ -585,7 +585,7 @@ static const u16 sDiscuttleTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTennadishTeachableLearnset[] = {
+static const u16 sPupacrackTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_LIGHT_SCREEN,
     MOVE_PROTECT,
@@ -606,7 +606,7 @@ static const u16 sTennadishTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sWebilliteTeachableLearnset[] = {
+static const u16 sFlutterpopTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_HYPER_BEAM,
     MOVE_LIGHT_SCREEN,
@@ -627,7 +627,7 @@ static const u16 sWebilliteTeachableLearnset[] = {
     MOVE_FLASH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DISCUTTLE
+#endif //P_FAMILY_FUZZSNAP
 
 #if P_FAMILY_BANANEE
 static const u16 sBananeeTeachableLearnset[] = {

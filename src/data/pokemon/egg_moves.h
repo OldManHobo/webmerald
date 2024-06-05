@@ -62,8 +62,8 @@ const u16 gEggMoves[] = {
         MOVE_AURA_SPHERE),
 #endif //P_FAMILY_RELENTOOTH
 
-#if P_FAMILY_DISCUTTLE
-    egg_moves(DISCUTTLE,
+#if P_FAMILY_FUZZSNAP
+    egg_moves(FUZZSNAP,
         MOVE_PURSUIT,
         MOVE_FEINT_ATTACK,
         MOVE_FORESIGHT,
@@ -73,7 +73,7 @@ const u16 gEggMoves[] = {
         MOVE_BRAVE_BIRD,
         MOVE_UPROAR,
         MOVE_DEFOG),
-#endif //P_FAMILY_DISCUTTLE
+#endif //P_FAMILY_FUZZSNAP
 
 #if P_FAMILY_BANANEE
     egg_moves(BANANEE,

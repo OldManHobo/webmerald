@@ -201,8 +201,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SilwingMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ROADILLO
 
-#if P_FAMILY_DISCUTTLE
-static const union AnimCmd sAnim_Discuttle_1[] =
+#if P_FAMILY_FUZZSNAP
+static const union AnimCmd sAnim_Fuzzsnap_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -215,14 +215,14 @@ static const union AnimCmd sAnim_Discuttle_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Tennadish_1[] =
+static const union AnimCmd sAnim_Pupacrack_1[] =
 {
     ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Webillite_1[] =
+static const union AnimCmd sAnim_Flutterpop_1[] =
 {
     ANIMCMD_FRAME(0, 25),
     ANIMCMD_FRAME(1, 25),
@@ -231,9 +231,9 @@ static const union AnimCmd sAnim_Webillite_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(WebilliteMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(FlutterpopMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_DISCUTTLE
+#endif //P_FAMILY_FUZZSNAP
 
 #if P_FAMILY_BANANEE
 static const union AnimCmd sAnim_Bananee_1[] =
@@ -10156,14 +10156,14 @@ SINGLE_ANIMATION(Silwing);
 SINGLE_ANIMATION(SilwingMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ROADILLO
-#if P_FAMILY_DISCUTTLE
-SINGLE_ANIMATION(Discuttle);
-SINGLE_ANIMATION(Tennadish);
-SINGLE_ANIMATION(Webillite);
+#if P_FAMILY_FUZZSNAP
+SINGLE_ANIMATION(Fuzzsnap);
+SINGLE_ANIMATION(Pupacrack);
+SINGLE_ANIMATION(Flutterpop);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(WebilliteMega);
+SINGLE_ANIMATION(FlutterpopMega);
 #endif
-#endif //P_FAMILY_DISCUTTLE
+#endif //P_FAMILY_FUZZSNAP
 #if P_FAMILY_BANANEE
 SINGLE_ANIMATION(Bananee);
 SINGLE_ANIMATION(Banagon);

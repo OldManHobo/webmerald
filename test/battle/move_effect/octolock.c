@@ -72,17 +72,17 @@ SINGLE_BATTLE_TEST("Octolock Defense reduction is prevented by Big Pecks")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_DISCUTTLE) { Ability(ABILITY_BIG_PECKS); }
+        OPPONENT(SPECIES_FUZZSNAP) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(player, MOVE_OCTOLOCK); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OCTOLOCK, player);
-        MESSAGE("Foe Discuttle can no longer escape because of Octolock!");
+        MESSAGE("Foe Fuzzsnap can no longer escape because of Octolock!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        NOT MESSAGE("Foe Discuttle's Defense fell!");
+        NOT MESSAGE("Foe Fuzzsnap's Defense fell!");
         ABILITY_POPUP(opponent, ABILITY_BIG_PECKS);
-        MESSAGE("Foe Discuttle's Big Pecks prevents Defense loss!");
-        MESSAGE("Foe Discuttle's Sp. Def fell!");
+        MESSAGE("Foe Fuzzsnap's Big Pecks prevents Defense loss!");
+        MESSAGE("Foe Fuzzsnap's Sp. Def fell!");
     }
 }
 

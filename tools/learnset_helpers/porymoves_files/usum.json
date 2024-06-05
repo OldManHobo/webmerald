@@ -1531,7 +1531,7 @@
       "MOVE_THROAT_CHOP"
     ]
   },
-  "DISCUTTLE": {
+  "FUZZSNAP": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1636,7 +1636,7 @@
       "MOVE_UPROAR"
     ]
   },
-  "TENNADISH": {
+  "PUPACRACK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1749,7 +1749,7 @@
       "MOVE_UPROAR"
     ]
   },
-  "WEBILLITE": {
+  "FLUTTERPOP": {
     "LevelMoves": [
       {
         "Level": 1,

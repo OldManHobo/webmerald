@@ -484,25 +484,25 @@ Cry_SilwingMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ROADILLO
 
-.if P_FAMILY_DISCUTTLE == TRUE
+.if P_FAMILY_FUZZSNAP == TRUE
 	.align 2
-Cry_Discuttle::
+Cry_Fuzzsnap::
 	.incbin "sound/direct_sound_samples/cries/pidgey.bin"
 
 	.align 2
-Cry_Tennadish::
+Cry_Pupacrack::
 	.incbin "sound/direct_sound_samples/cries/pidgeotto.bin"
 
 	.align 2
-Cry_Webillite::
+Cry_Flutterpop::
 	.incbin "sound/direct_sound_samples/cries/pidgeot.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_WebilliteMega::
+Cry_FlutterpopMega::
 	.incbin "sound/direct_sound_samples/cries/pidgeot_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_DISCUTTLE
+.endif @ P_FAMILY_FUZZSNAP
 
 .if P_FAMILY_BANANEE == TRUE
 	.align 2
