@@ -52,7 +52,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Ganera,
         .iconPalIndex = 3,
         FOOTPRINT(Ganera)
-        .canLevitate = TRUE,
         .levelUpLearnset = sGaneraLevelUpLearnset,
         .teachableLearnset = sGaneraTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_GYANNEX}),
@@ -944,7 +943,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Coattail,
         .iconPalIndex = 5,
         FOOTPRINT(Coattail)
-        .tmIlliterate = TRUE,
         .levelUpLearnset = sCoattailLevelUpLearnset,
         .teachableLearnset = sCoattailTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_COATOAC}),
@@ -998,7 +996,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Coatoac,
         .iconPalIndex = 2,
         FOOTPRINT(Coatoac)
-        .tmIlliterate = TRUE,
         .levelUpLearnset = sCoatoacLevelUpLearnset,
         .teachableLearnset = sCoatoacTeachableLearnset,
     },
@@ -1174,7 +1171,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Roadillo,
         .iconPalIndex = 5,
         FOOTPRINT(Roadillo)
-        .tmIlliterate = TRUE,
         .levelUpLearnset = sRoadilloLevelUpLearnset,
         .teachableLearnset = sRoadilloTeachableLearnset,
     },
@@ -1228,7 +1224,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Felight,
         .iconPalIndex = 5,
         FOOTPRINT(Felight)
-        .tmIlliterate = TRUE,
         .levelUpLearnset = sFelightLevelUpLearnset,
         .teachableLearnset = sFelightTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_SILWING}),
@@ -13245,7 +13240,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Magikarp,
         .iconPalIndex = 0,
         FOOTPRINT(Magikarp)
-        .tmIlliterate = TRUE,
         .levelUpLearnset = sMagikarpLevelUpLearnset,
         .teachableLearnset = sMagikarpTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GYARADOS}),
@@ -13536,7 +13530,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Ditto,
         .iconPalIndex = 2,
         FOOTPRINT(Ditto)
-        .tmIlliterate = TRUE,
         .levelUpLearnset = sDittoLevelUpLearnset,
         .teachableLearnset = sDittoTeachableLearnset,
     },
