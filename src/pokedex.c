@@ -989,7 +989,7 @@ static const struct WindowTemplate sInfoScreen_WindowTemplates[] =
     [WIN_DATA_STATS] =
     {
         .bg = 2,
-        .tilemapLeft = 14,
+        .tilemapLeft = 12,
         .tilemapTop = 3,
         .width = 16,
         .height = 10,
@@ -3927,177 +3927,188 @@ static void PrintDataScreen_Name(u32 num, u32 value)
 static void PrintDataScreen_Stats()
 {
     u8 base_x = 0;
-    u8 base_x_offset = 90;
+    u8 base_x_offset = 65;
     u8 base_x_first_row = 25;
-    u8 base_x_second_row = 65;
+    u8 base_x_second_row = 40;
+    u8 base_x_third_row = 80;
+    u8 base_x_end = 105;
     u8 base_y_offset = 15;
     u8 base_i = 0;
-    u8 base_y = 5;
+    u8 base_y = 4;
     u8 strBase[14];
 
     //Base stats
     //HP
-	PrintDataScreenText(WIN_DATA_STATS, FONT_SMALL, sText_Stats_HP, base_x, base_y + base_y_offset*base_i);
+	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_HP, base_x+3, base_y + base_y_offset*base_i);
+    base_i++;
     if (sPokedexView->baseHP <= 20)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseHP <= 50)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseHP <= 80)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseHP <= 100)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseHP <= 125)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+5, base_y + base_y_offset*base_i);
     }
     else
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+5, base_y + base_y_offset*base_i);
     }
+    base_i--;
 
     //SpAttack
-    PrintDataScreenText(WIN_DATA_STATS, FONT_SMALL, sText_Stats_Attack, base_x+base_x_second_row, base_y + base_y_offset*base_i);
+    PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_Attack, base_x+base_x_second_row, base_y + base_y_offset*base_i);
+    base_i++;
 	if (sPokedexView->baseAttack <= 20)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseAttack <= 50)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseAttack <= 80)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseAttack <= 100)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseAttack <= 125)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
 
-	base_i++;
+	base_i--;
     //Attack
-	PrintDataScreenText(WIN_DATA_STATS, FONT_SMALL, sText_Stats_Defense, base_x, base_y + base_y_offset*base_i);
+	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_Defense, base_x+base_x_third_row, base_y + base_y_offset*base_i);
+    base_i++;
 	if (sPokedexView->baseDefense <= 20)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseDefense <= 50)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseDefense <= 80)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseDefense <= 100)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseDefense <= 125)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
 
+    base_i++;
     //SpDefense
-	PrintDataScreenText(WIN_DATA_STATS, FONT_SMALL, sText_Stats_Speed, base_x+base_x_second_row, base_y + base_y_offset*base_i);
+	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_Speed, base_x+base_x_third_row, base_y + base_y_offset*base_i);
+    base_i++;
 	if (sPokedexView->baseSpeed <= 20)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpeed <= 50)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpeed <= 80)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpeed <= 100)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpeed <= 125)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
     else
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_third_row+5, base_y + base_y_offset*base_i);
     }
 
-	base_i++;
+    base_i--;
     //Defense
-	PrintDataScreenText(WIN_DATA_STATS, FONT_SMALL, sText_Stats_SpAttack, base_x, base_y + base_y_offset*base_i);
+	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_SpAttack, base_x, base_y + base_y_offset*base_i);
+    base_i++;
 	if (sPokedexView->baseSpAttack <= 20)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpAttack <= 50)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpAttack <= 80)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpAttack <= 100)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpAttack <= 125)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+5, base_y + base_y_offset*base_i);
     }
     else
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+5, base_y + base_y_offset*base_i);
     }
 
+    base_i--;
     //Speed
-	PrintDataScreenText(WIN_DATA_STATS, FONT_SMALL, sText_Stats_SpDefense, base_x+base_x_second_row, base_y + base_y_offset*base_i);
+	PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Stats_SpDefense, base_x+base_x_second_row, base_y + base_y_offset*base_i);
+    base_i++;
 	if (sPokedexView->baseSpDefense <= 25)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeF, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpDefense <= 50)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeD, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpDefense <= 80)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeC, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpDefense <= 100)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeB, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else if (sPokedexView->baseSpDefense <= 125)
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeA, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
     else
     {
-        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintDataScreenText(WIN_DATA_STATS, FONT_NORMAL, sText_Data_GradeS, base_x+base_x_second_row+5, base_y + base_y_offset*base_i);
     }
 	base_i++;
 }
