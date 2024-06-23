@@ -8390,6 +8390,13 @@ u32 GetBattlerWeight(u32 battler)
     return weight;
 }
 
+u32 GetBattlerColor(u32 battler)
+{
+    u32 bodyColor = GetSpeciesBodyColor(gBattleMons[battler].species);
+
+    return bodyColor; 
+}
+
 u32 CountBattlerStatIncreases(u32 battler, bool32 countEvasionAcc)
 {
     u32 i;
@@ -8549,7 +8556,7 @@ static inline u32 CalcMoveBasePower(u32 move, u32 battlerAtk, u32 battlerDef, u3
 {
     u32 i;
     u32 basePower = gMovesInfo[move].power;
-    u32 weight, hpFraction, speed;
+    u32 weight, hpFraction, speed, bodyColor;
 
     if (gBattleStruct->zmove.active)
         return GetZMovePower(gBattleStruct->zmove.baseMoves[battlerAtk]);
@@ -8663,6 +8670,11 @@ static inline u32 CalcMoveBasePower(u32 move, u32 battlerAtk, u32 battlerDef, u3
             basePower = sWeightToDamageTable[i + 1];
         else
             basePower = 120;
+        break;
+    case EFFECT_RGB:
+        bodyColor = GetBattlerColor(battlerDef);
+        if ((bodyColor = (BODY_COLOR_GREEN || BODY_COLOR_BLUE || BODY_COLOR_RED)))
+            basePower *= 1.5;
         break;
     case EFFECT_HEAT_CRASH:
         weight = GetBattlerWeight(battlerAtk) / GetBattlerWeight(battlerDef);
@@ -9661,7 +9673,7 @@ static inline uq4_12_t GetScreensModifier(u32 move, u32 battlerAtk, u32 battlerD
     bool32 reflect = (sideStatus & SIDE_STATUS_REFLECT) && IS_MOVE_PHYSICAL(move);
     bool32 auroraVeil = sideStatus & SIDE_STATUS_AURORA_VEIL;
 
-    if (isCrit || abilityAtk == ABILITY_INFILTRATOR || gProtectStructs[battlerAtk].confusionSelfDmg)
+    if (isCrit || abilityAtk == ABILITY_INFILTRATOR || gProtectStructs[battlerAtk].confusionSelfDmg || gMovesInfo[move].effect == EFFECT_DEEP_SUNDER)
         return UQ_4_12(1.0);
     if (reflect || lightScreen || auroraVeil)
         return (gBattleTypeFlags & BATTLE_TYPE_DOUBLE) ? UQ_4_12(0.667) : UQ_4_12(0.5);

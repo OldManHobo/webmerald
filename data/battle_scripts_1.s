@@ -755,6 +755,14 @@ BattleScript_EffectPhotonGeyser::
 	setphotongeysercategory
 	goto BattleScript_EffectHit
 
+BattleScript_EffectOverflow::
+	setphotongeysercategory
+	goto BattleScript_EffectHit
+
+BattleScript_EffectUnderflow::
+	setphotongeysercategory
+	goto BattleScript_EffectHit
+
 BattleScript_EffectAuraWheel:: @ Aura Wheel can only be used by Morpeko
 	jumpifspecies BS_ATTACKER, SPECIES_MORPEKO_FULL_BELLY, BattleScript_EffectHit
 	jumpifspecies BS_ATTACKER, SPECIES_MORPEKO_HANGRY, BattleScript_EffectHit

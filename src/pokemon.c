@@ -3347,6 +3347,11 @@ u16 GetSpeciesWeight(u16 species)
     return gSpeciesInfo[SanitizeSpeciesId(species)].weight;
 }
 
+u16 GetSpeciesBodyColor(u16 species)
+{
+    return gSpeciesInfo[SanitizeSpeciesId(species)].bodyColor;
+}
+
 const struct LevelUpMove *GetSpeciesLevelUpLearnset(u16 species)
 {
     const struct LevelUpMove *learnset = gSpeciesInfo[SanitizeSpeciesId(species)].levelUpLearnset;

@@ -2235,5 +2235,17 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
     {
         .battleScript = BattleScript_EffectVenomDrain,
         .battleTvScore = 0,
+    },
+
+    [EFFECT_OVERFLOW] =
+    {
+        .battleScript = BattleScript_EffectOverflow,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+
+    [EFFECT_UNDERFLOW] =
+    {
+        .battleScript = BattleScript_EffectUnderflow,
+        .battleTvScore = 0, // TODO: Assign points
     }
 };
