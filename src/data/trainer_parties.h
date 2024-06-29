@@ -3224,7 +3224,7 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     .lvl = 13,
     .species = SPECIES_CYCLIL,
     .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_FACADE, MOVE_ROLLOUT, MOVE_DEFENSE_CURL}
+    .moves = {MOVE_FACADE, MOVE_ROLLOUT}
     }
 };
 
@@ -11819,13 +11819,13 @@ static const struct TrainerMon sParty_Circe[] = {
     .iv = TRAINER_PARTY_IVS(15, 20, 15, 20, 15, 20),
     .lvl = 14,
     .species = SPECIES_PUPPETTE,
-    .moves = {MOVE_GRUDGE, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_GRUDGE, MOVE_PURSUIT, MOVE_SNATCH, MOVE_SHADOW_SNEAK}
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 20, 15, 20, 15, 20),
     .lvl = 15,
     .species = SPECIES_PUPPETTE,
-    .moves = {MOVE_GRUDGE, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_GRUDGE, MOVE_PURSUIT, MOVE_SNATCH, MOVE_SHADOW_SNEAK}
     }
 };
 
