@@ -6712,7 +6712,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Mackarrel doesn't like to fight fairly.\n"
             "If there's any low blows possible, it goes\n"
             "straight for it without leaving any\n"
-            "chance to his opponent."),
+            "chance to its opponent."),
         .pokemonScale = 342,
         .pokemonOffset = 14,
         .trainerScale = 256,

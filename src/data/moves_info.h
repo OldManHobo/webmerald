@@ -21149,7 +21149,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Water-imbued fangs hits\n"
             "through defenses."),
-        .effect = EFFECT_DEEP_SUNDER,
+        .effect = EFFECT_BRICK_BREAK,
         .power = 80,
         .type = TYPE_WATER,
         .accuracy = 100,
